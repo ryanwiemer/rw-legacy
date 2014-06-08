@@ -1,0 +1,20 @@
+{
+  "name": "evernote - marketing job",
+  "version": "0.0.1",
+  "authors": [
+    "Ryan Wiemer <ryan@ryanwiemer.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "3.2",
+    "neat": "1.5",
+    "jquery": "~1.11"
+  }
+}
