@@ -1,0 +1,29 @@
+/* ------- *
+ *  Typography  *
+ * ------- */
+
+html {
+	font-size: 100%;
+
+	@include bp(small) {
+		font-size: 112.5%;
+	}
+
+	@include bp(medium) {
+		font-size: 125%;
+	}
+
+	@include bp(large) {
+		font-size: 137.5%;
+	}
+}
+
+body {
+	font-family: $freight-sans;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $kulturista;
+	font-weight: 300;
+}
