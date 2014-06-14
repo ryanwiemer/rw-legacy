@@ -4,14 +4,20 @@
 
 
 .hero {
-  background: black;
-  height: 500px;
+  background-image: url('../img/hero--about.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  text-align: center;
 }
 
 
 .hero__title {
-  padding-top: 250px;
+  font-size: 2em;
+  margin-top: 125px;
+  padding: .75em;
   color: white;
   text-align: center;
   text-transform: uppercase;
+  display: inline-block;
 }

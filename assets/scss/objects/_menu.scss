@@ -3,7 +3,7 @@
 * ------- */
 
 .site-header {
-  background: black;
+  background: rgba(255,255,255, .4);
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,7 +12,10 @@
 }
 
 .site-title {
+  font-size: 18px;
+  letter-spacing: 3px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .site-nav {
@@ -27,10 +30,16 @@
 }
 
 .site-nav ul li {
+  font-size: 16px;
   display: inline-block;
-  margin-left: .5em;
+  margin-left: 1.5em;
 }
 
 .site-nav a {
   color: white;
+}
+
+.site-nav ul li a:hover {
+  color: #ddd;
+  text-decoration:line-through;
 }
