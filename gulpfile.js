@@ -15,9 +15,7 @@ var livereload = require('gulp-livereload');
 
 // Move and Minfiy Scripts from Bower
 gulp.task ('move', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.js'])
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(uglify())
+    return gulp.src(['bower_components/jquery/dist/jquery.min.js', 'bower_components/slick.js/slick/slick.min.js'])
         .pipe(gulp.dest('assets/js/'))
         .pipe(notify({ message: 'Bower components are moved!'}));
 });

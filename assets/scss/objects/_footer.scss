@@ -3,6 +3,35 @@
 * ------- */
 
 .site-footer {
-  background: $secondary;
-  height: 150px;
+  height: 100px;
+  background: $footer;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+
+.site-footer__container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.site-footer a {
+  color: white;
+  opacity: .5;
+}
+
+.site-footer a:hover {
+}
+
+.social-icons {
+  font-size: 1.25em;
+  @include span-columns(4);
+}
+
+.social-icons a {
+  margin-right: .5em;
+}
+
+.colophon {
+  @include span-columns(8);
 }
