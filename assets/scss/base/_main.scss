@@ -3,16 +3,19 @@
  * ------- */
 
 body {
-	background: $background;
+
 }
 
 
 .wrapper {
 	max-width: 960px;
 	margin: 0 auto;
-	margin-top: 60px;
 	padding: 0 1em;
 	min-height: 600px;
+}
+
+.container {
+	background: $background;
 }
 
 
