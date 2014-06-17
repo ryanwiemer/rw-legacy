@@ -6,3 +6,13 @@ a {
 	text-decoration: none;
   border: none;
 }
+
+p a {
+	color: $secondary;
+	border-bottom: 2px solid $secondary;
+}
+
+p a:hover {
+	color: $highlight;
+	border-bottom: 2px solid $highlight;
+}

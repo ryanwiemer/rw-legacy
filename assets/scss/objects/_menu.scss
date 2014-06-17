@@ -5,8 +5,8 @@
 .site-header {
   @extend %clearfix;
   background: #fff;
+  max-width: 1220px;
   margin: 0 auto;
-  max-width: 960px;
 }
 
 .site-header div{
@@ -72,6 +72,7 @@
 }
 
 .site-header__ul li {
+  font-family: $adelle-sans;
   font-size: 16px;
   margin: 0;
   @include bp(medium) {

@@ -2,13 +2,13 @@
  * PARAGRAPHS *
  * ------- */
 
-p {
-  font-size: .85em;
+p, span {
+  font-size: .8em;
   @include bp(medium) {
-      font-size: .8em;
+      font-size: .75em;
   }
   @include bp(large) {
-      font-size: .75em;
+      font-size: .725em;
   }
 }
 

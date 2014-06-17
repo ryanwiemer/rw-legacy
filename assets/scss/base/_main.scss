@@ -8,14 +8,19 @@ body {
 
 
 .wrapper {
-	max-width: 960px;
+	max-width: 1220px;
 	margin: 0 auto;
-	padding: 0 1em;
 	min-height: 600px;
+	@extend %clearfix;
+	padding: 2em 1em;
+	@include bp(medium) {
+	padding: 2em 5%;
+	}
 }
 
 .container {
 	background: $background;
+	@extend %clearfix;
 }
 
 

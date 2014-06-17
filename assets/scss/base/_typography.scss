@@ -4,7 +4,7 @@
 
 //Font Families
 $adelle-sans: "adelle-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$adelle: "Adelle", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$adelle: "adelle", "Georgia", serif;
 
 
 html {
@@ -24,7 +24,7 @@ html {
 }
 
 body, p {
-	font-family: $adelle-sans;
+	font-family: $adelle;
 	font-weight: 400;
 }
 
