@@ -92,6 +92,7 @@
 
 .site-header__ul li a:hover {
   color: $highlight;
+  background: $background;
   @include bp(medium) {
     background: none;
   }

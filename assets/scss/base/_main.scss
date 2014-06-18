@@ -14,7 +14,7 @@ body {
 	@extend %clearfix;
 	padding: 2em 1em;
 	@include bp(medium) {
-	padding: 2em 5%;
+	padding: 2em 1em;
 	}
 }
 
