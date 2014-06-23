@@ -1,0 +1,80 @@
+/* ------- *
+*  Blog   *
+* ------- */
+.projects .wrapper {
+  margin-bottom: -1em;
+}
+
+
+.hero--project {
+  background: $base;
+  background-repeat: repeat;
+  //background-size: cover;
+  //background-position: center center;
+}
+
+.hero--project div {
+  background-color: rgba(51,54, 57, .4);
+  height: 100%;
+}
+
+.hero--project__title {
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: $highlight;
+  font-size: 2.75em;
+  margin-bottom: 1.25em;
+  padding-top: 20px;
+  opacity: .8;
+  @include bp(medium) {
+    padding-top: 70px;
+  }
+}
+
+
+.project {
+  position: relative;
+  height: 300px;
+  margin-bottom: 1em;
+  text-align: center;
+  //border-radius: 2px;
+  overflow: hidden;
+  @include span-columns(12);
+  @include bp(medium) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+}
+
+.project article {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+
+.project__title {
+  font-weight: 400;
+  color: white;
+  background: rgba(51,54,56,.75);
+  //border-top: 2px solid $base;
+  font-size: .75em;
+  position: absolute;
+  text-align: 50px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  padding: 1.25em 0;
+  opacity: 1;
+  @include bp(medium) {
+    height: 100%;
+    padding-top: 150px;
+    opacity: 0;
+  }
+}
+
+.project:hover .project__title {
+opacity: 1;
+}

@@ -3,35 +3,47 @@
 * ------- */
 
 .site-footer {
-  height: 100px;
+  height: 50px;
+  line-height: 50px;
   background: $footer;
   width: 100%;
-  bottom: 0;
-  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -4em;
 }
 
 .site-footer__container {
-  max-width: 960px;
+  line-height: 50px;
   margin: 0 auto;
+  display: inline-block;
 }
 
-.site-footer a {
+.site-footer__icons {
+  line-height: 50px;
+  float: left;
+  font-size: 20px;
+  margin-left: 1em;
+}
+
+.site-footer__icons a {
+line-height: 50px;
+  margin-right: .6em;
+  color: rgba(255,255,255, .3);
+}
+
+.site-footer__icons a:hover {
   color: white;
-  opacity: .5;
 }
 
-.site-footer a:hover {
+.site-footer__colophon {
+  display: none;
+  @include bp(medium) {
+  display: block;
+  line-height: 50px;
+  float: left;
+  font-size: 14px;
+  font-family: $adelle-sans;
+  color: rgba(255,255,255, .3);
 }
-
-.social-icons {
-  font-size: 1.25em;
-  @include span-columns(4);
-}
-
-.social-icons a {
-  margin-right: .5em;
-}
-
-.colophon {
-  @include span-columns(8);
 }

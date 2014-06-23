@@ -4,7 +4,7 @@
 
 .site-header {
   @extend %clearfix;
-  background: #fff;
+  background: $base;
   max-width: 1220px;
   margin: 0 auto;
 }
@@ -22,7 +22,7 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: 60px;
-  color: $base;
+  color: white;
   float: left;
   margin-left: 1em;
   display: inline-block;
@@ -32,6 +32,7 @@
 }
 
 .site-header__toggle {
+  color: white;
   line-height: 60px;
   font-size: 1.15em;
   float: right;
@@ -47,7 +48,7 @@
   }
 }
 .site-header__toggle:hover {
-  color: $secondary;
+  color: gray;
 }
 
 .site-header__nav {
@@ -55,7 +56,7 @@
 }
 
 
-.site-header__ul {
+.site-header__nav ul {
   text-align: center;
   overflow: hidden;
   max-height: 0;
@@ -67,11 +68,11 @@
   }
 }
 
-.open .site-header__ul {
+.open .site-header__nav ul {
     max-height: 15em!important;
 }
 
-.site-header__ul li {
+.site-header__nav ul li {
   font-family: $adelle-sans;
   font-size: 16px;
   margin: 0;
@@ -81,8 +82,8 @@
   }
 }
 
-.site-header__ul li a {
-  color: $base;
+.site-header__nav ul li a {
+  color: white;
   display: block;
   border-top: 1px solid $background;
   @include bp(medium) {
@@ -90,7 +91,7 @@
   }
 }
 
-.site-header__ul li a:hover {
+.site-header__nav ul li a:hover {
   color: $highlight;
   background: $background;
   @include bp(medium) {
@@ -98,11 +99,11 @@
   }
 }
 
-.site-header__ul .active {
+.site-header__nav ul .active {
   color: $secondary;
   text-decoration:line-through;
 }
 
-.site-header__ul .active:hover {
+.site-header__nav ul .active:hover {
   text-decoration:line-through;
 }
