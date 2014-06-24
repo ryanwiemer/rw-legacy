@@ -3,10 +3,13 @@
 * ------- */
 
 .site-header {
-  @extend %clearfix;
-  background: $base;
-  max-width: 1220px;
   margin: 0 auto;
+  max-width: 1220px;
+  display: block;
+  opacity: .7;
+  @extend %clearfix;
+  z-index: 9999;
+  width: 100%;
 }
 
 .site-header div{
@@ -14,6 +17,11 @@
   @include bp(medium) {
   float: left;
   }
+}
+
+.site-header section {
+  margin: 0 auto;
+  max-width: 1220px;
 }
 
 .site-header__title {
@@ -48,15 +56,18 @@
   }
 }
 .site-header__toggle:hover {
-  color: gray;
+  color: $secondary;
 }
 
 .site-header__nav {
-  line-height: 60px;
+  @include bp(medium) {
+  float: right;
+}
 }
 
 
 .site-header__nav ul {
+  line-height: 60px;
   text-align: center;
   overflow: hidden;
   max-height: 0;
@@ -69,31 +80,30 @@
 }
 
 .open .site-header__nav ul {
-    max-height: 15em!important;
+    max-height: 100%!important;
 }
 
 .site-header__nav ul li {
+  background: red;
   font-family: $adelle-sans;
   font-size: 16px;
   margin: 0;
   @include bp(medium) {
     display: inline-block;
     margin-left: 1.5em;
+    background: none;
   }
 }
 
 .site-header__nav ul li a {
   color: white;
-  display: block;
-  border-top: 1px solid $background;
   @include bp(medium) {
-    border: none;
+    //border: none;
   }
 }
 
 .site-header__nav ul li a:hover {
   color: $highlight;
-  background: $background;
   @include bp(medium) {
     background: none;
   }
@@ -101,9 +111,9 @@
 
 .site-header__nav ul .active {
   color: $secondary;
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 
 .site-header__nav ul .active:hover {
-  text-decoration:line-through;
+  text-decoration: line-through;
 }

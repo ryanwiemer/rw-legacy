@@ -2,25 +2,22 @@
  *   Main  *
  * ------- */
 
-body {
-
-}
-
 
 .wrapper {
-	max-width: 1220px;
-	margin: 0 auto;
-	min-height: 600px;
-	@extend %clearfix;
-	padding: 2em 1em;
-	@include bp(medium) {
-	padding: 2em 1em;
-	}
 }
 
 .container {
-	background: $background;
+	@extend %clearfix;
+	position: relative;
+	max-width: 1220px;
+	margin: 0 auto;
+	min-height: 600px;
+	padding: 2em 1em 0 1em;
+	@include bp(medium) {
+	padding: 2em 1em 0 1em;
+	}
 }
+
 
 
 
