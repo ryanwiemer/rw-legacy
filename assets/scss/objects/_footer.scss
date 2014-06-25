@@ -4,7 +4,6 @@
 
 .site-footer {
   height: 50px;
-  line-height: 50px;
   background: $footer;
   width: 100%;
   text-align: center;
@@ -14,20 +13,21 @@
 }
 
 .site-footer__container {
-  line-height: 50px;
+  //line-height: 50px;
   margin: 0 auto;
   display: inline-block;
 }
 
 .site-footer__icons {
-  line-height: 50px;
+  //line-height: 50px;
+  padding-top: 16px;
   float: left;
   font-size: 20px;
   margin-left: 1em;
 }
 
 .site-footer__icons a {
-line-height: 50px;
+  //line-height: 40px;
   margin-right: .6em;
   color: rgba(255,255,255, .3);
 }
@@ -37,13 +37,14 @@ line-height: 50px;
 }
 
 .site-footer__colophon {
+  padding-top: 20px;
   display: none;
   @include bp(medium) {
   display: block;
-  line-height: 50px;
+  //line-height: 50px;
   float: left;
   font-size: 14px;
-  font-family: $adelle-sans;
+  font-family: $body;
   color: rgba(255,255,255, .3);
 }
 }

@@ -3,8 +3,11 @@
  * ------- */
 
 //Font Families
-$adelle-sans: "adelle-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$adelle: "adelle", "Georgia", serif;
+
+
+
+$headline: "myriad-pro", Helvetica, sans-serif;
+$body: "chaparral-pro", Georgia, serif;
 
 
 html {
@@ -24,17 +27,15 @@ html {
 }
 
 body, p {
-	font-family: $adelle;
+	font-family: $body;
 	font-weight: 400;
 	color: $base;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: $adelle-sans;
-	font-weight: 600;
+	font-family: $headline;
+	font-weight: 200;
 }
-
-
 
 
 //Icons

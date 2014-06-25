@@ -1,15 +1,17 @@
 <?php
 /**
- * Template Name: Contact Page
- * Description: A Page Template for the Contact Page
+ * Template Name: Projects Page
+ * Description: A Page Template for the Projects Page
  */
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<h3> </h3>
-
-
+<div class="hero hero--projects">
+<div>
+    <h2 class="hero__title--projects">Amateur Developer and web enthusiast</h2>
+  </div>
+</div> <!-- hero -->
 <div class="wrapper">
 <div class="container">
 
