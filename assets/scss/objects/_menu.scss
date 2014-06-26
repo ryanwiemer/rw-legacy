@@ -12,12 +12,14 @@
   width: 100%;
 }
 
-.page-contact .site-header, .page-projects .site-header, .page-blog .site-header {
-  background: $secondary;
+//.page-contact .site-header, .page-projects .site-header, .page-blog .site-header {
+  //background: white;
+//}
+
+
+.page-blog .site-header__title,  .page-blog .site-header__nav ul li a{
+  color: $base;
 }
-
-
-
 
 
 
@@ -97,11 +99,14 @@
 }
 
 .site-header__nav ul li {
-  background: $secondary;
-  font-family: $body;
+  background: $base;
+  font-family: $headline;
   font-size: 16px;
   margin: 0;
+  border-bottom: 1px solid gray;
+  //text-align: right;
   @include bp(medium) {
+    border: none;
     display: inline-block;
     margin-left: 1.5em;
     background: none;
@@ -116,9 +121,9 @@
 }
 
 .site-header__nav ul li a:hover {
-  color: $base;
+  color: gray;
+  opacity: .75;
   @include bp(medium) {
-    color: $secondary;
     background: none;
   }
 }

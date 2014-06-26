@@ -7,9 +7,11 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="hero hero--projects">
+<div class="hero hero--image" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'full', true);
+echo $image_url[0]; } else {}?>');">
 <div>
-    <h2 class="hero__title--projects">Amateur Developer and web enthusiast</h2>
+    <h2 class="hero__title">Recent Projects</h2>
   </div>
 </div> <!-- hero -->
 <div class="wrapper">

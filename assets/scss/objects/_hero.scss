@@ -8,7 +8,7 @@
 }
 
 
-.hero--about {
+.hero--image {
   //position: relative;
   margin-top: -60px;
   background: $base;
@@ -20,17 +20,11 @@
   position: relative;
   @include bp(medium) {
     margin-top: -62px;
-    height: 500px;
+    height: 400px;
   }
 }
 
 
-
-.hero--projects {
-  height: 200px;
-  background: $base;
-  color: white;
-}
 
 
 
@@ -40,27 +34,31 @@
 
 
 .hero__title {
+  font-family: $body;
+  font-style: italic;
   line-height: 1.4;
   text-transform: uppercase;
   color: white;
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin-bottom: 1.25em;
-  padding-top: 90px;
-  max-width: 600px;
+  padding-top: 140px;
   margin: 0 auto;
   letter-spacing: .1em;
   @include bp(medium) {
-    padding-top: 220px;
+    padding-top: 200px;
   }
 }
 
 .hero__scroll {
-  //opacity: .75;
-  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  opacity: .75;
   padding: .3em;
-  display: inline-block;
-  color: gray;
+  display: block;
+  width: 100%;
+  background: gray;
   margin-top: 30px;
+  color: white;
 }
 
 .hero__scroll:hover {
