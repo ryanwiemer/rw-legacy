@@ -5,14 +5,18 @@
 ?>
 
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<h1><?php the_title() ;?></h1>
+<article class="post">
 
-  <?php the_content(); ?>
+<div class="post__img" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'full', true);
+echo $image_url[0]; } else {}?>');" >
+</div>
 
-<?php endwhile; else: ?>
+<div class="post__details">
+	<h2 class="post__title"><?php the_title() ;?></h2>
+	<hr>
+	<a class="post__read"href="#">read more</a>
+</div>
 
-	<p>Sorry, this page does not exist</p>
-
-<?php endif; ?>
+</article>

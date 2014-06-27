@@ -3,23 +3,21 @@
 * ------- */
 
 .site-footer {
+  //opacity: .75;
   height: 50px;
-  background: $footer;
+  background: white;
   width: 100%;
   text-align: center;
   margin: 0;
   padding: 0;
-
 }
 
 .site-footer__container {
-  //line-height: 50px;
   margin: 0 auto;
   display: inline-block;
 }
 
 .site-footer__icons {
-  //line-height: 50px;
   padding-top: 16px;
   float: left;
   font-size: 20px;
@@ -27,24 +25,23 @@
 }
 
 .site-footer__icons a {
-  //line-height: 40px;
   margin-right: .6em;
-  color: rgba(255,255,255, .3);
+  color: $tertiary;
 }
 
 .site-footer__icons a:hover {
-  color: white;
+  opacity: .75;
 }
 
 .site-footer__colophon {
+  color: $tertiary;
   padding-top: 20px;
   display: none;
   @include bp(medium) {
   display: block;
-  //line-height: 50px;
   float: left;
   font-size: 14px;
   font-family: $body;
-  color: rgba(255,255,255, .3);
+  color: $base;
 }
 }

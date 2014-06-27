@@ -5,20 +5,18 @@
 .site-header {
   z-index: 99999;
   margin: 0 auto;
-  max-width: 1220px;
   display: block;
   @extend %clearfix;
   position: relative;
   width: 100%;
 }
 
-//.page-contact .site-header, .page-projects .site-header, .page-blog .site-header {
-  //background: white;
-//}
+.page-blog .site-header__title,  .page-blog .site-header__toggle{
 
+}
 
-.page-blog .site-header__title,  .page-blog .site-header__nav ul li a{
-  color: $base;
+.page-blog .site-header, .page-about .site-header, .home .site-header, .page-projects .site-header {
+  background: $secondary;
 }
 
 
@@ -48,15 +46,16 @@
   float: left;
   margin-left: 1em;
   display: inline-block;
-  font-weight: 700!important;
+  font-weight: 600;
 }
 
 .site-header__title:hover {
+  color: $highlight;
 }
 
 .site-header__toggle {
+  vertical-align: center;
   color: white;
-  line-height: 60px;
   font-size: 1.15em;
   float: right;
   border: none;
@@ -66,12 +65,14 @@
   margin: 0 1em 0 0;
   cursor: pointer;
   display: inline-block;
+  margin-top: 15px;
+  padding: 5px;
   @include bp(medium) {
     display: none;
   }
 }
 .site-header__toggle:hover {
-  color: $secondary;
+  opacity: .75;
 }
 
 .site-header__nav {
@@ -82,11 +83,12 @@
 
 
 .site-header__nav ul {
-  line-height: 60px;
+  margin: 0;
   text-align: center;
   overflow: hidden;
   max-height: 0;
   @include bp(medium) {
+    margin-top: 20px;
     padding: 0 1em;
     float: right;
     text-align: right;
@@ -99,13 +101,15 @@
 }
 
 .site-header__nav ul li {
-  background: $base;
+  background: $secondary;
   font-family: $headline;
-  font-size: 16px;
+  font-size: 16px!important;
   margin: 0;
   border-bottom: 1px solid gray;
   //text-align: right;
+  line-height: 60px;
   @include bp(medium) {
+    line-height: 0;
     border: none;
     display: inline-block;
     margin-left: 1.5em;
@@ -121,18 +125,21 @@
 }
 
 .site-header__nav ul li a:hover {
-  color: gray;
-  opacity: .75;
+  color: $highlight;
+  opacity: .65;
+  background: $tertiary;
   @include bp(medium) {
     background: none;
+    color: white;
+    opacity: 1;
+    border-bottom: 2px solid white;
+    padding-bottom: 14px;
   }
 }
 
-.site-header__nav ul .active {
-  color: $secondary;
-  text-decoration: line-through;
+.site-header__nav ul li .active {
+  opacity: .15;
 }
 
 .site-header__nav ul .active:hover {
-  text-decoration: line-through;
 }

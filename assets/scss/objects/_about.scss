@@ -2,56 +2,57 @@
 *  About  *
 * ------- */
 
+.about__image {
+  border: 4px solid white;
+  border-radius: 2px;
+  background-image: url('http://placehold.it/150x200');
+  margin-bottom: 1em;
+  background-size: cover;
+  background-position: center center;
+  @include span-columns(12);
+  @include bp(medium) {
+    @include span-columns(6);
+  }
+   @include bp(large) {
+     @include span-columns(6);
+   }
+}
+
+.about__image img {
+
+}
+
+
+
+.about__bio {
+  @include span-columns(12);
+  @include bp(medium) {
+    @include span-columns(6);
+  }
+   @include bp(large) {
+     @include span-columns(6);
+   }
+}
+
+
+.about__title {
+  line-height: 1;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+}
+
+
+
+
+
+
+
 
 .about__info {
 @include span-columns(12);
  @include bp(large) {
    @include span-columns(6);
  }
-}
-
-
-.about__bio {
-  border: 1px solid #d1d1d1;
-  background: white;
-  border-radius: 2px;
-  padding: .5em;
-  @include span-columns(12);
-  margin-bottom: 1.4em;
-  @include bp(small) {
-  margin-bottom: 1.45em;
-  }
-  @include bp(medium) {
-     margin-bottom: 1.5em;
-  }
-  @include bp(large) {
-    @include span-columns(3);
-  }
-}
-
-.about__bio__title {
-  font-size: 1em;
-  //margin-bottom: 1em;
-  margin-bottom: 1em;
-}
-
-.about__bio span {
-@include span-columns(12);
-margin-bottom: .5em;
-}
-
-
-.about__links{
-@include span-columns(12);
-@include bp(large) {
-  @include span-columns(3);
-}
-}
-
-.about__links a {
-  @include span-columns(12);
-}
-
-.about__links__title {
-  border-bottom: 1px solid $base;
 }

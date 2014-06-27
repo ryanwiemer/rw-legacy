@@ -19,6 +19,7 @@
 
 <body <?php body_class(); ?>>
 <header class="site-header">
+  <section>
     <nav class="site-header__nav">
           <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => 'ul', 'menu_class' => '', 'container_class' => '') ); ?>
     </nav>
@@ -26,4 +27,5 @@
       <a href="<?php echo site_url(); ?>"><h1 class="site-header__title">Ryan Wiemer</h1></a>
       <button class="site-header__toggle icon-"></button>
     </div>
+    <section>
 </header>

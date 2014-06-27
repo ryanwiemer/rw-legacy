@@ -12,6 +12,8 @@
  */
 
 get_header(); ?>
+<div class="wrapper">
+<div class="container">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -28,12 +30,12 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php rw_paging_nav(); ?>
-
 		<?php else : ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
 
+</div> <!-- container -->
+</div> <!-- wrapper -->
 <?php get_footer(); ?>

@@ -1,0 +1,63 @@
+/* ------- *
+*  Blog   *
+* ------- */
+
+.post {
+@extend %clearfix;
+background: white;
+margin-bottom: 1em;
+}
+
+.post:hover {
+}
+
+hr {
+  @extend %clearfix;
+  width: 50px;
+  margin: .5em 0;
+  border: none;
+  height: 4px;
+  background: $base;
+  margin-bottom: 1em;
+  //margin-bottom: 130px;
+}
+
+.post__title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.post__details {
+  width: 100%;
+  padding: 1em;
+  position: relative;
+}
+
+.post__img {
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  @include span-columns(12);
+  @include bp(medium) {
+    @include span-columns(9);
+  }
+   @include bp(large) {
+     @include span-columns(9);
+   }
+}
+
+
+.post__read {
+  float: left;
+  padding: .25em;
+  font-style: italic;
+  color: $highlight;
+  border-radius: 2px;
+  border: 2px solid $highlight;
+  text-align: center;
+}
+
+.post__read:hover {
+  background: $highlight;
+  color: white;
+}

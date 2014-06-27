@@ -11,7 +11,7 @@ get_header(); ?>
 $image_url = wp_get_attachment_image_src($image_id,'full', true);
 echo $image_url[0]; } else {}?>');">
 <div>
-    <h2 class="hero__title">Lorem ipsum dolor set.</h2>
+    <h2 class="hero__title"><?php the_field('hero_title'); ?></h2>
   </div>
 </div> <!-- hero -->
 
