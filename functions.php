@@ -78,12 +78,42 @@ function filter_ptags_on_images($content){
 add_filter('the_content', 'filter_ptags_on_images');
 
 //Remove Image Dimensions
-add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
-add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
-function remove_width_attribute( $html ) {
-   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
-   return $html;
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
+add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 );
+// Removes attached image sizes as well
+add_filter( 'the_content', 'remove_thumbnail_dimensions', 10 );
+function remove_thumbnail_dimensions( $html ) {
+  		$html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+  		return $html;
 }
+
+//Remove Attachement Dimensions
+add_shortcode( 'wp_caption', 'fixed_img_caption_shortcode' );
+add_shortcode( 'caption', 'fixed_img_caption_shortcode' );
+function fixed_img_caption_shortcode($attr, $content = null) {
+  if ( ! isset( $attr['caption'] ) ) {
+     if ( preg_match( '#((?:<a [^>]+>\s*)?<img [^>]+>(?:\s*</a>)?)(.*)#is', $content, $matches ) ) {
+     $content = $matches[1];
+     $attr['caption'] = trim( $matches[2] );
+     }
+  }
+  $output = apply_filters( 'img_caption_shortcode', '', $attr, $content );
+     if ( $output != '' )
+     return $output;
+  extract( shortcode_atts(array(
+  'id'      => '',
+  'align'   => 'alignnone',
+  'width'   => '',
+  'caption' => ''
+  ), $attr));
+  if ( 1 > (int) $width || empty($caption) )
+  return $content;
+  if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
+  return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
+  . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></div>';
+}
+
+
 
 //Featured Image Support and removing some file sizes
 add_theme_support( 'post-thumbnails' );
@@ -126,5 +156,8 @@ function rw_scripts() {
   wp_enqueue_script( 'rw-global-script',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
   //wp_enqueue_script( 'knw-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
 }
+
+//function rw_single_scripts() { }}
+
 add_action( 'wp_enqueue_scripts', 'rw_scripts');
-add_action ('wp_enqueue_scripts', 'rw_single_scripts');
+//add_action ('wp_enqueue_scripts', 'rw_single_scripts');

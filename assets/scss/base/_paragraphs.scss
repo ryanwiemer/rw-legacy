@@ -2,7 +2,7 @@
  * PARAGRAPHS *
  * ------- */
 
-p, span {
+p, span, .navigation__left, .navigation__right {
   font-size: .8em;
   @include bp(medium) {
       font-size: .75em;
@@ -12,7 +12,7 @@ p, span {
   }
 }
 
-p {
+p, .wp-caption {
 	line-height: 1.4;
 	margin-bottom: 1.4em;
 	@include bp(small) {

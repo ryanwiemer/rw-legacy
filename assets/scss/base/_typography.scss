@@ -88,3 +88,13 @@ h1,h2,h3,h4,h5,h6 {
 .icon-dot:before {
 	content: "\f111";
 }
+.icon-tag:before {
+	margin-right: .75em;
+	content: "\e600";
+	font-size: 1.25em;
+}
+.icon-clock:before {
+	margin-right: .75em;
+	content: "\e601";
+	font-size: 1.25em;
+}

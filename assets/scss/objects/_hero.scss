@@ -8,12 +8,12 @@
 }
 
 
-.hero--image {
+.hero {
   //position: relative;
   margin-top: -60px;
   background: $base;
   background-size: cover;
-  background-position: top;
+  background-position: center center;
   text-align: center;
   height: 300px;
   margin-bottom: 0;
@@ -24,28 +24,21 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
 .hero__title {
+  font-size: 1.5em;
+  max-width: 800px;
   font-family: $body;
   font-style: italic;
   line-height: 1.4;
   text-transform: uppercase;
   color: white;
-  font-size: 2.5em;
-  margin-bottom: 1.25em;
   padding: 140px 1em 0 1em;
   margin: 0 auto;
   letter-spacing: .1em;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
   @include bp(medium) {
-    padding-top: 200px;
+    padding-top: 180px;
+    font-size: 2em;
   }
 }
 
