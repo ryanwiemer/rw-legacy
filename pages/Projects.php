@@ -8,7 +8,7 @@ get_header(); ?>
 <div class="wrapper">
 <div class="container">
 
-<?php $loop = new WP_Query( array( 'post_type' => 'project_post_type', 'posts_per_page' => 6 ) ); ?>
+<?php $loop = new WP_Query( array( 'post_type' => 'projects', 'posts_per_page' => 6 ) ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 <div class="project" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
