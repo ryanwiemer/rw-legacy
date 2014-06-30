@@ -35,7 +35,9 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-
+<div class="pag-nav">
+<?php posts_nav_link(' ','newer posts','older posts'); ?>
+</div>
 </div> <!-- container -->
 </div> <!-- wrapper -->
 <?php get_footer(); ?>

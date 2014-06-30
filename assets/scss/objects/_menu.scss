@@ -9,20 +9,12 @@
   @extend %clearfix;
   position: relative;
   width: 100%;
-}
-
-.page-blog .site-header__title,  .page-blog .site-header__toggle{
-
-}
-
-.page-blog .site-header, .page-about .site-header, .home .site-header, .page-projects .site-header {
   background: $secondary;
 }
 
-
-
-
-
+.single .site-header {
+  background: none;
+}
 
 
 .site-header div{

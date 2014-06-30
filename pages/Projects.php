@@ -5,19 +5,19 @@
  */
 get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
 <div class="wrapper">
 <div class="container">
 
-  <?php the_content(); ?>
+<?php $loop = new WP_Query( array( 'post_type' => 'project_post_type', 'posts_per_page' => 6 ) ); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-<?php endwhile; else: ?>
+<div class="project" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'full', true);
+echo $image_url[0]; } else {}?>');" >
+<a href="<?php echo get_permalink(); ?>"><h2 class="project__title"><?php the_title(); ?></h2></a>
+</div>
 
-  <p>Sorry, this page does not exist</p>
-
-<?php endif; ?>
-
+<?php endwhile; wp_reset_query(); ?>
 
 </div> <!-- container -->
 </div> <!-- wrapper -->

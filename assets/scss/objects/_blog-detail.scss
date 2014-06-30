@@ -1,107 +1,6 @@
 /* ------- *
-*  Blog   *
+*  Blog Detail  *
 * ------- */
-
-
-//Blog List Styles
-.post {
-@extend %clearfix;
-background: white;
-margin-bottom: 1em;
-}
-
-.post:last-child {
-  margin-bottom: 0;
-}
-
-.post:hover {
-}
-
-.post__date {
-  font-family: $headline;
-  color: gray;
-  margin-bottom: .5em;
-}
-
-.post__tag {
-  color: gray;
-  font-family: $headline;
-  margin-bottom: .5em;
-}
-
-
-
-
-
-
-
-
-hr {
-  @extend %clearfix;
-  width: 50px;
-  margin: .5em 0;
-  border: none;
-  height: 4px;
-  background: $base;
-  margin-bottom: 1em;
-  //margin-bottom: 130px;
-}
-
-.post__title {
-  font-weight: 700;
-  font-size: 1.25em;
-}
-
-.post__details {
-  @include span-columns(12);
-  padding: 1em;
-  position: relative;
-  @include bp(medium) {
-    @include span-columns(4);
-  }
-}
-
-.post__img {
-  height: 250px;
-  background-position: center center;
-  background-size: cover;
-  @include span-columns(12);
-  @include bp(medium) {
-    height: 300px;
-    @include span-columns(8);
-  }
-   @include bp(large) {
-     @include span-columns(8);
-   }
-}
-
-
-.post__read {
-  padding: .35em;
-  font-style: italic;
-  color: $highlight;
-  background: $highlight;
-  color: white;
-  border-radius: 2px;
-  font-size: .85em;
-  margin-top: .5em;
-  display: inline-block;
-}
-
-.post__read:hover {
-  background: darken( $highlight, 10% )
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -145,8 +44,8 @@ hr {
     border-radius: 2px;
     display: inline-block;
     padding: .5em;
-    border: 1px solid darken( $background, 10%);
-    color: darken( $background, 10%);
+    border: 1px solid darken( $background, 15%);
+    color: darken( $background, 15%);
   }
 }
 
@@ -172,8 +71,8 @@ hr {
     border-radius: 2px;
     display: inline-block;
     padding: .5em;
-    border: 1px solid darken( $background, 10%);
-    color: darken( $background, 10%);
+    border: 1px solid darken( $background, 15%);
+    color: darken( $background, 15%);
   }
 }
 
@@ -184,7 +83,7 @@ hr {
   font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
-  color: darken( $background, 10%);
+  color: darken( $background, 15%);
   display: inline-block;
   text-align: left;
   margin-right: .5em;
@@ -198,7 +97,7 @@ hr {
   font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
-  color: darken( $background, 10%);
+  color: darken( $background, 15%);
   display: inline-block;
   text-align: left;
 }
@@ -244,10 +143,6 @@ hr {
 
 
 
-.single-post img {
-  margin-right: -1em;
-
-}
 
 
 
@@ -280,7 +175,7 @@ hr {
   text-align: center;
   font-family: $headline;
   line-height: 1.4;
-  color: darken( $background, 10%);
+  color: darken( $background, 15%);
   margin-bottom: -.5em;
   font-size: .7em;
 }

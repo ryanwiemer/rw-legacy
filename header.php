@@ -11,7 +11,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
-  <title>About Ryan Wiemer</title>
+  <title><?php wp_title('|', true, 'right'); ?></title>
   <script type="text/javascript" src="//use.typekit.net/izi7tnt.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?php wp_head(); ?>
