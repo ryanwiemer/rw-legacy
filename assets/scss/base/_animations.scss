@@ -1,9 +1,29 @@
 //animations
 
-.site-header {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.project__title{
+  @include transition (opacity 150ms ease-in-out);
+}
+
+.container a, footer a {
+   -webkit-transition : border, color, background-color 100ms ease-in-out;
+   -moz-transition :  border, color, background-color 100ms ease-in-out;
+   -o-transition :  border, color, background-color 100ms ease-in-out;
+   transition:  border, color, background-color 100ms ease-in-out;
+}
+
+.site-header__title {
+  -webkit-transition :color 100ms ease-in-out;
+  -moz-transition : color 100ms ease-in-out;
+  -o-transition :  color 100ms ease-in-out;
+  transition:  color 100ms ease-in-out;
+}
+
+
+header a, header a:hover {
+  @include bp(medium) {
+  -webkit-transition : border-color, color 100ms ease-in-out;
+  -moz-transition :  border-color, color 100ms ease-in-out;
+  -o-transition :  border-color, color 100ms ease-in-out;
+  transition:  color 100ms ease-in-out;
+}
 }

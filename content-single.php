@@ -18,16 +18,33 @@ echo $image_url[0]; } else {}?>');">
 <div class="container">
 
 <div class="navigation">
-	<span class="article__date"><span class="icon-clock"></span><?php the_date(); ?></span>	
+	<?php if(!is_singular( 'projects' ) ){?>
+	<span class="article__date"><span class="icon-clock"></span><?php the_date(); ?></span>
+	<?php }
+	else {}?>
+
+
 	<span class="article__tag"><span class="icon-tag"></span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
 	<div class="navigation__right">
+<?php if(!is_singular( 'projects' ) ){?>
 	<?php next_post('%',
-	'next article', 'no'); ?>
+	'next post', 'no'); ?>
 	</div>
 	<div class="navigation__left">
 	<?php previous_post('%',
-	'previous article', 'no'); ?>
+	'previous post', 'no'); ?>
 	</div>
+
+	<?php }
+	else {?>
+	<?php next_post('%',
+	'next project', 'no'); ?>
+	</div>
+	<div class="navigation__left">
+	<?php previous_post('%',
+	'previous project', 'no'); ?>
+	</div>
+<?php }?>
 </div> <!-- end navigation -->
 
 <?php the_content(); ?>

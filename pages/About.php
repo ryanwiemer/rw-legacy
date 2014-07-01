@@ -9,16 +9,14 @@ get_header(); ?>
 
 <div class="wrapper">
 <div class="container">
-  <?php the_content(); ?>
 
   <div class="about__image">
     <img src="http://placehold.it/150x200" />
   </div>
-  <h2 class="about__title"><?php the_field('hero_title'); ?></h2>
+  <h2 class="about__title"><?php the_title(); ?></h2>
   <hr>
   <div class="about__bio">
-    <p>Praesent adipiscing eu ante egestas fringilla. Duis sagittis pretium enim, viverra faucibus ipsum. Duis lobortis tincidunt magna, sit amet blandit elit eleifend ut. Morbi quis mauris nec ligula egestas laoreet. Donec in sollicitudin mi. Morbi malesuada erat justo, et ultrices libero condimentum non. Integer vulputate elementum eros ac volutpat. Nulla at sem sit amet nisl mollis posuere. Proin sit amet odio dignissim, pretium tortor eget, semper neque. Nullam accumsan dui justo, sed semper orci hendrerit non. Aliquam bibendum urna mi, sit amet ullamcorper orci sodales ut. Sed ultricies enim eget suscipit eleifend. Quisque ut urna sed ipsum luctus condimentum vel ac velit.</p>
-    <p>Praesent adipiscing eu ante egestas fringilla. Duis sagittis pretium enim, viverra faucibus ipsum. Duis lobortis tincidunt magna, sit amet blandit elit eleifend ut. Morbi quis mauris nec ligula egestas laoreet. Donec in sollicitudin mi. Morbi malesuada erat justo, et ultrices libero condimentum non. Integer vulputate elementum eros ac volutpat. Nulla at sem sit amet nisl mollis posuere. Proin sit amet odio dignissim, pretium tortor eget, semper neque. Nullam accumsan dui justo, sed semper orci hendrerit non. Aliquam bibendum urna mi, sit amet ullamcorper orci sodales ut. Sed ultricies enim eget suscipit eleifend. Quisque ut urna sed ipsum luctus condimentum vel ac velit.</p>
+    <?php the_content(); ?>
   </div>
 
 

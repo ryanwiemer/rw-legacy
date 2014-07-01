@@ -21,10 +21,6 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
 					get_template_part( 'content', get_post_format() );
 				?>
 
@@ -35,9 +31,19 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-<div class="pag-nav">
-<?php posts_nav_link(' ','newer posts','older posts'); ?>
-</div>
+
+
+		<?php	if ( is_home() ) { ?>
+    <div class="pag-nav">
+				 <?php posts_nav_link(' ','newer posts','older posts'); ?>
+				</div>
+			<?php	} else { ?>
+    		<div class="pag-nav">
+						<?php	posts_nav_link(' ','newer projects','older projects'); ?>
+						</div>
+		<?php	}
+			?>
+
 </div> <!-- container -->
 </div> <!-- wrapper -->
 <?php get_footer(); ?>

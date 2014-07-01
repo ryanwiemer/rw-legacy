@@ -112,20 +112,15 @@
 .site-header__nav ul li a {
   color: white;
   display: block;
-  @include bp(medium) {
-  }
 }
 
 .site-header__nav ul li a:hover {
   color: $highlight;
-  opacity: .65;
+  //opacity: .65;
   background: $tertiary;
   @include bp(medium) {
-    background: none;
-    color: white;
-    opacity: 1;
-    border-bottom: 2px solid white;
-    padding-bottom: 14px;
+    //background: none;
+    color: darken( $background, 10%);
   }
 }
 
