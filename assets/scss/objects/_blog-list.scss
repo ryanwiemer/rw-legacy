@@ -3,9 +3,9 @@
 * ------- */
 
 .post {
-@extend %clearfix;
-background: white;
-margin-bottom: 1em;
+  @extend %clearfix;
+  background: white;
+  margin-bottom: 1em;
 }
 
 .post:last-child {

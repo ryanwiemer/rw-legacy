@@ -1,0 +1,126 @@
+/* ------- *
+*  Contact  *
+* ------- */
+
+input, textarea, .error {
+  font-family: $body;
+  font-size: .75em;
+  padding: .5em;
+  resize: none;
+}
+
+.form {
+  background: white;
+  padding: 1em;
+  @extend %clearfix;
+}
+
+.form input, .form textarea {
+  border: 2px solid darken( $background, 15%);
+}
+
+.form input:focus, .form textarea:focus {
+  outline: none !important;
+  box-shadow: 0;
+  border: 2px solid $highlight;
+}
+
+
+.form fieldset {
+  @include span-columns(12);
+  @include bp(medium) {
+  @include span-columns(8);
+}
+}
+
+.form__intro {
+  @include span-columns(12);
+  @include bp(medium) {
+  @include span-columns(4);
+}
+}
+
+
+.form__intro__title{
+line-height: 1;
+font-weight: 800;
+font-size: 2em;
+text-transform: uppercase;
+margin-bottom: .5em;
+}
+
+
+
+
+
+.form__name {
+  @include span-columns(12);
+  margin-bottom: .5em;
+}
+.form__name__input{
+  @include span-columns(12);
+}
+
+.form__email {
+  @include span-columns(12);
+  margin-bottom: .5em;
+  }
+
+
+.form__email__input{
+  @include span-columns(12);
+}
+
+
+.form__message {
+  margin-bottom: .5em;
+}
+
+.form__message__textarea{
+  height: 300px;
+  @include span-columns(12);
+}
+
+.form__submit {
+  margin-top: .5em;
+  font-family: $body;
+  border: none!important;
+  padding: .35em .75em;
+  font-style: italic;
+  color: $highlight;
+  background: $highlight;
+  color: white;
+  border-radius: 2px;
+  font-size: .85em;
+  display: inline-block;
+}
+
+.form__submit:hover {
+  background: darken( $highlight, 5%);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.error {
+  color: red;
+  font-size: .75em;
+}
+.form__success, .form__error {
+  display: none;
+}
