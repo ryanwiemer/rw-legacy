@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: About Page
- * Description: A Page Template for the Home Page / About Page
+ * Description: A Page Template for the About Page
  */
 get_header(); ?>
 
