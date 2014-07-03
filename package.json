@@ -1,21 +1,21 @@
 {
-  "name": "Evernote",
-  "version": "0.1.1",
-  "description": "Microsite created for Marketing Coordinator position at Evernote.",
-  "main": "index.html",
+  "name": "RW",
+  "version": "0.0.1",
+  "description": "Custom WordPress theme for www.ryanwiemer.com",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryanwiemer/evernote.git"
+    "url": "https://github.com/ryanwiemer/rw.git"
   },
   "author": "Ryan Wiemer",
   "license": "No License",
   "bugs": {
-    "url": "https://github.com/ryanwiemer/evernote/issues"
+    "url": "https://github.com/ryanwiemer/rw/issues"
   },
-  "homepage": "https://github.com/ryanwiemer/evernote",
+  "homepage": "http://www.ryaniemer.com",
   "devDependencies": {
     "gulp": "~3.6.0",
     "gulp-rename": "~1.2.0",
