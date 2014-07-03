@@ -17,6 +17,9 @@ get_header(); ?>
   <hr>
   <div class="about__bio">
     <?php the_content(); ?>
+    <a href="#" class="btn">
+        download resume
+    </a>
   </div>
 
 

@@ -14,8 +14,8 @@
     </div>
     <div class="site-footer__icons">
       <a href="https://github.com/ryanwiemer" target="blank" class="icon-github"></a>
-      <a href="https://github.com/ryanwiemer" target="blank" class="icon-linkedin"></a>
-      <a href="https://github.com/ryanwiemer" target="blank" class="icon-mail"></a>
+      <a href="https://www.linkedin.com/in/ryanwiemer" target="blank" class="icon-linkedin"></a>
+      <a href="mailto:ryan@ryanwiemer.com" class="icon-mail"></a>
     </div>
   </div>
 </footer>

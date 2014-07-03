@@ -15,9 +15,11 @@
 		<div class="post__details">
 			<h2 class="post__title"><?php the_title() ;?></h2>
 			<hr>
-			<p class="post__date"><span class="icon-clock"></span><?php the_date(); ?></p>
-			<p class="post__tag"><span class="icon-tag"></span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></p>
-			<a class="post__read"href="<?php echo get_permalink(); ?>">read more</a>
+			<div>
+				<p class="post__date"><span class="icon-clock"></span><?php the_date(); ?></p>
+				<p class="post__tag"><span class="icon-tag"></span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></p>
+			</div>
+			<a class="post__read btn"href="<?php echo get_permalink(); ?>">read more</a>
 		</div>
 	</article>
 <?php	} else { ?>

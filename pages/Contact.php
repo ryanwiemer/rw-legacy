@@ -37,7 +37,7 @@ get_header(); ?>
       <textarea class="form__message__textarea" placeholder="Message"name="message" required=""></textarea>
     </div>
 
-    <input class="form__submit" name="submit" type="submit" value="send" />
+    <input class="form__submit btn" name="submit" type="submit" value="send" />
   </fieldset>
 </form>
 <div class="form__success">

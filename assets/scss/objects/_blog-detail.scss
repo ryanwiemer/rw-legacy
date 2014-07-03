@@ -32,47 +32,38 @@
 
 
 .navigation__left {
+  position: relative;
+  bottom: .2em;
   float: left;
   @include bp(medium) {
   float: right;
   }
-
   margin-right: .5em;
-  font-style: italic;
   text-align: right;
+  //font-size: .9em;
   a {
-    border-radius: 2px;
-    display: inline-block;
-    padding: .5em;
-    border: 1px solid darken( $background, 15%);
-    color: darken( $background, 15%);
+    @extend .btn;
   }
 }
 
 .navigation__left a:hover {
-  background: $highlight;
-  color: white;
-  border: 1px solid $highlight;
+@extend .btn:hover;
 }
 
 .navigation__right a:hover {
-  background: $highlight;
-  color: white;
-  border: 1px solid $highlight;
+  @extend .btn:hover;
 }
 
 
 .navigation__right {
   margin-right: .5em;
+  position: relative;
+  bottom: .2em;
   float: right;
-  font-style: italic;
+  //font-size: .9em;
   text-align: right;
   a {
-    border-radius: 2px;
-    display: inline-block;
-    padding: .5em;
-    border: 1px solid darken( $background, 15%);
-    color: darken( $background, 15%);
+    @extend .btn;
   }
 }
 
@@ -83,7 +74,7 @@
   font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
-  color: darken( $background, 15%);
+  color: darken( $background, 20%);
   display: inline-block;
   text-align: left;
   margin-right: .5em;
@@ -97,7 +88,7 @@
   font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
-  color: darken( $background, 15%);
+  color: darken( $background, 20%);
   display: inline-block;
   text-align: left;
 }

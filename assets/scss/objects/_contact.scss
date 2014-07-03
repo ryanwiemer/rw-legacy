@@ -82,21 +82,12 @@ margin-bottom: .5em;
 }
 
 .form__submit {
-  margin-top: .5em;
-  font-family: $body;
-  border: none!important;
-  padding: .35em .75em;
-  font-style: italic;
-  color: $highlight;
-  background: $highlight;
-  color: white;
-  border-radius: 2px;
-  font-size: .85em;
-  display: inline-block;
+  margin-top: .75em;
+  background: none;
+  width: 6em;
 }
 
 .form__submit:hover {
-  background: darken( $highlight, 5%);
   cursor: pointer;
 }
 

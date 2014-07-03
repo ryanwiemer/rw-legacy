@@ -1,0 +1,35 @@
+/* ------- *
+*  Blockquote  *
+* ------- */
+
+
+blockquote {
+  @extend %clearfix;
+  margin-bottom: 1em;
+
+}
+
+blockquote p{
+  //font-family: $headline;
+  border-left: 6px solid $highlight;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+blockquote em {
+  font-family: $headline;
+  font-style: normal;
+  font-weight: 600;
+  float: left;
+}
+
+
+blockquote p:before {
+content: '\201C';
+color: darken( $background, 15%);
+font-size: 3em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+font-family: $body;
+}
