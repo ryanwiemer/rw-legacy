@@ -2,7 +2,7 @@
  * PARAGRAPHS *
  * ------- */
 
-p, span, .navigation__left, .navigation__right, {
+p, span, .navigation__left, .navigation__right, .single ul  {
   font-size: .8em;
   @include bp(medium) {
       font-size: .75em;
