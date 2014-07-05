@@ -8,8 +8,8 @@ a {
 }
 
 p a {
-	color: darken( $background, 20%);
-	border-bottom: 2px solid darken( $background, 15%);
+	color: gray;
+	border-bottom: 2px solid gray;
 }
 
 p a:hover {

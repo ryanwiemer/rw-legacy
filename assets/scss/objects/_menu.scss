@@ -41,7 +41,7 @@
 }
 
 .site-header__title:hover {
-  color: $highlight;
+  color:  darken( $background, 10%);
 }
 
 .site-header__toggle {

@@ -38,20 +38,15 @@ get_header(); ?>
     </div>
 
     <input class="form__submit btn" name="submit" type="submit" value="send" />
+    <div class="form__success">
+      Message sent successfully!
+    </div>
+    <div class="form__error">
+      Error, try again.
+    </div>
+
   </fieldset>
 </form>
-<div class="form__success">
-
-Message sent successfully. Thank you!
-
-</div>
-<div class="form__error">
-
-Something went wrong, try refreshing and submitting the form again.
-
-</div>
-
-
 
 <?php endwhile; else: ?>
 
