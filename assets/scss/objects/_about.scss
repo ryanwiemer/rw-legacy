@@ -4,21 +4,24 @@
 
 .about__image {
   border: 4px solid white;
-  background-image: url('http://placehold.it/150x200');
+  //background-image: url('../img/bio.jpg');
   margin-bottom: 1em;
   background-size: cover;
   background-position: center center;
   @include span-columns(12);
+  //@include bp(small) {
+    //@include span-columns(8);
+  //}
   @include bp(medium) {
-    @include span-columns(6);
+    @include span-columns(4);
   }
    @include bp(large) {
-     @include span-columns(6);
+     @include span-columns(4);
    }
 }
 
 .about__image img {
-
+margin-bottom: -.2em;
 }
 
 

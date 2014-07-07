@@ -14,8 +14,8 @@ textarea {
 }
 
 .error {
-  border: 2px solid red!important;
-  color: red;
+  border: 2px solid #c53f3f!important;
+  color: #c53f3f;
   font-size: .75em;
 }
 
@@ -121,7 +121,7 @@ margin-bottom: .5em;
 }
 
 .form__error {
-  color: red;
+  color: #c53f3f;
 }
 
 .form__success, .form__error {

@@ -44,6 +44,17 @@
 }
 
 
+.single img {
+margin-bottom: 1.4em;
+  @include bp(small) {
+      margin-bottom: 1.45em;
+  }
+  @include bp(medium) {
+    margin-bottom: 1.5em;
+  }
+}
+
+
 
 .single .aligncenter .wp-caption-text, .single .alignnone .wp-caption-text {
   display: block;
@@ -57,7 +68,7 @@
 
 
 
-.single .container ul {
+.single .container ul, .single .container ol {
   margin-bottom: 1.45em;
     line-height: 1.45;
     margin-bottom: 1.45em;
@@ -80,6 +91,11 @@
 .single .container ul li {
   list-style-type: square;
   list-style-position:inside;
+}
+
+.single .container ol li{
+  list-style-position:inside;
+  list-style-type: decimal;
 }
 
 

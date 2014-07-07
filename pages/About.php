@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="container">
 
   <div class="about__image">
-    <img src="http://placehold.it/150x200" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" />
   </div>
   <h2 class="about__title"><?php the_title(); ?></h2>
   <hr>

@@ -7,12 +7,12 @@ a {
   border: none;
 }
 
-p a {
+p a, .single .container ul li a {
 	color: gray;
 	border-bottom: 2px solid gray;
 }
 
-p a:hover {
+p a:hover, .single .container ul li a:hover {
 	color: $highlight;
 	border-bottom: 2px solid $highlight;
 }
