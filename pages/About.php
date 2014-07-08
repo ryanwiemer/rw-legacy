@@ -13,8 +13,6 @@ get_header(); ?>
   <div class="about__image">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" />
   </div>
-  <h2 class="about__title"><?php the_title(); ?></h2>
-  <hr>
   <div class="about__bio">
     <?php the_content(); ?>
     <a href="#" class="btn">

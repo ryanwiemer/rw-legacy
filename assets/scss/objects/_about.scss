@@ -29,31 +29,44 @@ margin-bottom: -.2em;
 .about__bio {
   @include span-columns(12);
   @include bp(medium) {
-    @include span-columns(6);
+    @include span-columns(8);
   }
    @include bp(large) {
-     @include span-columns(6);
+     @include span-columns(8);
    }
 }
 
 
 .about__title {
+
+}
+
+.about__info {
+@include span-columns(12);
+ @include bp(large) {
+   @include span-columns(8);
+ }
+}
+
+.about__bio p:nth-child(2), .about__bio p:nth-child(3), .about__bio p:nth-child(4) {
+@include span-columns(12);
+ @include bp(large) {
+   @include span-columns(6);
+   @include omega(3n);
+ }
+}
+
+.about__bio blockquote p {
+  font-size: 1.45em;
+  border: none;
+  margin-bottom: .5em;
+  padding: 0;
+}
+
+.about__title h2 {
   line-height: 1;
   font-weight: 800;
   font-size: 2em;
   text-transform: uppercase;
   margin-bottom: .5em;
-}
-
-
-.about__info {
-@include span-columns(12);
- @include bp(large) {
-   @include span-columns(6);
- }
-}
-
-
-.resume {
-
 }

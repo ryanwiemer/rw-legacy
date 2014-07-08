@@ -23,6 +23,7 @@
 		</div>
 	</article>
 <?php	} else { ?>
+
 	<div class="project" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
 	$image_url = wp_get_attachment_image_src($image_id,'full', true);
 	echo $image_url[0]; } else {}?>');" >

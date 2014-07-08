@@ -4,7 +4,7 @@
 
 .project {
   position: relative;
-  height: 300px;
+  height: 250px;
   margin-bottom: 1em;
   text-align: center;
   background-size: cover;
@@ -12,8 +12,8 @@
   overflow: hidden;
   @include span-columns(12);
   @include bp(medium) {
-    @include span-columns(6);
-    @include omega(2n);
+  @include span-columns(4);
+  @include omega(3n);
   }
 }
 
