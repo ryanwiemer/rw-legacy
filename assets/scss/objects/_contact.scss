@@ -2,9 +2,60 @@
 *  Contact  *
 * ------- */
 
+.contact-intro {
+  @extend %clearfix;
+  @include span-columns(12);
+  @include bp(medium) {
+    @include span-columns(8);
+    @include omega;
+  }
+}
+
+.contact-intro__title{
+line-height: 1;
+font-weight: 800;
+font-size: 2em;
+text-transform: uppercase;
+margin-bottom: .5em;
+}
+
+.contact-intro__content {
+@include span-columns(12);
+@include bp(large) {
+@include span-columns(8);
+}
+}
+
+.contact-intro__image {
+  @include span-columns(12);
+  display: none;
+  margin-bottom: 1.4em;
+  @include bp(small) {
+    margin-bottom: 1.45em;
+  }
+  @include bp(medium) {
+    margin-bottom: 1.5em;
+    @include span-columns(4);
+  }
+}
+
+.contact-intro__email {
+  @include span-columns(4);
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
 input, textarea {
+  background: $background;
   font-family: $body;
-  font-size: .75em;
+  //font-size: .75em;
   padding: .5em;
   resize: none;
 }
@@ -16,12 +67,9 @@ textarea {
 .error {
   border: 2px solid #c53f3f!important;
   color: #c53f3f;
-  font-size: .75em;
 }
 
 .form {
-  background: white;
-  padding: 1em;
   @extend %clearfix;
   position: relative;
 }
@@ -30,7 +78,7 @@ textarea {
   border: 2px solid lighten(gray, 10%);
 }
 
-.form__name input:focus, .form__email input:focus, .form__message textarea:focus {
+.form__name input:focus, .form__email input:focus, .form__message textarea:focus, .form__subject input:focus {
   outline: none !important;
   box-shadow: 0;
   border: 2px solid $base;
@@ -50,29 +98,13 @@ textarea {
 }
 }
 
-.form__intro {
-  @include span-columns(12);
-  @include bp(medium) {
-  @include span-columns(4);
-}
-}
-
-
-.form__intro__title{
-line-height: 1;
-font-weight: 800;
-font-size: 2em;
-text-transform: uppercase;
-margin-bottom: .5em;
-}
-
-
-
-
-
 .form__name {
   @include span-columns(12);
   margin-bottom: .5em;
+
+  @include bp(medium) {
+  @include span-columns(6);
+}
 }
 .form__name__input{
   @include span-columns(12);
@@ -81,13 +113,24 @@ margin-bottom: .5em;
 .form__email {
   @include span-columns(12);
   margin-bottom: .5em;
-  }
-
+  @include bp(medium) {
+  @include span-columns(6);
+  @include omega;
+}
+}
 
 .form__email__input{
   @include span-columns(12);
 }
 
+.form__subject {
+  @include span-columns(12);
+  margin-bottom: .5em;
+}
+
+.form__subject__input{
+  @include span-columns(12);
+}
 
 .form__message {
   margin-bottom: .5em;
@@ -126,15 +169,7 @@ margin-bottom: .5em;
 
 .form__success, .form__error {
   position: relative;
-  font-size: .75em;
   font-family: $headline;
   left: 1.5em;
-  top: 1.65em;
-  font-size: .9em;
-  @include bp(medium) {
-      font-size: .75em;
-  }
-  @include bp(large) {
-      font-size: .725em;
-  }
+  top: 1.68em;
 }

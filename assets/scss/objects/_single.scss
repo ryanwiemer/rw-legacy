@@ -88,12 +88,12 @@ margin-bottom: 1.4em;
     }
 }
 
-.single .container ul li {
+.single .container ul li, .page-contact .container ul li {
   list-style-type: square;
   list-style-position:inside;
 }
 
-.single .container ol li{
+.single .container ol li, .page-contact .container ol li{
   list-style-position:inside;
   list-style-type: decimal;
 }

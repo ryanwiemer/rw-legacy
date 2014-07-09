@@ -10,13 +10,6 @@
   padding: .65em;
   border: 2px solid lighten(gray, 10%);
   color: gray;
-  font-size: .9em;
-  @include bp(medium) {
-      font-size: .75em;
-  }
-  @include bp(large) {
-      font-size: .725em;
-  }
 }
 
 .btn:hover {

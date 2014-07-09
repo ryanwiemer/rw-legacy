@@ -67,7 +67,7 @@
 .article__date {
   display: none;
 @include bp(medium) {
-  font-size: .7em;
+  //font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
   color: gray;
@@ -81,7 +81,7 @@
 .article__tag {
   display: none;
 @include bp(medium) {
-  font-size: .7em;
+  //font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
   color: gray;

@@ -3,15 +3,11 @@
 * ------- */
 
 .about__image {
-  border: 4px solid white;
-  //background-image: url('../img/bio.jpg');
+  //border: 4px solid white;
   margin-bottom: 1em;
   background-size: cover;
   background-position: center center;
   @include span-columns(12);
-  //@include bp(small) {
-    //@include span-columns(8);
-  //}
   @include bp(medium) {
     @include span-columns(4);
   }
@@ -36,10 +32,6 @@ margin-bottom: -.2em;
    }
 }
 
-
-.about__title {
-
-}
 
 .about__info {
 @include span-columns(12);

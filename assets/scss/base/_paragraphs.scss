@@ -2,16 +2,6 @@
  * PARAGRAPHS *
  * ------- */
 
-p, span, .navigation__left, .navigation__right, .single ul, .single ol  {
-  font-size: .8em;
-  @include bp(medium) {
-      font-size: .75em;
-  }
-  @include bp(large) {
-      font-size: .725em;
-  }
-}
-
 p, .wp-caption {
 	line-height: 1.4;
 	margin-bottom: 1.4em;

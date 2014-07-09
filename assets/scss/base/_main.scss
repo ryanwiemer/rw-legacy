@@ -15,8 +15,25 @@ margin: 0 auto;
 //min-height: 600px;
 padding: 2em 1em;
 @include bp(medium) {
-padding: 3em 1em;
+padding: 4em 1em;
 }
+}
+
+
+p, span, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error  {
+	font-size: .8em;
+	@include bp(small) {
+			font-size: .8em;
+	}
+	@include bp(medium) {
+			font-size: .75em;
+	}
+	@include bp(large) {
+			font-size: .74em;
+	}
+	@include bp(extra-large) {
+			font-size: .75em;
+	}
 }
 
 

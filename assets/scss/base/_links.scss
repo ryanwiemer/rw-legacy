@@ -7,12 +7,12 @@ a {
   border: none;
 }
 
-p a, .single .container ul li a {
+p a, .single .container ul li a, .single .container ol li a, .page-contact .container ul li a, .page-contact .container ol li a {
 	color: gray;
 	border-bottom: 2px solid gray;
 }
 
-p a:hover, .single .container ul li a:hover {
+p a:hover, .single .container ul li a:hover, .single .container ol li a:hover, .page-contact .container ul li a:hover, .page-contact .container ol li a:hover  {
 	color: $highlight;
 	border-bottom: 2px solid $highlight;
 }
