@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="container">
 <div class="page-header">
   <h2 class="page-header__title">About</h2>
-  <a href="#" class="page-header__button">i</a>
+  <span class="page-header__subtitle">my info</span>
 </div>
 
   <div class="about__image">

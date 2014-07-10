@@ -9,13 +9,6 @@
   border-bottom: 2px solid darken($background, 5%);
 }
 
-.page-header span {
-  background: $highlight;
-  height: 100px;
-  width: 200px;
-  display: block;
-}
-
 .page-header__title {
   display: inline-block;
   font-size: 3em;
@@ -27,9 +20,10 @@
   top: 3px;
 }
 
-.page-header__button {
+.page-header__subtitle {
+  font-size: 1em;
   color: darken($background, 25%);
   font-style: italic;
   float: right;
-  margin-top: 3.15em;
+  margin-top: 3em;
 }

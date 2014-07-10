@@ -17,11 +17,12 @@ get_header(); ?>
 <div class="page-header">
 		<?php	if ( is_home() ) { ?>
 				<h2 class="page-header__title">Blog</h2>
+				<span class="page-header__subtitle">my thoughts</span>
 			<?php	} else { ?>
 				<h2 class="page-header__title">Projects</h2>
+				<span class="page-header__subtitle">my work</span>
 		<?php	}
 			?>
-			<a href="#" class="page-header__button">i</a>
 </div>
 
 		<?php if ( have_posts() ) : ?>
