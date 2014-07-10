@@ -8,7 +8,6 @@ get_header(); ?>
 
 <div class="wrapper">
 <div class="container">
-
 <?php
     get_template_part( 'content', get_post_format() );
 ?>

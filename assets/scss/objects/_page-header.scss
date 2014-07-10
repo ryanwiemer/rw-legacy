@@ -1,0 +1,35 @@
+/* ------- *
+*  Page Header  *
+* ------- */
+
+.page-header {
+  margin-bottom: 2.5em;
+  @extend %clearfix;
+  text-align: center;
+  border-bottom: 2px solid darken($background, 5%);
+}
+
+.page-header span {
+  background: $highlight;
+  height: 100px;
+  width: 200px;
+  display: block;
+}
+
+.page-header__title {
+  display: inline-block;
+  font-size: 3em;
+  font-weight: 700;
+  //padding: 0 .25em 0 0;
+  float: left;
+  border-bottom: 3px solid $base;
+  position: relative;
+  top: 3px;
+}
+
+.page-header__button {
+  color: darken($background, 25%);
+  font-style: italic;
+  float: right;
+  margin-top: 3.15em;
+}

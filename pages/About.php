@@ -9,6 +9,10 @@ get_header(); ?>
 
 <div class="wrapper">
 <div class="container">
+<div class="page-header">
+  <h2 class="page-header__title">About</h2>
+  <a href="#" class="page-header__button">i</a>
+</div>
 
   <div class="about__image">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" />

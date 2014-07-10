@@ -14,12 +14,20 @@
 get_header(); ?>
 <div class="wrapper">
 <div class="container">
+<div class="page-header">
+		<?php	if ( is_home() ) { ?>
+				<h2 class="page-header__title">Blog</h2>
+			<?php	} else { ?>
+				<h2 class="page-header__title">Projects</h2>
+		<?php	}
+			?>
+			<a href="#" class="page-header__button">i</a>
+</div>
 
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<?php
 					get_template_part( 'content', get_post_format() );
 				?>
