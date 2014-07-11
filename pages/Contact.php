@@ -16,8 +16,7 @@ get_header(); ?>
 <div class="wrapper">
 <div class="container">
 <div class="page-header">
-  <h2 class="page-header__title">Contact</h2>
-  <span class="page-header__subtitle">my lorem</span>
+  <h2 class="page-header__title"> How to get in <em>contact</em></h2>
 </div>
 
 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image" />
