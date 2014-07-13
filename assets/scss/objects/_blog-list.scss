@@ -37,7 +37,7 @@ hr {
   height: 4px;
   background: $base;
   margin-bottom: 1em;
-  //margin-bottom: 130px;
+  float: left;
 }
 
 .post__title {
@@ -89,7 +89,9 @@ hr {
   }
 }
 
-
+.page-nav {
+  font-size: .85em;
+}
 .pag-nav a {
   @extend .btn;
 }
