@@ -6,9 +6,6 @@
   @extend %clearfix;
   background: white;
   margin-bottom: 1em;
-  @include bp(medium) {
-    position: relative;
-  }
 }
 
 .post:last-child {
@@ -50,13 +47,16 @@ hr {
 .post__details {
   @include span-columns(12);
   padding: 1em;
+  position: relative;
+  @extend %clearfix;
   @include bp(medium) {
+    height: 300px;
     @include span-columns(4);
   }
 }
 
 .post__details div{
-  @include span-columns(4);
+  @include span-columns(6);
   @include bp(medium) {
     @include span-columns(12);
   }
@@ -80,10 +80,11 @@ hr {
 .post__read {
   float: right;
   position: relative;
-  bottom: -.25em;
+  bottom: -.6em;
   @include bp(medium) {
   position: absolute;
   bottom: 2em;
+  left: 1.3em;
   }
 }
 

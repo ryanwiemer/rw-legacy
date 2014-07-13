@@ -21,7 +21,7 @@ get_header(); ?>
 
 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image" />
 <div class="contact-intro">
-  <p class="contact-intro__content">In consequat diam et auctor ullamcorper. Cras eros ante, mattis vitae lectus eu, vulputate aliquam est. In quis dolor sagittis, varius dui.  diam et auctor ullamcorper</p>
+  <p class="contact-intro__content">I am currently available for small web projects. For work inquiries or just to say "hi" please fill out the form below. </p>
 </div>
 
 

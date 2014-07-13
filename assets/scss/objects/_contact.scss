@@ -55,9 +55,9 @@ margin-bottom: .5em;
 input, textarea {
   background: $background;
   font-family: $body;
-  //font-size: .75em;
   padding: .5em;
   resize: none;
+  -webkit-appearance:none
 }
 
 textarea {
