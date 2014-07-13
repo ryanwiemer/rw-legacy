@@ -21,18 +21,18 @@ padding: 2em 1em;
 
 
 p, span, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error  {
-	font-size: .8em;
+	font-size: 1em;
 	@include bp(small) {
-			font-size: .8em;
+			font-size: .9em;
 	}
 	@include bp(medium) {
-			font-size: .75em;
+			font-size: .9em;
 	}
 	@include bp(large) {
-			font-size: .74em;
+			font-size: .8em;
 	}
 	@include bp(extra-large) {
-			font-size: .75em;
+			font-size: .8em;
 	}
 }
 

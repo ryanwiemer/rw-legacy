@@ -17,6 +17,7 @@
     "neat": "1.5",
     "jquery": "~1.11",
     "jquery-form": "~3.46.0",
-    "jquery-validate": "~1.13.0"
+    "jquery-validate": "~1.13.0",
+    "jquery-placeholder": "~2.0.8"
   }
 }
