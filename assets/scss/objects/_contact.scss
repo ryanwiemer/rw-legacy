@@ -57,7 +57,8 @@ input, textarea {
   font-family: $body;
   padding: .5em;
   resize: none;
-  -webkit-appearance:none
+  -webkit-appearance:none;
+  border-radius: none;
 }
 
 textarea {
