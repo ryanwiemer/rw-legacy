@@ -15,7 +15,7 @@ var livereload = require('gulp-livereload');
 
 // Move and Minfiy Scripts from Bower
 gulp.task ('move', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/jquery-validate/dist/jquery.validate.js', 'bower_components/jquery-placeholder/jquery.placeholder.js' ])
+    return gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/jquery-validate/dist/jquery.validate.js'])
         .pipe(uglify())
         .pipe(rename({
           suffix: '.min'

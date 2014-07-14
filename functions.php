@@ -225,7 +225,6 @@ function contact_scripts() {
   if( is_page('contact')) {
   wp_enqueue_script( 'rw-jquery-validate',  get_template_directory_uri() . '/assets/js/jquery.validate.min.js', '', '', true);
   wp_enqueue_script( 'rw-jquery-form',  get_template_directory_uri() . '/assets/js/jquery.form.min.js', '', '', true);
-  wp_enqueue_script( 'rw-form-settings',  get_template_directory_uri() . '/assets/js/jquery.placeholder.min.js', '', '', true);
 }}
 
 add_action( 'wp_enqueue_scripts', 'rw_scripts');

@@ -59,6 +59,13 @@ get_header(); ?>
 
 <?php endif; ?>
 
+<script>
+Modernizr.load({
+  test: Modernizr.input.placeholder,
+  nope: ['<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js'],
+});
+</script>
+
 </div> <!-- container -->
 </div> <!-- wrapper -->
 
