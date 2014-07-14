@@ -22,6 +22,10 @@
     margin-top: -62px;
     height: 400px;
   }
+  @include bp(extra-large) {
+    margin-top: -62px;
+    height: 500px;
+  }
 }
 
 .hero__title {
@@ -36,6 +40,9 @@
   @include bp(medium) {
     padding-top: 180px;
     font-size: 2em;
+  }
+  @include bp(extra-large) {
+    padding-top: 230px;
   }
 }
 

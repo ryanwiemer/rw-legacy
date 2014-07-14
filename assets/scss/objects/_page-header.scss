@@ -6,13 +6,15 @@
   margin-bottom: 2.5em;
   @extend %clearfix;
   text-align: center;
+  @include bp(medium) {
+  margin-bottom: 3em;
+  }
 }
 
 .page-header__title {
   display: inline-block;
   font-size: 1.75em;
   font-weight: 700;
-  //text-transform: uppercase;
   @extend %clearfix;
   padding: 0 .5em;
 }
