@@ -117,17 +117,11 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 add_theme_support( 'post-thumbnails');
 set_post_thumbnail_size( 400, 600);
 function sgr_filter_image_sizes( $sizes) {
-    unset( $sizes['medium']);
+    unset( $sizes['thumbnail']);
     unset( $sizes['large']);
     return $sizes;
 }
 add_filter('intermediate_image_sizes_advanced', 'sgr_filter_image_sizes');
-
-
-
-
-
-
 
 ///////////////////////////
 //Theme Specific Functions/

@@ -19,18 +19,18 @@
 
 .project__title {
   color: white;
-  background: rgba(141,196,197,.8);
-  font-size: 1em;
-  position: absolute;
-  text-align: 50px;
   width: 100%;
   text-align: center;
-  bottom: 0;
-  padding: 1.25em 0;
+  padding: 130px 1em 0 1em;
   opacity: 1;
+  line-height: 1.2;
+  height: 100%;
+  background: rgba(52,52,52,.3);
   @include bp(medium) {
+    font-size: .85em;
+    background: rgba(141,196,197,.8);
     height: 100%;
-    padding: 115px 1em 0 1em;
+    padding: 125px 1em 0 1em;
     opacity: 0;
   }
 }

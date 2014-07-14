@@ -4,34 +4,28 @@
   @include transition (opacity 150ms ease-in-out);
 }
 
-.container a, .site-footer__icons a {
-   -webkit-transition : border, color, background-color 100ms ease-in-out;
-   -moz-transition :  border, color, background-color 100ms ease-in-out;
-   -o-transition :  border, color, background-color 100ms ease-in-out;
-   transition:  border, color, background-color 100ms ease-in-out;
+.container a {
+  @include transition-property (border, background-color, color);
+  @include transition-duration(100ms);
+  @include transition-timing-function(ease-in-out);
 }
 
 .site-header__title {
-  -webkit-transition :color 100ms ease-in-out;
-  -moz-transition : color 100ms ease-in-out;
-  -o-transition :  color 100ms ease-in-out;
-  transition:  color 100ms ease-in-out;
+  @include transition (color 100ms ease-in-out);
 }
 
 
 header a, header a:hover {
-  -webkit-transition : background 100ms ease-in-out;
-  -moz-transition :  background 100ms ease-in-out;
-  -o-transition :  background 100ms ease-in-out;
-  transition:  background 100ms ease-in-out;
+  @include transition (background 100ms ease-in-out);
   @include bp(medium) {
-  -webkit-transition : color 100ms ease-in-out;
-  -moz-transition :  color 100ms ease-in-out;
-  -o-transition :  color 100ms ease-in-out;
-  transition:  color 100ms ease-in-out;
+    @include transition (color 100ms ease-in-out);
 }
 }
 
-.site-header__nav ul{
-  @include transition (max-height 400ms ease-out);
+.site-header__nav ul, .open .site-header ul{
+   @include transition (max-height 300ms ease-in-out);
+}
+
+.site-footer__icons a {
+  @include transition (color 100ms ease-in-out);
 }

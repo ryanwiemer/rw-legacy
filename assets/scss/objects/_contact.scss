@@ -63,7 +63,7 @@ input, textarea {
 
 textarea {
   line-height: 1.4;
-  overflow: auto; 
+  overflow: auto;
 }
 
 .error {
@@ -151,11 +151,12 @@ textarea {
 }
 
 .form__submit:focus {
-  border: 2px solid $highlight!important;
+  border: 2px solid lighten(gray, 10%)!important;
 }
 
 .form__submit:hover {
   cursor: pointer;
+  border: 2px solid $highlight!important;
 }
 
 .form__success, .form__error {
@@ -172,6 +173,6 @@ textarea {
 .form__success, .form__error {
   position: relative;
   font-family: $headline;
-  left: 1.5em;
+  left: 1em;
   top: 1.68em;
 }
