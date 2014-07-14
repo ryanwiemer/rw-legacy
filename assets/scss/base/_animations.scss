@@ -31,3 +31,7 @@ header a, header a:hover {
   transition:  color 100ms ease-in-out;
 }
 }
+
+.site-header__nav ul{
+  @include transition (max-height 400ms ease-out);
+}

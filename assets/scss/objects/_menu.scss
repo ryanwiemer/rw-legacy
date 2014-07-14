@@ -114,10 +114,9 @@
 
 .site-header__nav ul li a:hover {
   color: $highlight;
-  //opacity: .65;
   background: $tertiary;
   @include bp(medium) {
-    //background: none;
+    background: none;
     color: darken( $background, 10%);
   }
 }
