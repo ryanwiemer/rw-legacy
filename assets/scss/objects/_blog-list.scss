@@ -13,9 +13,6 @@
   margin-bottom: 0;
 }
 
-.post:hover {
-}
-
 .post__date {
   font-family: $headline;
   color: gray;
@@ -30,14 +27,17 @@
 }
 
 hr {
-  @extend %clearfix;
+  //@extend %clearfix;
   width: 50px;
   margin: .5em 0;
   border: none;
   height: 4px;
   background: $base;
   margin-bottom: 1em;
-  float: left;
+  text-align: left;
+  @include bp(medium) {
+    float: left;
+  }
 }
 
 .post__title {
