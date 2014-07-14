@@ -78,7 +78,7 @@
   overflow: hidden;
   max-height: 0;
   @include bp(medium) {
-    margin-top: 22px;
+    line-height: 60px;
     padding: 0 1em;
     float: right;
     text-align: right;
@@ -99,11 +99,11 @@
   border-bottom: 1px solid gray;
   line-height: 60px;
   @include bp(medium) {
-    line-height: 0;
     border: none;
     display: inline-block;
     margin-left: 1.5em;
     background: none;
+    line-height: 60px;
   }
 }
 
