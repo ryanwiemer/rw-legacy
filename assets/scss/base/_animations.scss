@@ -23,7 +23,7 @@ header a, header a:hover {
 }
 
 .site-header__nav ul, .open .site-header ul{
-   @include transition (max-height 300ms ease-in-out);
+   @include transition (max-height 300ms ease-out);
 }
 
 .site-footer__icons a {
