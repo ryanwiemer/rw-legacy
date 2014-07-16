@@ -1,10 +1,4 @@
 <?php
-  if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
-    wpcf7_enqueue_scripts();
-  }
-?>
-
-<?php
 /**
  * Template Name: Contact Page
  * Description: A Page Template for the Contact Page
