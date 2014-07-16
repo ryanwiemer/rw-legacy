@@ -4,7 +4,7 @@
   @include transition (opacity 150ms ease-in-out);
 }
 
-.container a {
+.container a, .form__submit {
   @include transition-property (border, background-color, color);
   @include transition-duration(100ms);
   @include transition-timing-function(ease-in-out);
@@ -28,6 +28,6 @@ header a, header a:hover {
 
 .site-header__nav ul {
   @include transition-property (height);
-  @include transition-duration(150ms);
+  @include transition-duration(300ms);
   @include transition-timing-function(ease-out);
 }

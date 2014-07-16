@@ -45,20 +45,3 @@
     padding-top: 230px;
   }
 }
-
-.hero__scroll {
-  position: absolute;
-  bottom: 0;
-  opacity: .75;
-  padding: .3em;
-  display: block;
-  width: 100%;
-  background: gray;
-  margin-top: 30px;
-  color: white;
-}
-
-.hero__scroll:hover {
-  color: gray;
-  background: white;
-}

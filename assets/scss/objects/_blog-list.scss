@@ -92,7 +92,7 @@ hr {
 .page-nav {
   font-size: .85em;
 }
-.pag-nav a {
+.pag-nav a, .touch .pag-nav a {
   @extend .btn;
 }
 

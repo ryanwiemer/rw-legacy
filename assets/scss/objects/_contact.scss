@@ -143,7 +143,7 @@ textarea {
   @include span-columns(12);
 }
 
-.form__submit {
+.form__submit, .touch .form__submit {
   margin-top: .75em;
   background: none;
   width: 6em;

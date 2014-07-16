@@ -28,7 +28,7 @@
   max-width: 1100px;
 }
 
-.site-header__title {
+.site-header__title, .touch .site-header__title {
   font-size: 18px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -41,10 +41,10 @@
 }
 
 .site-header__title:hover {
-  color:  darken( $background, 10%);
+  color: darken( $background, 10%);
 }
 
-.site-header__toggle {
+.site-header__toggle, .touch .site-header__toggle {
   vertical-align: center;
   color: white;
   font-size: 22px;
@@ -107,7 +107,7 @@
   }
 }
 
-.site-header__nav ul li a {
+.site-header__nav ul li a, .touch .site-header__nav ul li a {
   color: white;
   display: block;
 }
@@ -119,11 +119,4 @@
     background: none;
     color: darken( $background, 10%);
   }
-}
-
-.site-header__nav ul li .active {
-  opacity: .15;
-}
-
-.site-header__nav ul .active:hover {
 }
