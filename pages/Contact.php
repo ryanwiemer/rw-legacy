@@ -53,18 +53,18 @@ get_header(); ?>
   </fieldset>
 </form>
 
-<script>
-Modernizr.load({
-  test: Modernizr.input.placeholder,
-  nope: 'http://ryanwiemer.com/wp-content/themes/rw/assets/js/placeholders.min.js',
-});
-</script>
-
 <?php endwhile; else: ?>
 
   <p>Sorry, this page does not exist</p>
 
 <?php endif; ?>
+
+<script>
+Modernizr.load({
+  test: Modernizr.input.placeholder,
+  yep: '<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js',
+});
+</script>
 
 </div> <!-- container -->
 </div> <!-- wrapper -->
