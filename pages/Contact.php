@@ -21,7 +21,7 @@ get_header(); ?>
 
 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image" />
 <div class="contact-intro">
-  <p class="contact-intro__content"><?php the_content(); ?></p>
+  <p class="contact-intro__content">I am currently available for small projects or other work opportunities. If you'd like to work together or just want to say "hi" please fill out the form below.</p>
 </div>
 
 
