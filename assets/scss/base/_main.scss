@@ -5,6 +5,7 @@
 .wrapper {
 	background: $background;
 	@extend %clearfix;
+	position: relative;
 }
 
 .container {
@@ -15,6 +16,7 @@
 	@include bp(medium) {
 	padding: 3em 1em;
 	}
+	position: relative;
 }
 
 

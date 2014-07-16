@@ -22,19 +22,12 @@ header a, header a:hover {
 }
 }
 
-.open .site-header__nav ul {
-  @include transition-property (max-height);
-  @include transition-duration(300ms);
-  @include transition-timing-function(ease-out);
+.site-footer__icons a {
+  @include transition (color 100ms ease-in-out);
 }
 
 .site-header__nav ul {
-  @include transition-property (max-height);
+  @include transition-property (height);
   @include transition-duration(150ms);
   @include transition-timing-function(ease-out);
-}
-
-
-.site-footer__icons a {
-  @include transition (color 100ms ease-in-out);
 }

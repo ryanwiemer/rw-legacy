@@ -21,7 +21,7 @@ get_header(); ?>
 
 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image" />
 <div class="contact-intro">
-  <p class="contact-intro__content">I am currently available for small web projects. For work inquiries or just to say "hi" please fill out the form below. </p>
+  <p class="contact-intro__content"><?php the_content(); ?></p>
 </div>
 
 
@@ -58,13 +58,6 @@ get_header(); ?>
   <p>Sorry, this page does not exist</p>
 
 <?php endif; ?>
-
-<script>
-Modernizr.load({
-  test: Modernizr.input.placeholder,
-  nope: ['<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js'],
-});
-</script>
 
 </div> <!-- container -->
 </div> <!-- wrapper -->

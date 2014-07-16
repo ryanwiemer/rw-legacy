@@ -76,7 +76,7 @@
   margin: 0;
   text-align: center;
   overflow: hidden;
-  max-height: 0;
+  height: 0;
   @include bp(medium) {
     line-height: 60px;
     padding: 0 1em;
@@ -88,7 +88,7 @@
 }
 
 .open .site-header__nav ul {
-    max-height: 700px;
+  height:  244px;
 }
 
 .site-header__nav ul li {
