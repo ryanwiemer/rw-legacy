@@ -3,7 +3,7 @@
 * ------- */
 
 
-.container .btn, .touch .container .btn:hover {
+.container .btn, .touch .container .btn:hover  {
   font-family: $headline;
   display: inline-block;
   padding: .65em;
@@ -12,7 +12,7 @@
   background: none;
 }
 
-.btn:hover {
+.container .btn:hover {
   background: $highlight;
   color: white;
   border: 2px solid $highlight;

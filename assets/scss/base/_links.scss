@@ -7,7 +7,7 @@ a {
   border: none;
 }
 
-.container a {
+.container a, .touch .container a:hover {
 	color: $highlight;
 }
 

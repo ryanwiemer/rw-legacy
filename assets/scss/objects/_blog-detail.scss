@@ -28,7 +28,7 @@
 }
 
 
-.navigation__left, .touch .navigation__left {
+.navigation__left, .touch .navigation__left:hover {
   position: relative;
   bottom: .2em;
   float: left;
@@ -52,7 +52,7 @@
 }
 
 
-.navigation__right, .touch .navigation__right {
+.navigation__right, .touch .navigation__right:hover {
   margin-right: .5em;
   position: relative;
   bottom: .2em;

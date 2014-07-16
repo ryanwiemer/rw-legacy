@@ -49,7 +49,7 @@ get_header(); ?>
 <script>
 Modernizr.load({
   test: Modernizr.input.placeholder,
-  yep: '<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js',
+  nope: '<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js',
 });
 </script>
 

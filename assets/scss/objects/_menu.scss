@@ -44,7 +44,7 @@
   color: darken( $background, 10%);
 }
 
-.site-header__toggle, .touch .site-header__toggle {
+.site-header__toggle {
   vertical-align: center;
   color: white;
   font-size: 22px;
@@ -61,7 +61,7 @@
     display: none;
   }
 }
-.site-header__toggle:hover {
+.no-touch .site-header__toggle:hover {
   opacity: .75;
 }
 
@@ -107,12 +107,12 @@
   }
 }
 
-.site-header__nav ul li a, .touch .site-header__nav ul li a {
+.site-header__nav ul li a {
   color: white;
   display: block;
 }
 
-.site-header__nav ul li a:hover {
+.no-touch .site-header__nav ul li a:hover {
   color: $highlight;
   background: $tertiary;
   @include bp(medium) {
