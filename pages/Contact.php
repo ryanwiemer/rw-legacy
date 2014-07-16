@@ -18,7 +18,6 @@ get_header(); ?>
   <p class="contact-intro__content">I am currently available for small projects or other work opportunities. If you'd like to work together or just want to say "hi" please fill out the form below.</p>
 </div>
 
-
 <form class="form" method="post" name="contact" novalidate="novalidate">
   <fieldset>
     <div class="form__name">
@@ -47,18 +46,18 @@ get_header(); ?>
   </fieldset>
 </form>
 
-<?php endwhile; else: ?>
-
-  <p>Sorry, this page does not exist</p>
-
-<?php endif; ?>
-
 <script>
 Modernizr.load({
   test: Modernizr.input.placeholder,
   yep: '<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js',
 });
 </script>
+
+<?php endwhile; else: ?>
+
+  <p>Sorry, this page does not exist</p>
+
+<?php endif; ?>
 
 </div> <!-- container -->
 </div> <!-- wrapper -->
