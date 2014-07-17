@@ -7,14 +7,11 @@
 
 get_header(); ?>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'rw' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
+<div class="wrapper">
+<div class="container">
+		<section class="error-404 not-found">
+				<p><?php _e( 'Oops! That page can&rsquo;t be found. Please check the URL and try again.'); ?></p>
+		</section><!-- .error-404 -->
+</div> <!-- container -->
+</div> <!-- wrapper -->
 <?php get_footer(); ?>
