@@ -156,7 +156,7 @@ function custom_post_type() {
     'view_item'           => __( 'View Project', 'text_domain' ),
     'add_new_item'        => __( 'Add New Project', 'text_domain' ),
     'add_new'             => __( 'Add New Project', 'text_domain' ),
-    'edit_item'           => __( 'Edit Projecy', 'text_domain' ),
+    'edit_item'           => __( 'Edit Project', 'text_domain' ),
     'update_item'         => __( 'Update Project', 'text_domain' ),
     'search_items'        => __( 'Search Project', 'text_domain' ),
     'not_found'           => __( 'Not found', 'text_domain' ),
