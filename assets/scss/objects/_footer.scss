@@ -3,10 +3,7 @@
 * ------- */
 
 .site-footer {
-  position: relative;
-  //border-top: 2px solid darken( $background, 5%);
   background: white;
-  width: 100%;
   text-align: center;
   height: 60px;
 }
@@ -33,14 +30,13 @@
 }
 
 .site-footer__colophon {
-  color: $tertiary;
-  padding-top: 25px;
+  color: $base;
   display: none;
   @include bp(medium) {
   display: block;
   float: left;
-  font-size: 14px;
+  //font-size: 14px;
+  padding-top: 25px;
   font-family: $body;
-  color: $base;
 }
 }

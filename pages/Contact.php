@@ -61,5 +61,4 @@ Modernizr.load({
 
 </div> <!-- container -->
 </div> <!-- wrapper -->
-
 <?php get_footer(); ?>

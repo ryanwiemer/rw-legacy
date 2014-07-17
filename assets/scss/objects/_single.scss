@@ -54,17 +54,16 @@ margin-bottom: 1.4em;
   }
 }
 
-
-
-.single .aligncenter .wp-caption-text, .single .alignnone .wp-caption-text {
-  display: block;
-  text-align: center;
+.wp-caption {
   font-family: $headline;
-  line-height: 1.4;
   color: darken( $background, 15%);
-  margin-bottom: -.5em;
-  margin-top: -1.75em;
-  font-size: .7em;
+  text-align: center;
+  font-size: .9em;
+  line-height: 1.4;
+}
+
+.wp-caption img {
+  margin-bottom: 0;
 }
 
 

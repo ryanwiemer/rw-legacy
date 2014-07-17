@@ -34,7 +34,6 @@ body, p {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $headline;
-	font-weight: 200;
 }
 
 
@@ -51,6 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 [class^="icon-"], [class*=" icon-"] {
+	color: lighten($base, 5%);
 	font-family: 'icons';
 	speak: none;
 	font-style: normal;

@@ -54,5 +54,6 @@ echo $image_url[0]; } else {}?>');">
 		comments_template();
 	endif;
 ?>
+
 </div> <!-- container -->
 </div> <!-- wrapper -->

@@ -15,19 +15,18 @@
 
 .post__date {
   font-family: $headline;
-  color: gray;
+  color: $base;
   margin-bottom: .5em;
 }
 
 .post__tag {
   @extend %clearfix;
-  color: gray;
+  color: $base;
   font-family: $headline;
   margin-bottom: .5em;
 }
 
 hr {
-  //@extend %clearfix;
   width: 50px;
   margin: .5em 0;
   border: none;

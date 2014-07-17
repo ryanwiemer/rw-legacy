@@ -8,10 +8,9 @@ a {
 }
 
 .container a, .touch .container a:hover {
-	color: $highlight;
-	border: none;
+	color: $base;
+	border-bottom: 2px solid lighten($base, 15%);
 }
 
 .container a:hover{
-	border-bottom: 2px solid $highlight;
 }

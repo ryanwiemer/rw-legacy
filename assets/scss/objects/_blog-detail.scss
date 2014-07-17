@@ -37,7 +37,6 @@
   }
   margin-right: .5em;
   text-align: right;
-  //font-size: .9em;
   a {
     @extend .btn;
   }
@@ -57,7 +56,6 @@
   position: relative;
   bottom: .2em;
   float: right;
-  //font-size: .9em;
   text-align: right;
   a {
     @extend .btn;
@@ -68,10 +66,9 @@
 .article__date {
   display: none;
 @include bp(medium) {
-  //font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
-  color: gray;
+  color: $base;
   display: inline-block;
   text-align: left;
   margin-right: .5em;
@@ -85,7 +82,7 @@
   //font-size: .7em;
   font-family: $headline;
   vertical-align: bottom;
-  color: gray;
+  color: $base;
   display: inline-block;
   text-align: left;
 }

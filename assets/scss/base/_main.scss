@@ -3,9 +3,9 @@
  * ------- */
 
 .wrapper {
-	background: $background;
 	@extend %clearfix;
 	position: relative;
+	background: $background;
 }
 
 .container {
@@ -20,7 +20,7 @@
 }
 
 
-p, span, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error  {
+p, span, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error, .site-footer  {
 	font-size: 1em;
 	@include bp(small) {
 			font-size: .9em;
@@ -32,7 +32,7 @@ p, span, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn
 			font-size: .8em;
 	}
 	@include bp(extra-large) {
-			font-size: .8em;
+			font-size: .85em;
 	}
 }
 
