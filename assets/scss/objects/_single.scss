@@ -43,27 +43,16 @@
    }
 }
 
-
-.single img {
-margin-bottom: 1.4em;
-  @include bp(small) {
-      margin-bottom: 1.45em;
-  }
-  @include bp(medium) {
-    margin-bottom: 1.5em;
-  }
-}
-
 .wp-caption {
   font-family: $headline;
-  color: lighten( $base, 15%);
+  color: darken( $background, 50%);
   text-align: center;
   font-size: .85em;
   line-height: 1.4;
 }
 
 .wp-caption img {
-  margin-bottom: .2em;
+  //margin-bottom: .2em;
 }
 
 
