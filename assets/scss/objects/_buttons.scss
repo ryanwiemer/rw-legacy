@@ -3,7 +3,7 @@
 * ------- */
 
 
-.container .btn, .touch .container .btn:hover  {
+.container .btn, .touch .container .btn:hover, .touch .container .btn:focus, .touch .container .btn:active  {
   font-family: $headline;
   display: inline-block;
   padding: .65em;

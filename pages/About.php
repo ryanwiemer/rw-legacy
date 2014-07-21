@@ -18,9 +18,7 @@ get_header(); ?>
   </div>
   <div class="about__bio">
     <?php the_content(); ?>
-    <a href="#" class="btn">
-        download resume
-    </a>
+    <a href="<?php echo get_template_directory_uri(); ?>/wp-content/uploads/2014/07/Ryan-Wiemer-Resume.pdf" class="btn">download resume</a>
   </div>
 
 
