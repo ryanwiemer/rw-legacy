@@ -19,30 +19,6 @@
    }
 }
 
-
-
-.single .aligncenter {
-  margin-bottom: 1.4em;
-  @include bp(small) {
-      line-height: 1.45;
-      margin-bottom: 1.45em;
-  }
-@include span-columns(12);
-  @include bp(medium) {
-    @include span-columns(10);
-    @include shift(1);
-    margin-bottom: 1.5em;
-  }
-  @include bp(large) {
-    @include span-columns(8);
-    @include shift(2);
-  }
-   @include bp(extra-large) {
-      @include span-columns(7);
-      @include shift(2.5);
-   }
-}
-
 .wp-caption {
   font-family: $headline;
   color: darken( $background, 50%);
@@ -50,12 +26,6 @@
   font-size: .85em;
   line-height: 1.4;
 }
-
-.wp-caption img {
-  //margin-bottom: .2em;
-}
-
-
 
 .single .container ul, .single .container ol {
   margin-bottom: 1.45em;

@@ -103,8 +103,8 @@ function fixed_img_caption_shortcode($attr, $content = null) {
   if ( 1 > (int) $width || empty($caption) )
   return $content;
   if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
-  return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
-  . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></div>';
+  return '<p ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
+  . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
 }
 
 //Featured Image Support and removing some file sizes
