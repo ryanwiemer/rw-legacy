@@ -28,7 +28,7 @@
 }
 
 
-.navigation__left, .touch .navigation__left:hover {
+.navigation__left {
   position: relative;
   bottom: .2em;
   float: left;
@@ -40,6 +40,10 @@
   a {
     @extend .btn;
   }
+}
+
+.touch .navigation__left a:hover, .touch .navigation__right a:hover {
+  @extend .btn;
 }
 
 .navigation__left a:hover {
