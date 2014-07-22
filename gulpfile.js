@@ -24,7 +24,6 @@ gulp.task ('move', function() {
         .pipe(notify({ message: 'Bower components are moved!'}));
 });
 
-
 // Concatenate, Lint and Minify JS
 gulp.task('scripts', function() {
     return gulp.src(['assets/js/scripts/*.js'])
