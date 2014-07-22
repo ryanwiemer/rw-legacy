@@ -109,13 +109,12 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 
 //Featured Image Support and removing some file sizes
 add_theme_support( 'post-thumbnails');
-set_post_thumbnail_size( 400, 600);
-function sgr_filter_image_sizes( $sizes) {
+function trickspanda_remove_default_image_sizes( $sizes) {
     unset( $sizes['thumbnail']);
     unset( $sizes['large']);
     return $sizes;
 }
-add_filter('intermediate_image_sizes_advanced', 'sgr_filter_image_sizes');
+add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');
 
 ///////////////////////////
 //Theme Specific Functions/
