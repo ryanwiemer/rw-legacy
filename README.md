@@ -19,8 +19,7 @@ The source code for this websites is here on GitHub. The code checked into this 
 - 4. After some more testing and bug fixes I use DeployHQ again to push to the Live Environment.
 
 ##Links
-- [Welcome to www.ryanwiemer.com](http://stage.ryanwiemer.com/welcome-blog/)
-- [Style Guide](http://www.ryanwiemer.com/style-guide)
+- [Welcome to www.ryanwiemer.com](http://www.ryanwiemer.com/welcome-blog/)
 
 ##Copyright
 - All rights Reserved
