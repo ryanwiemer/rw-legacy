@@ -14,8 +14,8 @@
   }
 
    @include bp(extra-large) {
-      @include span-columns(7);
-      @include shift(2.5);
+      @include span-columns(7.5);
+      @include shift(2.25);
    }
 }
 

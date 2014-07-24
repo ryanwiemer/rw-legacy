@@ -13,4 +13,8 @@ p, .wp-caption {
 	 	line-height: 1.5;
 	 	margin-bottom: 1.5em;
 	}
+	@include bp(large) {
+		line-height: 1.6;
+		margin-bottom: 1.6em;
+	}
 }
