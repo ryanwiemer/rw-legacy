@@ -46,7 +46,7 @@
   text-align: right;
 }
 
-.navigation__left a, .navigation__right a, .touch .navigation__left a:hover, .touch .navigation__right a:hover{
+.navigation__left a, .navigation__right a, .touch .navigation__left a:hover, .touch .navigation__left a:focus, .touch .navigation__right a:focus, .touch .navigation__right a:hover{
   @extend .btn;
 }
 

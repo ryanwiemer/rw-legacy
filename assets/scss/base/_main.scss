@@ -19,8 +19,7 @@
 	position: relative;
 }
 
-
-p, .navigation__left a, .navigation__left a:hover, .navigation__right a, .navigation__right a:hover, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error, .site-footer, code, pre {
+p, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error, .site-footer, code, pre {
 	font-size: 1.1em;
 	@include bp(small) {
 			font-size: 1em;
@@ -35,10 +34,6 @@ p, .navigation__left a, .navigation__left a:hover, .navigation__right a, .naviga
 			font-size: .85em;
 	}
 }
-
-
-
-
 
 ::-moz-selection {
 	//background: $border; /* Firefox */
