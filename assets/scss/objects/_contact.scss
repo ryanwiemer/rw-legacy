@@ -3,50 +3,18 @@
 * ------- */
 
 .contact-intro {
-  display: none;
-  @extend %clearfix;
   @include span-columns(12);
-  display: none;
   @include bp(medium) {
-    @include span-columns(8);
-    @include omega;
-    display: none;
-  }
-}
-
-.contact-intro__title{
-line-height: 1;
-font-weight: 800;
-font-size: 2em;
-text-transform: uppercase;
-margin-bottom: .5em;
-}
-
-.contact-intro__content {
-@include span-columns(12);
-@include bp(large) {
-@include span-columns(8);
-}
-}
-
-.contact-intro__image {
-  @include span-columns(12);
-  display: none;
-  margin-bottom: 1.4em;
-  @include bp(small) {
-    margin-bottom: 1.45em;
-  }
-  @include bp(medium) {
-    margin-bottom: 1.5em;
     @include span-columns(4);
   }
 }
 
-.contact-intro__email {
-  @include span-columns(4);
-  text-align: right;
+.contact-intro__image {
+  display: none;
+  @include bp(medium) {
+    @include span-columns(12);
+  }
 }
-
 
 input, textarea {
   background: $background;
