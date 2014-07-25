@@ -1,0 +1,19 @@
+/* ------- *
+*  Pagination *
+* ------- */
+
+.pag-nav a, .touch .pag-nav a:hover  {
+  @extend .btn;
+}
+
+.pag-nav a:hover {
+  @extend .btn:hover;
+}
+
+.btn-pagination--next {
+  float: left;
+}
+
+.btn-pagination--prev{
+  float: right;
+}

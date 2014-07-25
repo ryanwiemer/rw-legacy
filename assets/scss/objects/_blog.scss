@@ -26,7 +26,7 @@
   margin-bottom: .5em;
 }
 
-hr {
+.post hr {
   width: 50px;
   margin: .5em 0;
   border: none;
@@ -41,7 +41,10 @@ hr {
 
 .post__title {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 1.4em;
+  @include bp(medium) {
+    font-size: 1.25em;
+  }
 }
 
 .post__details {
@@ -76,7 +79,6 @@ hr {
    }
 }
 
-
 .post__read {
   float: right;
   position: relative;
@@ -86,23 +88,4 @@ hr {
   bottom: 2em;
   left: 1.3em;
   }
-}
-
-.page-nav {
-  font-size: .85em;
-}
-.pag-nav a, .touch .pag-nav a:hover  {
-  @extend .btn;
-}
-
-.pag-nav a:hover {
-  @extend .btn:hover;
-}
-
-.btn-pagination--next {
-  float: left;
-}
-
-.btn-pagination--prev{
-  float: right;
 }
