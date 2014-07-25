@@ -133,6 +133,16 @@ function alx_embed_html( $html ) {
 add_filter( 'embed_oembed_html', 'alx_embed_html', 10, 3 );
 add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
 
+add_filter('next_posts_link_attributes','add_link_css_class_older');
+ add_filter('previous_posts_link_attributes','add_link_css_class_newer');
+ function add_link_css_class_older() {
+ return 'class="btn btn--post older"';
+ }
+ function add_link_css_class_newer() {
+ return 'class="btn btn--post newer"';
+ }
+
+
 ///////////////////////////
 //Project Custom Post Type/
 ///////////////////////////
