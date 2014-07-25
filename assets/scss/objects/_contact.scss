@@ -3,11 +3,14 @@
 * ------- */
 
 .contact-intro {
+  display: none;
   @extend %clearfix;
   @include span-columns(12);
+  display: none;
   @include bp(medium) {
     @include span-columns(8);
     @include omega;
+    display: none;
   }
 }
 
@@ -43,13 +46,6 @@ margin-bottom: .5em;
   @include span-columns(4);
   text-align: right;
 }
-
-
-
-
-
-
-
 
 
 input, textarea {
@@ -146,7 +142,7 @@ textarea {
 .form__submit, .touch .form__submit:hover {
   margin-top: .75em;
   background: none;
-  width: 6em;
+  //width: 6em;
   float: left;
 }
 

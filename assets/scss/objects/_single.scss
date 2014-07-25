@@ -12,11 +12,14 @@
     @include span-columns(8);
     @include shift(2);
   }
-
    @include bp(extra-large) {
       @include span-columns(7.5);
       @include shift(2.25);
    }
+}
+
+.single p:last-child{
+margin-bottom: 0;
 }
 
 .wp-caption {
@@ -57,30 +60,6 @@
   list-style-type: decimal;
 }
 
-
-
-
-//Comments
-#disqus_thread{
-@include span-columns(12);
-   @include bp(medium) {
-     @include span-columns(10);
-     @include shift(1);
-   }
-   @include bp(large) {
-     @include span-columns(8);
-     @include shift(2);
-   }
-    @include bp(extra-large) {
-       @include span-columns(7);
-       @include shift(2.5);
-    }
-}
-
-#disqus_thread a {
-    color: $highlight;
-}
-
-.single p:last-child{
-margin-bottom: 0;
+.single strong {
+  font-size: .9em;
 }

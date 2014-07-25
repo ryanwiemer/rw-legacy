@@ -1,6 +1,6 @@
-/* ------- *
-*  Blog Detail  *
-* ------- */
+/* -------------------------- *
+*  Single Page Sub Navigation *
+* --------------------------- */
 
 .navigation {
   font-size: .8em;
@@ -27,43 +27,31 @@
 
 }
 
-
 .navigation__left {
   position: relative;
   bottom: .25em;
+  margin-right: .5em;
+  text-align: right;
   float: left;
   @include bp(medium) {
   float: right;
   }
-  margin-right: .5em;
-  text-align: right;
-  a {
-    @extend .btn;
-  }
 }
 
-.touch .navigation__left a:hover, .touch .navigation__right a:hover {
-  @extend .btn;
-}
-
-.navigation__left a:hover {
-@extend .btn:hover;
-}
-
-.navigation__right a:hover {
-  @extend .btn:hover;
-}
-
-
-.navigation__right, .touch .navigation__right:hover {
+.navigation__right {
   margin-right: .5em;
   position: relative;
   bottom: .25em;
   float: right;
   text-align: right;
-  a {
-    @extend .btn;
-  }
+}
+
+.navigation__left a, .navigation__right a, .touch .navigation__left a:hover, .touch .navigation__right a:hover{
+  @extend .btn;
+}
+
+.navigation__left a:hover, .navigation__right a:hover {
+  @extend .btn:hover;
 }
 
 
