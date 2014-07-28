@@ -31,3 +31,10 @@ header a, header a:hover {
   @include transition-duration(300ms);
   @include transition-timing-function(ease-out);
 }
+
+#preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
