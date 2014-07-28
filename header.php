@@ -18,7 +18,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="preload" <?php body_class(); ?>>
 <header class="site-header">
   <section>
     <nav class="site-header__nav">

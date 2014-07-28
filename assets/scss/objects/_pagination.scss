@@ -2,6 +2,12 @@
 *  Pagination *
 * ------- */
 
+
+.pag-nav {
+  //@extend %clearfix;
+  @include span-columns(12);
+}
+
 .newer {
   float: right;
 }

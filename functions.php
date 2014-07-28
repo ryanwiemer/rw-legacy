@@ -111,6 +111,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 add_theme_support( 'post-thumbnails');
 function trickspanda_remove_default_image_sizes( $sizes) {
     unset( $sizes['thumbnail']);
+    unset( $sizes['medium']);
     unset( $sizes['large']);
     return $sizes;
 }
@@ -200,7 +201,7 @@ add_action( 'init', 'custom_post_type', 0 );
 add_filter('pre_get_posts', 'limit_archive_posts');
 function limit_archive_posts($query){
     if ($query->is_archive) {
-        $query->set('posts_per_page', 6);
+        $query->set('posts_per_page', -6);
     }
     return $query;
 }
