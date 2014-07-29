@@ -25,7 +25,6 @@ var removeClass = function (elem, className) {
     }
 }
 
-
 //Menu JS and Preload
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById('site-header__toggle').onclick = function() {
