@@ -7,7 +7,7 @@
   @extend %clearfix;
   text-align: center;
   @include bp(medium) {
-  margin-bottom: 3em;
+    margin-bottom: 3em;
   }
 }
 

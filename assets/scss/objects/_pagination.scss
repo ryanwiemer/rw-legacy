@@ -2,9 +2,7 @@
 *  Pagination *
 * ------- */
 
-
 .pag-nav {
-  //@extend %clearfix;
   @include span-columns(12);
 }
 
@@ -17,8 +15,8 @@
 }
 
 .btn--post {
-background: darken( $background, 5%)!important;
-border: none!important;
+  background: darken( $background, 5%)!important;
+  border: none!important;
 }
 
 .btn--post:hover {

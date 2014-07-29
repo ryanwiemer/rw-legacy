@@ -19,7 +19,7 @@
 .site-header div{
   @extend %clearfix;
   @include bp(medium) {
-  float: left;
+    float: left;
   }
 }
 
@@ -67,8 +67,8 @@
 
 .site-header__nav {
   @include bp(medium) {
-  float: right;
-}
+    float: right;
+  }
 }
 
 .site-header__nav ul {

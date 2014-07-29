@@ -32,9 +32,9 @@
   color: $base;
   display: none;
   @include bp(medium) {
-  display: block;
-  float: left;
-  padding-top: 25px;
-  font-family: $body;
-}
+    display: block;
+    float: left;
+    padding-top: 25px;
+    font-family: $body;
+  }
 }
