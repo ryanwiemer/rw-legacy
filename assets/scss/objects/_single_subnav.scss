@@ -16,14 +16,13 @@
     @include shift(1);
   }
   @include bp(large) {
-    @include span-columns(8);
-    @include shift(2);
+    @include span-columns(8.5);
+    @include shift(1.75);
   }
-
-   @include bp(extra-large) {
-      @include span-columns(7.5);
-      @include shift(2.25);
-   }
+  @include bp(extra-large) {
+    @include span-columns(8.5);
+    @include shift(1.75);
+  }
 
 }
 

@@ -111,7 +111,7 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 add_theme_support( 'post-thumbnails');
 function trickspanda_remove_default_image_sizes( $sizes) {
     unset( $sizes['thumbnail']);
-    unset( $sizes['medium']);
+    //unset( $sizes['medium']);
     unset( $sizes['large']);
     return $sizes;
 }
