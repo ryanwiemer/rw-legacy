@@ -4,6 +4,8 @@
 
 code, pre {
   display: block;
+  overflow: auto;
+  padding: .5em 1em;
 }
 
 
@@ -25,20 +27,12 @@ code[class*="language-"],pre[class*="language-"] {
 }
 
 /* Code blocks */
-pre[class*="language-"] {
-	padding: .5em;
-	margin: .5em 0;
-	overflow: auto;
-}
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
 	background: $base;
 }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .5em;
-}
 
 .token.comment,
 .token.prolog,
