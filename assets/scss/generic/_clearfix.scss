@@ -1,8 +1,8 @@
-/**
- * Clearfix
- * 1. only meant to be extended from within the stylesheets
- */
-%clearfix { 
+/* ------- *
+* Clearfix *
+* ------- */
+
+%clearfix {
 	&:after {
     	display: table;
     	content: "";

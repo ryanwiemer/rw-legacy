@@ -6,7 +6,7 @@
   font-size: .8em!important;
   margin-bottom: 1.4em;
   @include bp(small) {
-      margin-bottom: 1.45em;
+    margin-bottom: 1.45em;
   }
 
   @include span-columns(12);
@@ -23,7 +23,6 @@
     @include span-columns(8.5);
     @include shift(1.75);
   }
-
 }
 
 .navigation__left {
@@ -53,28 +52,27 @@
   @extend .btn:hover;
 }
 
-
 .article__date {
   display: none;
-@include bp(medium) {
-  font-family: $headline;
-  vertical-align: bottom;
-  color: $base;
-  display: inline-block;
-  text-align: left;
-  margin-right: .5em;
-  margin-top: .5em;
-}
+  @include bp(medium) {
+    font-family: $headline;
+    vertical-align: bottom;
+    color: $base;
+    display: inline-block;
+    text-align: left;
+    margin-right: .5em;
+    margin-top: .5em;
+  }
 }
 
 .article__tag {
   display: none;
-@include bp(medium) {
-  font-family: $headline;
-  vertical-align: bottom;
-  color: $base;
-  display: inline-block;
-  text-align: left;
-  margin-top: .5em;
-}
+  @include bp(medium) {
+    font-family: $headline;
+    vertical-align: bottom;
+    color: $base;
+    display: inline-block;
+    text-align: left;
+    margin-top: .5em;
+  }
 }

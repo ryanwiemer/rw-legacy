@@ -7,16 +7,16 @@
      @include span-columns(10);
      @include shift(1);
    }
-   @include bp(large) {
-     @include span-columns(8);
-     @include shift(2);
-   }
-    @include bp(extra-large) {
-       @include span-columns(7);
-       @include shift(2.5);
-    }
+  @include bp(large) {
+    @include span-columns(8.5);
+    @include shift(1.75);
+  }
+  @include bp(extra-large) {
+    @include span-columns(8.5);
+    @include shift(1.75);
+  }
 }
 
 #disqus_thread a {
-    color: $highlight;
+  color: $highlight;
 }

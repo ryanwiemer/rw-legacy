@@ -3,7 +3,6 @@
 * ------- */
 
 .about__image {
-  //border: 4px solid white;
   margin-bottom: 1em;
   background-size: cover;
   background-position: center center;
@@ -17,10 +16,8 @@
 }
 
 .about__image img {
-margin-bottom: -.2em;
+  margin-bottom: -.2em;
 }
-
-
 
 .about__bio {
   @include span-columns(12);
@@ -31,7 +28,6 @@ margin-bottom: -.2em;
      @include span-columns(8);
    }
 }
-
 
 .about__info {
 @include span-columns(12);

@@ -17,8 +17,7 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?php wp_head(); ?>
 </head>
-
-<body id="preload" <?php body_class(); ?>>
+<body <?php function preload_class($classes) { $classes[] = 'preload'; return $classes; } add_filter('body_class', 'preload_class'); body_class(); ?>>
 <header class="site-header">
   <section>
     <nav class="site-header__nav">
@@ -26,7 +25,7 @@
     </nav>
     <div>
       <a href="<?php echo site_url(); ?>"><h1 class="site-header__title">Ryan Wiemer</h1></a>
-      <button class="site-header__toggle icon-"></button>
+      <button id="site-header__toggle" class="site-header__toggle icon-"></button>
     </div>
     <section>
 </header>
