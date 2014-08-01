@@ -14,7 +14,7 @@ get_header(); ?>
 </div>
 
   <div class="about__image">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" alt="Ryan Wiemer"/>
   </div>
   <div class="about__bio">
     <?php the_content(); ?>
