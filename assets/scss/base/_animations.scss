@@ -31,14 +31,20 @@ header a, header a:hover {
   @include transition-timing-function(ease-out);
 }
 
-.preload * {
+.wf-loading .hero:before, .wf-loading .hero__title, .wf-loading .container  {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
+  webkit-animation: none !important;
+ -moz-animation: none !important;
+ -o-animation: none !important;
+ -ms-animation: none !important;
+ animation: none !important;
+
 }
 
-.wf-loading .wrapper {
+.wf-loading  {
   visibility: hidden;
 }
 
