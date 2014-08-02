@@ -66,16 +66,6 @@ function posts_link_attributes_prev() {
   return 'class="btn-pagination btn-pagination--prev"';
 }
 
-//Remove jQuery Migrate
-add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
-
-function dequeue_jquery_migrate( &$scripts){
-	if(!is_admin()){
-		$scripts->remove( 'jquery');
-		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
-	}
-}
-
 ////////////////////////
 //Edits to Image Output/
 ////////////////////////
@@ -226,8 +216,10 @@ function rw_scripts() {
 
 function contact_scripts() {
   if( is_page('contact')) {
-  wp_enqueue_script( 'rw-jquery-validate',  get_template_directory_uri() . '/assets/js/jquery.validate.min.js', array('jquery'), '', true);
-  wp_enqueue_script( 'rw-jquery-form',  get_template_directory_uri() . '/assets/js/jquery.form.min.js', array('jquery'), '', true);
+  wp_enqueue_script( 'rw-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
+  wp_enqueue_script( 'rw-jquery-form',  get_template_directory_uri() . '/assets/js/jquery.form.min.js', '', '', true);
+  wp_enqueue_script( 'rw-jquery-validate',  get_template_directory_uri() . '/assets/js/jquery.validate.min.js', '', '', true);
+  wp_enqueue_script( 'rw-jquery-form-settings',  get_template_directory_uri() . '/assets/js/jquery.form.settings.min.js', '', '', true);
 }}
 
 add_action( 'wp_enqueue_scripts', 'rw_scripts');
