@@ -1,6 +1,6 @@
 <?php
 
-    $to = "ryan@ryanwiemer.com"; 
+    $to = get_option( 'admin_email' );
     $from = preg_replace("([\r\n])", "", $_REQUEST['email']);
     $name = preg_replace("([\r\n])", "", $_REQUEST['name']);
     $headers = "From: $from";
@@ -20,6 +20,6 @@ if (preg_match($match, $_REQUEST['email']) ||
   die("Header injection detected.");
 }
 
-    $send = mail($to, $subject, $body, $headers);
+    $send = wp_mail($to, $subject, $body, $headers);
 
 ?>
