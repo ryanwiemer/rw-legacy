@@ -17,7 +17,7 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <?php wp_head(); ?>
 </head>
-<body <?php function preload_class($classes) { $classes[] = 'preload'; return $classes; } add_filter('body_class', 'preload_class'); body_class(); ?>>
+<body <?php function preload_class($classes) { $classes[] = 'preload'; return $classes; } add_filter('body_class', 'preload_class'); body_class(); ?> onload="removeClass(document.body, 'preload');">
 <header class="site-header">
   <section>
     <nav class="site-header__nav">

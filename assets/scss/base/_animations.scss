@@ -31,7 +31,7 @@ header a, header a:hover {
   @include transition-timing-function(ease-out);
 }
 
-.wf-loading .hero:before, .wf-loading .hero__title, .wf-loading .container  {
+.preload .hero:before, .preload .hero__title, .preload .container  {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -42,10 +42,6 @@ header a, header a:hover {
  -ms-animation: none !important;
  animation: none !important;
 
-}
-
-.wf-loading  {
-  visibility: hidden;
 }
 
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
@@ -66,9 +62,9 @@ header a, header a:hover {
 }
 
 .cssanimations .hero:before {
-  -webkit-animation:overlay 1000ms ease-in;
-  -moz-animation:overlay 1000ms ease-in;
-  animation:overlay 1000ms ease-in;
+  -webkit-animation:overlay 500ms ease-in;
+  -moz-animation:overlay 500ms ease-in;
+  animation:overlay 500ms ease-in;
   -webkit-animation-iteration-count:1;
   -moz-animation-iteration-count:1;
   animation-iteration-count:1
