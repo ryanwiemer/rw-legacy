@@ -110,7 +110,6 @@ textarea {
 .form__submit, .touch .form__submit:hover {
   margin-top: .75em;
   background: none;
-  //width: 6em;
   float: left;
 }
 
@@ -139,4 +138,14 @@ textarea {
   font-family: $headline;
   left: 1em;
   top: 1.68em;
+}
+
+//Spam Filter
+
+.form__bot {
+  display:none!important;
+}
+
+.form__bot__input {
+  display:none!important;
 }

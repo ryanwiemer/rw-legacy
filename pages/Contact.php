@@ -13,28 +13,33 @@ get_header(); ?>
   <h2 class="page-header__title"> How to get in <em>contact</em></h2>
 </div>
 <div class="contact-intro">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image" />
+  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image"/>
 </div>
 
-<form class="form" method="post" name="contact" novalidate="novalidate">
+<form class="form" method="post" name="contact">
   <fieldset>
     <div class="form__name">
-      <input class="form__name__input" name="name" placeholder="Name"required="" type="text" value="" />
+      <input class="form__name__input" name="name" for="name" placeholder="Name" type="text"/>
     </div>
 
     <div class="form__email">
-      <input class="form__email__input" name="email" placeholder="Email" required="" type="text" value="" />
+      <input class="form__email__input" name="email" for="email" placeholder="Email" type="text"/>
     </div>
 
     <div class="form__subject">
-      <input class="form__subject__input" name="subject" placeholder="Subject" required="" type="text" value="" />
+      <input class="form__subject__input" name="subject" for="subject" placeholder="Subject" type="text"/>
     </div>
 
     <div class="form__message">
-      <textarea class="form__message__textarea" placeholder="Message"name="message" required=""></textarea>
+      <textarea class="form__message__textarea" name="message" for="message" placeholder="Message" type="text"></textarea>
     </div>
 
-    <input class="form__submit btn" name="submit" type="submit" value="send message" />
+    <div class="form__bot">
+      <input class="form__bot__input" name="bot" for="bot" placeholder="Spam filter (Leave blank)" type="text"/>
+    </div>
+
+    <input class="form__submit btn" name="submit" type="submit" value="send message"/>
+
     <div class="form__success">
       Message sent successfully!
     </div>
