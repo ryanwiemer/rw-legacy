@@ -30,11 +30,9 @@ jQuery(function() {
                 url:"../wp-content/themes/rw/mail.php",
                 error: function() {
                         $('.form__error').fadeIn().delay( 1000 ).fadeOut();
-
                 },
                 success: function() {
                         $('.form__success').fadeIn().delay( 1000 ).fadeOut();
-
                 }
             });
         }
