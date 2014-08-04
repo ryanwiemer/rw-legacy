@@ -16,14 +16,14 @@
   background: none;
 }
 
-.site-header div{
+.site-header .site-header__inner{
   @extend %clearfix;
   @include bp(medium) {
     float: left;
   }
 }
 
-.site-header section {
+.site-header .site-header__container{
   margin: 0 auto;
   max-width: 1100px;
 }
@@ -119,3 +119,5 @@
     color: darken( $background, 10%);
   }
 }
+
+//.active {}

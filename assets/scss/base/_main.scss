@@ -20,7 +20,7 @@
 	}
 }
 
-p, .navigation__left a, .navigation__right a, .single ul, .single ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error, .site-footer, code, pre {
+p, .navigation__left a, .navigation__right a, .container ul, .container ol, .btn, .pag-nav a, .article__date, .article__tag, input, textarea, .form__success, .form__error, .site-footer{
 	font-size: 1.1em;
 	@include bp(small) {
 			font-size: 1em;

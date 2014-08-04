@@ -48,9 +48,9 @@ header a, header a:hover {
 @-moz-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
-@-webkit-keyframes overlay{0%{  background: rgba(70, 70, 70, 1);}100%{ background:rgba(0, 0, 0, 0.15);}}
-@-moz-keyframes overlay{0%{  background: rgba(70, 70, 70, 1);}100%{background:rgba(0, 0, 0, 0.15);}}
-@keyframes overlay{0%{  background: rgba(70, 70, 70, 1);}100%{background:rgba(0, 0, 0, 0.15);}}
+@-webkit-keyframes overlay{0%{  background: rgba(70, 71, 72, 1);}100%{ background:rgba(0, 0, 0, 0.15);}}
+@-moz-keyframes overlay{0%{  background: rgba(70, 71, 72, 1);}100%{background:rgba(0, 0, 0, 0.15);}}
+@keyframes overlay{0%{  background: rgba(70, 71, 72, 1);}100%{background:rgba(0, 0, 0, 0.15);}}
 
 .hero__title, .container {
   -webkit-animation:fade-in 300ms ease-in;
