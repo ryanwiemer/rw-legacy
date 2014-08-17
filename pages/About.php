@@ -10,18 +10,15 @@ get_header(); ?>
 <div class="wrapper">
 <div class="container">
 <div class="page-header">
-  <h2 class="page-header__title">About</h2>
-  <span class="page-header__subtitle">my info</span>
+  <h2 class="page-header__title">All About <em>Ryan Wiemer</em></h2>
 </div>
 
   <div class="about__image">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" />
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg" alt="Ryan Wiemer"/>
   </div>
   <div class="about__bio">
     <?php the_content(); ?>
-    <a href="#" class="btn">
-        download resume
-    </a>
+    <a href="<?php echo get_site_url(); ?>/wp-content/uploads/2014/07/Ryan-Wiemer-Resume.pdf" class="btn">download resume</a>
   </div>
 
 
@@ -31,8 +28,6 @@ get_header(); ?>
 
 <?php endif; ?>
 
-
 </div> <!-- container -->
 </div> <!-- wrapper -->
-
 <?php get_footer(); ?>

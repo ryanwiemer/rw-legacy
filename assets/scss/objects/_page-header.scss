@@ -6,24 +6,20 @@
   margin-bottom: 2.5em;
   @extend %clearfix;
   text-align: center;
-  border-bottom: 2px solid darken($background, 5%);
+  @include bp(medium) {
+    margin-bottom: 3em;
+  }
 }
 
 .page-header__title {
   display: inline-block;
-  font-size: 3em;
+  font-size: 1.75em;
   font-weight: 700;
-  //padding: 0 .25em 0 0;
-  float: left;
-  border-bottom: 3px solid $base;
-  position: relative;
-  top: 3px;
+  @extend %clearfix;
+  padding: 0 .5em;
 }
 
-.page-header__subtitle {
-  font-size: 1em;
-  color: darken($background, 25%);
-  font-style: italic;
-  float: right;
-  margin-top: 3em;
+.page-header__title em {
+  color: $highlight;
+  font-style: normal;
 }

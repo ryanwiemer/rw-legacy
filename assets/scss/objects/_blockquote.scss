@@ -10,7 +10,6 @@ blockquote {
 }
 
 blockquote p{
-  //font-family: $headline;
   border-left: 6px solid $highlight;
   padding-left: 1em;
   font-style: italic;
@@ -25,11 +24,11 @@ blockquote em {
 
 
 blockquote p:before {
-content: '\201C';
-color: darken( $background, 15%);
-font-size: 3em;
-line-height: 0.1em;
-margin-right: 0.25em;
-vertical-align: -0.4em;
-font-family: $body;
+  content: '\201C';
+  color: darken( $background, 15%);
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  font-family: $body;
 }

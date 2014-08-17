@@ -3,65 +3,31 @@
 * ------- */
 
 .contact-intro {
-  @extend %clearfix;
   @include span-columns(12);
   @include bp(medium) {
-    @include span-columns(8);
-    @include omega;
-  }
-}
-
-.contact-intro__title{
-line-height: 1;
-font-weight: 800;
-font-size: 2em;
-text-transform: uppercase;
-margin-bottom: .5em;
-}
-
-.contact-intro__content {
-@include span-columns(12);
-@include bp(large) {
-@include span-columns(8);
-}
-}
-
-.contact-intro__image {
-  @include span-columns(12);
-  display: none;
-  margin-bottom: 1.4em;
-  @include bp(small) {
-    margin-bottom: 1.45em;
-  }
-  @include bp(medium) {
-    margin-bottom: 1.5em;
     @include span-columns(4);
   }
 }
 
-.contact-intro__email {
-  @include span-columns(4);
-  text-align: right;
+.contact-intro__image {
+  display: none;
+  @include bp(medium) {
+    @include span-columns(12);
+  }
 }
-
-
-
-
-
-
-
-
 
 input, textarea {
   background: $background;
   font-family: $body;
-  //font-size: .75em;
   padding: .5em;
   resize: none;
+  -webkit-appearance:none;
+  border-radius: 0;
 }
 
 textarea {
   line-height: 1.4;
+  overflow: auto;
 }
 
 .error {
@@ -75,7 +41,7 @@ textarea {
 }
 
 .form input, .form textarea {
-  border: 2px solid lighten(gray, 10%);
+  border: 2px solid lighten($base, 15%);
 }
 
 .form__name input:focus, .form__email input:focus, .form__message textarea:focus, .form__subject input:focus {
@@ -87,7 +53,7 @@ textarea {
 .form__submit {
   outline: none !important;
   box-shadow: 0;
-  border: 2px solid lighten(gray, 10%);
+  line-height: 1;
 }
 
 
@@ -141,19 +107,19 @@ textarea {
   @include span-columns(12);
 }
 
-.form__submit {
+.form__submit, .touch .form__submit:hover {
   margin-top: .75em;
   background: none;
-  width: 6em;
   float: left;
 }
 
 .form__submit:focus {
-  border: 2px solid $highlight!important;
+  border: 2px solid lighten($base, 15%)!important;
 }
 
 .form__submit:hover {
   cursor: pointer;
+  border: 2px solid $highlight!important;
 }
 
 .form__success, .form__error {
@@ -170,6 +136,16 @@ textarea {
 .form__success, .form__error {
   position: relative;
   font-family: $headline;
-  left: 1.5em;
+  left: 1em;
   top: 1.68em;
+}
+
+//Spam Filter
+
+.form__bot {
+  display:none!important;
+}
+
+.form__bot__input {
+  display:none!important;
 }

@@ -1,0 +1,78 @@
+/* -------------------------- *
+*  Single Page Sub Navigation *
+* --------------------------- */
+
+.navigation {
+  font-size: .8em!important;
+  margin-bottom: 1.4em;
+  @include bp(small) {
+    margin-bottom: 1.45em;
+  }
+
+  @include span-columns(12);
+  @include bp(medium) {
+    margin-bottom: 1.5em;
+    @include span-columns(10);
+    @include shift(1);
+  }
+  @include bp(large) {
+    @include span-columns(8.5);
+    @include shift(1.75);
+  }
+  @include bp(extra-large) {
+    @include span-columns(8.5);
+    @include shift(1.75);
+  }
+}
+
+.navigation__left {
+  position: relative;
+  bottom: .25em;
+  margin-right: .5em;
+  text-align: right;
+  float: left;
+  @include bp(medium) {
+  float: right;
+  }
+}
+
+.navigation__right {
+  margin-right: .5em;
+  position: relative;
+  bottom: .25em;
+  float: right;
+  text-align: right;
+}
+
+.navigation__left a, .navigation__right a {
+  @extend .btn;
+}
+
+.no-touch .navigation__left a:hover, .no-touch .navigation__right a:hover {
+  @extend .btn:hover;
+}
+
+.article__date {
+  display: none;
+  @include bp(medium) {
+    font-family: $headline;
+    vertical-align: bottom;
+    color: $base;
+    display: inline-block;
+    text-align: left;
+    margin-right: .5em;
+    margin-top: .5em;
+  }
+}
+
+.article__tag {
+  display: none;
+  @include bp(medium) {
+    font-family: $headline;
+    vertical-align: bottom;
+    color: $base;
+    display: inline-block;
+    text-align: left;
+    margin-top: .5em;
+  }
+}

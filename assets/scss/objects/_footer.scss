@@ -3,9 +3,7 @@
 * ------- */
 
 .site-footer {
-  //border-top: 2px solid darken( $background, 5%);
   background: white;
-  width: 100%;
   text-align: center;
   height: 60px;
 }
@@ -22,9 +20,8 @@
   margin-left: 1em;
 }
 
-.site-footer__icons a {
+.site-footer__icons a, .touch .site-footer__icons a:hover {
   margin-right: .6em;
-  color: $tertiary;
 }
 
 .site-footer__icons a:hover {
@@ -32,14 +29,12 @@
 }
 
 .site-footer__colophon {
-  color: $tertiary;
-  padding-top: 25px;
+  color: $base;
   display: none;
   @include bp(medium) {
-  display: block;
-  float: left;
-  font-size: 14px;
-  font-family: $body;
-  color: $base;
-}
+    display: block;
+    float: left;
+    padding-top: 25px;
+    font-family: $body;
+  }
 }

@@ -4,30 +4,68 @@
   @include transition (opacity 150ms ease-in-out);
 }
 
-.container a, .site-footer__icons a {
-   -webkit-transition : border, color, background-color 100ms ease-in-out;
-   -moz-transition :  border, color, background-color 100ms ease-in-out;
-   -o-transition :  border, color, background-color 100ms ease-in-out;
-   transition:  border, color, background-color 100ms ease-in-out;
+.container a, .form__submit {
+  @include transition-property (border, background-color, color);
+  @include transition-duration(100ms);
+  @include transition-timing-function(ease-in-out);
 }
 
 .site-header__title {
-  -webkit-transition :color 100ms ease-in-out;
-  -moz-transition : color 100ms ease-in-out;
-  -o-transition :  color 100ms ease-in-out;
-  transition:  color 100ms ease-in-out;
+  @include transition (color 100ms ease-in-out);
 }
-
 
 header a, header a:hover {
-  -webkit-transition : background 100ms ease-in-out;
-  -moz-transition :  background 100ms ease-in-out;
-  -o-transition :  background 100ms ease-in-out;
-  transition:  background 100ms ease-in-out;
+  @include transition (background 100ms ease-in-out);
   @include bp(medium) {
-  -webkit-transition : color 100ms ease-in-out;
-  -moz-transition :  color 100ms ease-in-out;
-  -o-transition :  color 100ms ease-in-out;
-  transition:  color 100ms ease-in-out;
+    @include transition (color 100ms ease-in-out);
+  }
 }
+
+.site-footer__icons a {
+  @include transition (color 100ms ease-in-out);
+}
+
+.site-header__nav ul {
+  @include transition-property (height);
+  @include transition-duration(300ms);
+  @include transition-timing-function(ease-out);
+}
+
+.preload .hero:before, .preload .hero__title, .preload .container  {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  webkit-animation: none !important;
+ -moz-animation: none !important;
+ -o-animation: none !important;
+ -ms-animation: none !important;
+ animation: none !important;
+
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@-moz-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+@-webkit-keyframes overlay{0%{  background: rgba(70, 71, 72, 1);}100%{ background:rgba(0, 0, 0, 0.15);}}
+@-moz-keyframes overlay{0%{  background: rgba(70, 71, 72, 1);}100%{background:rgba(0, 0, 0, 0.15);}}
+@keyframes overlay{0%{  background: rgba(70, 71, 72, 1);}100%{background:rgba(0, 0, 0, 0.15);}}
+
+.hero__title, .container {
+  -webkit-animation:fade-in 300ms ease-in;
+  -moz-animation:fade-in 300ms ease-in;
+  animation:fade-in 300ms ease-in;
+  -webkit-animation-iteration-count:1;
+  -moz-animation-iteration-count:1;
+  animation-iteration-count:1
+}
+
+.cssanimations .hero:before {
+  -webkit-animation:overlay 500ms ease-in;
+  -moz-animation:overlay 500ms ease-in;
+  animation:overlay 500ms ease-in;
+  -webkit-animation-iteration-count:1;
+  -moz-animation-iteration-count:1;
+  animation-iteration-count:1
 }

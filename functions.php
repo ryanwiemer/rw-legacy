@@ -66,16 +66,9 @@ function posts_link_attributes_prev() {
   return 'class="btn-pagination btn-pagination--prev"';
 }
 
-
 ////////////////////////
 //Edits to Image Output/
 ////////////////////////
-
-//Remove <p> tags from images
-function filter_ptags_on_images($content){
-  return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-}
-add_filter('the_content', 'filter_ptags_on_images');
 
 //Remove Image Dimensions
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 );
@@ -109,25 +102,19 @@ function fixed_img_caption_shortcode($attr, $content = null) {
   if ( 1 > (int) $width || empty($caption) )
   return $content;
   if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
-  return '<div ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
-  . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></div>';
+  return '<p ' . $id . 'class="wp-caption ' . esc_attr($align) . '" >'
+  . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
 }
 
 //Featured Image Support and removing some file sizes
 add_theme_support( 'post-thumbnails');
-set_post_thumbnail_size( 400, 600);
-function sgr_filter_image_sizes( $sizes) {
-    unset( $sizes['medium']);
+function trickspanda_remove_default_image_sizes( $sizes) {
+    unset( $sizes['thumbnail']);
+    //unset( $sizes['medium']);
     unset( $sizes['large']);
     return $sizes;
 }
-add_filter('intermediate_image_sizes_advanced', 'sgr_filter_image_sizes');
-
-
-
-
-
-
+add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');
 
 ///////////////////////////
 //Theme Specific Functions/
@@ -146,6 +133,16 @@ function alx_embed_html( $html ) {
 add_filter( 'embed_oembed_html', 'alx_embed_html', 10, 3 );
 add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
 
+add_filter('next_posts_link_attributes','add_link_css_class_older');
+ add_filter('previous_posts_link_attributes','add_link_css_class_newer');
+ function add_link_css_class_older() {
+ return 'class="btn btn--post older"';
+ }
+ function add_link_css_class_newer() {
+ return 'class="btn btn--post newer"';
+ }
+
+
 ///////////////////////////
 //Project Custom Post Type/
 ///////////////////////////
@@ -162,7 +159,7 @@ function custom_post_type() {
     'view_item'           => __( 'View Project', 'text_domain' ),
     'add_new_item'        => __( 'Add New Project', 'text_domain' ),
     'add_new'             => __( 'Add New Project', 'text_domain' ),
-    'edit_item'           => __( 'Edit Projecy', 'text_domain' ),
+    'edit_item'           => __( 'Edit Project', 'text_domain' ),
     'update_item'         => __( 'Update Project', 'text_domain' ),
     'search_items'        => __( 'Search Project', 'text_domain' ),
     'not_found'           => __( 'Not found', 'text_domain' ),
@@ -194,8 +191,6 @@ function custom_post_type() {
 // Hook into the 'init' action
 add_action( 'init', 'custom_post_type', 0 );
 
-
-
 ////////////////////////////////
 //Limit Displayed Archive Posts/
 ////////////////////////////////
@@ -203,11 +198,10 @@ add_action( 'init', 'custom_post_type', 0 );
 add_filter('pre_get_posts', 'limit_archive_posts');
 function limit_archive_posts($query){
     if ($query->is_archive) {
-        $query->set('posts_per_page', 6);
+        $query->set('posts_per_page', -6);
     }
     return $query;
 }
-
 
 ////////////////////////
 //CSS & JS Scripts//////
@@ -216,15 +210,16 @@ function limit_archive_posts($query){
 //Enqueue scripts and styles.
 function rw_scripts() {
   wp_enqueue_style( 'rw-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'rw-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
+  wp_enqueue_script( 'rw-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
   wp_enqueue_script( 'rw-global-script',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
-  //wp_enqueue_script( 'rw-velocity',  get_template_directory_uri() . '/assets/js/velocity.min.js', '', '', true);
-  //wp_enqueue_script( 'knw-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
 }
+
 function contact_scripts() {
   if( is_page('contact')) {
+  wp_enqueue_script( 'rw-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
   wp_enqueue_script( 'rw-jquery-validate',  get_template_directory_uri() . '/assets/js/jquery.validate.min.js', '', '', true);
   wp_enqueue_script( 'rw-jquery-form',  get_template_directory_uri() . '/assets/js/jquery.form.min.js', '', '', true);
+  wp_enqueue_script( 'rw-jquery-form-settings',  get_template_directory_uri() . '/assets/js/jquery.form.settings.min.js', '', '', true);
 }}
 
 add_action( 'wp_enqueue_scripts', 'rw_scripts');

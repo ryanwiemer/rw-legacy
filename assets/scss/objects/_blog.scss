@@ -6,57 +6,60 @@
   @extend %clearfix;
   background: white;
   margin-bottom: 1em;
-  @include bp(medium) {
-    position: relative;
-  }
+  font-size: .85em;
 }
 
 .post:last-child {
   margin-bottom: 0;
 }
 
-.post:hover {
-}
-
 .post__date {
   font-family: $headline;
-  color: gray;
+  color: $base;
   margin-bottom: .5em;
 }
 
 .post__tag {
   @extend %clearfix;
-  color: gray;
+  color: $base;
   font-family: $headline;
   margin-bottom: .5em;
 }
 
-hr {
-  @extend %clearfix;
+.post hr {
   width: 50px;
   margin: .5em 0;
   border: none;
   height: 4px;
   background: $base;
   margin-bottom: 1em;
-  //margin-bottom: 130px;
+  text-align: left;
+  @include bp(medium) {
+    float: left;
+  }
 }
 
 .post__title {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 1.4em;
+  @include bp(medium) {
+    font-size: 1.25em;
+  }
 }
 
 .post__details {
   @include span-columns(12);
   padding: 1em;
+  position: relative;
+  @extend %clearfix;
   @include bp(medium) {
+    height: 300px;
     @include span-columns(4);
   }
 }
 
 .post__details div{
-  @include span-columns(4);
+  @include span-columns(6);
   @include bp(medium) {
     @include span-columns(12);
   }
@@ -76,30 +79,13 @@ hr {
    }
 }
 
-
 .post__read {
   float: right;
   position: relative;
-  bottom: -.25em;
+  bottom: -.6em;
   @include bp(medium) {
   position: absolute;
   bottom: 2em;
+  left: 1.3em;
   }
-}
-
-
-.pag-nav a {
-  @extend .btn;
-}
-
-.pag-nav a:hover {
-  @extend .btn:hover;
-}
-
-.btn-pagination--next {
-  float: left;
-}
-
-.btn-pagination--prev{
-  float: right;
 }

@@ -1,0 +1,24 @@
+/* ------- *
+*  Pagination *
+* ------- */
+
+.pag-nav {
+  @include span-columns(12);
+}
+
+.newer {
+  float: right;
+}
+
+.older{
+  float: left;
+}
+
+.btn--post {
+  background: darken( $background, 5%)!important;
+  border: none!important;
+}
+
+.btn--post:hover {
+  background: $highlight!important;
+}

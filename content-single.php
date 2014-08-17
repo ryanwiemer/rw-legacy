@@ -32,7 +32,7 @@ echo $image_url[0]; } else {}?>');">
 	</div>
 	<div class="navigation__left">
 	<?php previous_post('%',
-	'previous post', 'no'); ?>
+	'prev post', 'no'); ?>
 	</div>
 
 	<?php }
@@ -42,7 +42,7 @@ echo $image_url[0]; } else {}?>');">
 	</div>
 	<div class="navigation__left">
 	<?php previous_post('%',
-	'previous project', 'no'); ?>
+	'prev project', 'no'); ?>
 	</div>
 <?php }?>
 </div> <!-- end navigation -->
@@ -54,5 +54,6 @@ echo $image_url[0]; } else {}?>');">
 		comments_template();
 	endif;
 ?>
+
 </div> <!-- container -->
 </div> <!-- wrapper -->

@@ -1,6 +1,6 @@
 {
-  "name": "evernote - marketing job",
-  "version": "0.0.1",
+  "name": "rw theme",
+  "version": "0.1.0",
   "authors": [
     "Ryan Wiemer <ryan@ryanwiemer.com>"
   ],
@@ -13,10 +13,12 @@
     "tests"
   ],
   "dependencies": {
-    "bourbon": "3.2",
-    "neat": "1.5",
-    "jquery": "~1.11",
+    "bourbon": "~3.2",
+    "neat": "~1.5",
     "jquery-form": "~3.46.0",
-    "jquery-validate": "~1.13.0"
+    "jquery-validate": "~1.13.0",
+    "fastclick": "~1.0.3",
+    "placeholders": "~3.0.2",
+    "jquery": "~2.1.1"
   }
 }

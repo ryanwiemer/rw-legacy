@@ -1,6 +1,6 @@
 {
   "name": "RW",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Custom WordPress theme for www.ryanwiemer.com",
   "main": "index.php",
   "scripts": {

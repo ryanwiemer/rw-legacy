@@ -9,64 +9,26 @@
     @include shift(1);
   }
   @include bp(large) {
-    @include span-columns(8);
-    @include shift(2);
+    @include span-columns(8.5);
+    @include shift(1.75);
   }
-
-   @include bp(extra-large) {
-      @include span-columns(7);
-      @include shift(2.5);
-   }
-}
-
-
-
-.single .aligncenter {
-  margin-bottom: 1.4em;
-  @include bp(small) {
-      line-height: 1.45;
-      margin-bottom: 1.45em;
-  }
-@include span-columns(12);
-  @include bp(medium) {
-    @include span-columns(10);
-    @include shift(1);
-    margin-bottom: 1.5em;
-  }
-  @include bp(large) {
-    @include span-columns(8);
-    @include shift(2);
-  }
-   @include bp(extra-large) {
-      @include span-columns(7);
-      @include shift(2.5);
-   }
-}
-
-
-.single img {
-margin-bottom: 1.4em;
-  @include bp(small) {
-      margin-bottom: 1.45em;
-  }
-  @include bp(medium) {
-    margin-bottom: 1.5em;
+  @include bp(extra-large) {
+    @include span-columns(8.5);
+    @include shift(1.75);
   }
 }
 
+.single p:last-child{
+  margin-bottom: 0;
+}
 
-
-.single .aligncenter .wp-caption-text, .single .alignnone .wp-caption-text {
-  display: block;
-  text-align: center;
+.wp-caption {
   font-family: $headline;
+  color: darken( $background, 50%);
+  text-align: center;
+  font-size: .85em;
   line-height: 1.4;
-  color: darken( $background, 15%);
-  margin-bottom: -.5em;
-  font-size: .7em;
 }
-
-
 
 .single .container ul, .single .container ol {
   margin-bottom: 1.45em;
@@ -98,30 +60,6 @@ margin-bottom: 1.4em;
   list-style-type: decimal;
 }
 
-
-
-
-//Comments
-#disqus_thread{
-@include span-columns(12);
-   @include bp(medium) {
-     @include span-columns(10);
-     @include shift(1);
-   }
-   @include bp(large) {
-     @include span-columns(8);
-     @include shift(2);
-   }
-    @include bp(extra-large) {
-       @include span-columns(7);
-       @include shift(2.5);
-    }
-}
-
-#disqus_thread a {
-    color: $highlight;
-}
-
-.single p:last-child{
-margin-bottom: 0;
+.single strong {
+  font-size: .9em;
 }

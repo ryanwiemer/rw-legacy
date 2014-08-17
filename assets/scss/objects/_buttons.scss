@@ -3,16 +3,16 @@
 * ------- */
 
 
-
-.btn {
+.container .btn, .touch .container .btn:hover, .touch .container .btn:focus, .touch .container .btn:active  {
   font-family: $headline;
   display: inline-block;
   padding: .65em;
-  border: 2px solid lighten(gray, 10%);
-  color: gray;
+  border: 2px solid lighten($base, 15%);
+  color: $base;
+  background: none;
 }
 
-.btn:hover {
+.container .btn:hover {
   background: $highlight;
   color: white;
   border: 2px solid $highlight;

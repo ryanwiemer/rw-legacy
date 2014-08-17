@@ -14,5 +14,4 @@ get_header(); ?>
 
 </div> <!-- container -->
 </div> <!-- wrapper -->
-
 <?php get_footer(); ?>
