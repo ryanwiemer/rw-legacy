@@ -1,17 +1,37 @@
 /* ------- *
-*  Blog List  *
+*   Blog   *
 * ------- */
 
 .post {
   @extend %clearfix;
   background: white;
   margin-bottom: 1em;
-  font-size: .85em;
+  //font-size: .85em;
 }
 
 .post:last-child {
   margin-bottom: 0;
 }
+
+.post__date, .post__tag {
+  font-size: 1em;
+  @include bp(small) {
+      font-size: .9em;
+  }
+  @include bp(medium) {
+      font-size: .8em;
+  }
+  @include bp(large) {
+      font-size: .725em;
+  }
+  @include bp(extra-large) {
+      font-size: .75em;
+  }
+}
+
+
+
+
 
 .post__date {
   font-family: $headline;
@@ -41,9 +61,18 @@
 
 .post__title {
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1.45em;
+  @include bp(small) {
+      font-size: 1.35em;
+  }
   @include bp(medium) {
-    font-size: 1.25em;
+      font-size: 1.25em;
+  }
+  @include bp(large) {
+      font-size: 1.175em;
+  }
+  @include bp(extra-large) {
+      font-size: 1.2em;
   }
 }
 

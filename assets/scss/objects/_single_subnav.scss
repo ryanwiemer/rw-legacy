@@ -3,12 +3,10 @@
 * --------------------------- */
 
 .navigation {
-  font-size: .8em!important;
   margin-bottom: 1.4em;
   @include bp(small) {
     margin-bottom: 1.45em;
   }
-
   @include span-columns(12);
   @include bp(medium) {
     margin-bottom: 1.5em;
@@ -74,5 +72,21 @@
     display: inline-block;
     text-align: left;
     margin-top: .5em;
+  }
+}
+
+.article__date, .article__tag  {
+  font-size: 1em;
+  @include bp(small) {
+      font-size: .9em;
+  }
+  @include bp(medium) {
+      font-size: .8em;
+  }
+  @include bp(large) {
+      font-size: .725em;
+  }
+  @include bp(extra-large) {
+      font-size: .75em;
   }
 }

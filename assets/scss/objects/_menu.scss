@@ -87,7 +87,7 @@
 }
 
 .open .site-header__nav ul {
-  height:  244px;
+  height:  250px;
 }
 
 .site-header__nav ul li {
@@ -95,7 +95,7 @@
   font-family: $headline;
   font-size: 16px!important;
   margin: 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid gray;
   line-height: 60px;
   @include bp(medium) {
     border: none;

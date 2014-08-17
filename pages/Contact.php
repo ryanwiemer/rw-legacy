@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="wrapper">
 <div class="container">
 <div class="page-header">
-  <h2 class="page-header__title"> How to get in <em>contact</em></h2>
+  <h2 class="page-header__title"> How to get in <em>Contact</em></h2>
 </div>
 <div class="contact-intro">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image"/>
@@ -38,7 +38,7 @@ get_header(); ?>
       <input class="form__bot__input" name="bot" for="bot" placeholder="Spam filter (Leave blank)" type="text"/>
     </div>
 
-    <input class="form__submit btn" name="submit" type="submit" value="send message"/>
+    <input class="form__submit btn" name="submit" type="submit" value="Send Message"/>
 
     <div class="form__success">
       Message sent successfully!

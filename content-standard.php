@@ -19,7 +19,7 @@
 				<p class="post__date"><span class="icon-clock"></span><?php the_date(); ?></p>
 				<p class="post__tag"><span class="icon-tag"></span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></p>
 			</div>
-			<a class="post__read btn"href="<?php echo get_permalink(); ?>">read more</a>
+			<a class="post__read btn"href="<?php echo get_permalink(); ?>">Read More</a>
 		</div>
 	</article>
 <?php	} else { ?>

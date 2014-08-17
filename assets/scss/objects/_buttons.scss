@@ -17,3 +17,20 @@
   color: white;
   border: 2px solid $highlight;
 }
+
+
+.btn, .pag-nav a, .navigation__left a, .navigation__right a {
+  font-size: 1em;
+  @include bp(small) {
+      font-size: .9em;
+  }
+  @include bp(medium) {
+      font-size: .8em;
+  }
+  @include bp(large) {
+      font-size: .725em;
+  }
+  @include bp(extra-large) {
+      font-size: .75em;
+  }
+}
