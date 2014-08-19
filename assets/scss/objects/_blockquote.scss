@@ -32,3 +32,13 @@ blockquote p:before {
   vertical-align: -0.4em;
   font-family: $body;
 }
+
+blockquote p:after {
+  content: '\201D';
+  color: darken( $background, 15%);
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+  font-family: $body;
+}
