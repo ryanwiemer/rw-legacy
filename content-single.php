@@ -18,42 +18,26 @@ echo $image_url[0]; } else {}?>');">
 <div class="container">
 
 <div class="navigation">
+
 	<?php if(!is_singular( 'projects' ) ){?>
-	<span class="article__date"><span class="icon-clock"></span><?php the_date(); ?></span>
-	<?php }
-	else {}?>
+	<span class="navigation__left"><?php previous_post('%','', 'no'); ?></span>
+	<span class="post__date"><?php the_time('F j, Y'); ?></span>
+	<span class="navigation__right"><?php next_post('%','', 'no'); ?></span>
 
+	<?php }else {?>
+	<span class="navigation__left"><?php previous_post('%','', 'no'); ?></span>
+	<span class="post__tag"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
+	<span class="navigation__right"><?php next_post('%','', 'no'); ?></span>
+	<?php }?>
 
-	<span class="article__tag"><span class="icon-tag"></span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
-	<div class="navigation__right">
-<?php if(!is_singular( 'projects' ) ){?>
-	<?php next_post('%',
-	'next post', 'no'); ?>
-	</div>
-	<div class="navigation__left">
-	<?php previous_post('%',
-	'prev post', 'no'); ?>
-	</div>
+</div> <!--navigation -->
 
-	<?php }
-	else {?>
-	<?php next_post('%',
-	'next project', 'no'); ?>
-	</div>
-	<div class="navigation__left">
-	<?php previous_post('%',
-	'prev project', 'no'); ?>
-	</div>
-<?php }?>
-</div> <!-- end navigation -->
 <?php the_content(); ?>
-
 <?php
 	// If comments are open or we have at least one comment, load up the comment template
 	if ( comments_open() || '0' != get_comments_number() ) :
 		comments_template();
 	endif;
 ?>
-
 </div> <!-- container -->
 </div> <!-- wrapper -->

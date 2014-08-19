@@ -16,9 +16,10 @@
 
 .btn--post {
   background: darken( $background, 5%)!important;
-  border: none!important;
+  border-color: darken( $background, 5%)!important;
 }
 
 .btn--post:hover {
   background: $highlight!important;
+  border-color: $highlight!important;
 }

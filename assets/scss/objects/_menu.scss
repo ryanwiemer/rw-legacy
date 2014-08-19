@@ -68,6 +68,7 @@
 .site-header__nav {
   @include bp(medium) {
     float: right;
+    height: 60px;
   }
 }
 

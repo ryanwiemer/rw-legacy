@@ -3,7 +3,7 @@
 * ------- */
 
 .hero {
-  margin-top: -60px;
+  margin-top: -64px;
   background: $secondary;
   background-size: cover;
   background-position: center center;
@@ -20,6 +20,8 @@
     height: 500px;
   }
 }
+
+
 
 .hero:before {
    content: "";

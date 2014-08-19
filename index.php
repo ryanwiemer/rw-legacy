@@ -42,11 +42,11 @@ get_header(); ?>
 
 		<?php	if ( is_home() ) { ?>
     <div class="pag-nav">
-				 <?php posts_nav_link(' ','newer posts','older posts'); ?>
+				 <?php posts_nav_link(' ','Newer Posts','Older Posts'); ?>
 				</div>
 			<?php	} else { ?>
     		<div class="pag-nav">
-						<?php	posts_nav_link(' ','newer projects','older projects'); ?>
+						<?php	posts_nav_link(' ','Newer Projects','Older Projects'); ?>
 						</div>
 		<?php	}
 			?>

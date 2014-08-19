@@ -6,7 +6,6 @@
   @extend %clearfix;
   background: white;
   margin-bottom: 1em;
-  //font-size: .85em;
 }
 
 .post:last-child {
@@ -14,7 +13,9 @@
 }
 
 .post__date, .post__tag {
+  font-family: $headline;
   font-size: 1em;
+  margin-bottom: 0;
   @include bp(small) {
       font-size: .9em;
   }
@@ -27,23 +28,6 @@
   @include bp(extra-large) {
       font-size: .75em;
   }
-}
-
-
-
-
-
-.post__date {
-  font-family: $headline;
-  color: $base;
-  margin-bottom: .5em;
-}
-
-.post__tag {
-  @extend %clearfix;
-  color: $base;
-  font-family: $headline;
-  margin-bottom: .5em;
 }
 
 .post hr {
@@ -111,7 +95,7 @@
 .post__read {
   float: right;
   position: relative;
-  bottom: -.6em;
+  bottom: .66em;
   @include bp(medium) {
   position: absolute;
   bottom: 2em;

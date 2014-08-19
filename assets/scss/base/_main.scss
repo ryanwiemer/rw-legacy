@@ -20,7 +20,7 @@
 	}
 }
 
-p, .container ul, .container ol, .article__date, .article__tag, input, textarea, .site-footer {
+p, .container ul, .container ol, input, textarea, .site-footer {
 	font-size: 1.1em;
 	@include bp(small) {
 			font-size: 1em;

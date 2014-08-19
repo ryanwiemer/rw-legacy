@@ -54,7 +54,7 @@ em {
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"], .navigation__left a, .navigation__right a {
 	color: lighten($base, 5%);
 	font-family: 'icons';
 	speak: none;

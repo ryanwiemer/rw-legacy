@@ -3,90 +3,59 @@
 * --------------------------- */
 
 .navigation {
+  font-family: $headline;
   margin-bottom: 1.4em;
+  text-align: center;
+  color: darken( $background, 35%);
   @include bp(small) {
     margin-bottom: 1.45em;
   }
-  @include span-columns(12);
   @include bp(medium) {
     margin-bottom: 1.5em;
-    @include span-columns(10);
-    @include shift(1);
-  }
-  @include bp(large) {
-    @include span-columns(8.5);
-    @include shift(1.75);
-  }
-  @include bp(extra-large) {
-    @include span-columns(8.5);
-    @include shift(1.75);
+    position: relative;
+    bottom: .2em;
   }
 }
 
 .navigation__left {
-  position: relative;
-  bottom: .25em;
-  margin-right: .5em;
-  text-align: right;
+  font-size: 1.25em;
+  padding-right: .5em;
   float: left;
   @include bp(medium) {
-  float: right;
+  float: none;
+  position: relative;
+  top: .05em;
   }
 }
 
 .navigation__right {
-  margin-right: .5em;
-  position: relative;
-  bottom: .25em;
+  font-size: 1.25em;
+  padding-left: .5em;
   float: right;
-  text-align: right;
+  @include bp(medium) {
+  float: none;
+  position: relative;
+  top: .05em;
+  }
+}
+
+.navigation__left a:before {
+  content: "\f053";
+}
+
+.navigation__right a:before {
+  content: "\f054";
 }
 
 .navigation__left a, .navigation__right a {
-  @extend .btn;
+  border: none;
+  vertical-align: top;
+  color: darken( $background, 25%);
+  @include bp(medium) {
+    vertical-align: middle;
+  }
 }
 
 .no-touch .navigation__left a:hover, .no-touch .navigation__right a:hover {
-  @extend .btn:hover;
-}
-
-.article__date {
-  display: none;
-  @include bp(medium) {
-    font-family: $headline;
-    vertical-align: bottom;
-    color: $base;
-    display: inline-block;
-    text-align: left;
-    margin-right: .5em;
-    margin-top: .5em;
-  }
-}
-
-.article__tag {
-  display: none;
-  @include bp(medium) {
-    font-family: $headline;
-    vertical-align: bottom;
-    color: $base;
-    display: inline-block;
-    text-align: left;
-    margin-top: .5em;
-  }
-}
-
-.article__date, .article__tag  {
-  font-size: 1em;
-  @include bp(small) {
-      font-size: .9em;
-  }
-  @include bp(medium) {
-      font-size: .8em;
-  }
-  @include bp(large) {
-      font-size: .725em;
-  }
-  @include bp(extra-large) {
-      font-size: .75em;
-  }
+  border: none;
 }
