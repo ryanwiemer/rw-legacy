@@ -2,11 +2,9 @@
 *  Blockquote  *
 * ------- */
 
-
 blockquote {
   @extend %clearfix;
   margin-bottom: 1em;
-
 }
 
 blockquote p{
@@ -21,7 +19,6 @@ blockquote em {
   font-weight: 600;
   float: left;
 }
-
 
 blockquote p:before {
   content: '\201C';

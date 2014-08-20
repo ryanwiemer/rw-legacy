@@ -10,7 +10,7 @@ get_header(); ?>
 <div class="wrapper">
 <div class="container">
 <div class="page-header">
-  <h2 class="page-header__title">All About <em>Ryan Wiemer</em></h2>
+  <h2 class="page-header__title">All About Ryan Wiemer</h2>
 </div>
 
   <div class="about__image">

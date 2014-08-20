@@ -16,9 +16,9 @@ get_header(); ?>
 <div class="container">
 <div class="page-header">
 		<?php	if ( is_home() ) { ?>
-				<h2 class="page-header__title"> My Words, <em>Thoughts</em> and Insights</h2>
+				<h2 class="page-header__title"> My Words, Thoughts and Insights</h2>
 			<?php	} else { ?>
-				<h2 class="page-header__title"> See My <em>Projects</em> on the Web</h2>
+				<h2 class="page-header__title"> See My Projects on the Web</h2>
 		<?php	}
 			?>
 </div>

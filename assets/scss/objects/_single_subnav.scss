@@ -19,7 +19,6 @@
 
 .navigation__left {
   font-size: 1.25em;
-  padding-right: .5em;
   float: left;
   @include bp(medium) {
   float: none;
@@ -30,7 +29,6 @@
 
 .navigation__right {
   font-size: 1.25em;
-  padding-left: .5em;
   float: right;
   @include bp(medium) {
   float: none;
@@ -47,7 +45,7 @@
   content: "\f054";
 }
 
-.navigation__left a, .navigation__right a {
+.navigation__left a, .navigation__right a, .touch .navigation__left a:hover, .touch .navigation__right a:hover {
   border: none;
   vertical-align: top;
   color: darken( $background, 25%);
@@ -56,6 +54,21 @@
   }
 }
 
-.no-touch .navigation__left a:hover, .no-touch .navigation__right a:hover {
+.navigation__left a {
+  padding: .5em .5em .5em 0;
+@include bp(medium) {
+  padding: .5em;
+}
+}
+
+.navigation__right a {
+  padding: .5em 0 .5em .5em;
+@include bp(medium) {
+  padding: .5em;
+}
+}
+
+
+.navigation__left a:hover, .navigation__right a:hover {
   border: none;
 }
