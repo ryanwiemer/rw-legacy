@@ -16,9 +16,9 @@ get_header(); ?>
 <div class="container">
 <div class="page-header">
 		<?php	if ( is_home() ) { ?>
-				<h2 class="page-header__title"> My Words, Thoughts and Insights</h2>
+				<h2 class="page-header__title">My Words, Thoughts and Insights</h2>
 			<?php	} else { ?>
-				<h2 class="page-header__title"> See My Projects on the Web</h2>
+				<h2 class="page-header__title">See My Projects on the Web</h2>
 		<?php	}
 			?>
 </div>
@@ -30,27 +30,23 @@ get_header(); ?>
 				<?php
 					get_template_part( 'content', get_post_format() );
 				?>
-
+				
 			<?php endwhile; ?>
-
 		<?php else : ?>
-
 			<?php get_template_part( 'content', 'none' ); ?>
-
 		<?php endif; ?>
 
 
 		<?php	if ( is_home() ) { ?>
-    <div class="pag-nav">
+    	<div class="pag-nav">
 				 <?php posts_nav_link(' ','Newer Posts','Older Posts'); ?>
-				</div>
-			<?php	} else { ?>
-    		<div class="pag-nav">
-						<?php	posts_nav_link(' ','Newer Projects','Older Projects'); ?>
-						</div>
+			</div>
+		<?php	} else { ?>
+  		<div class="pag-nav">
+					<?php	posts_nav_link(' ','Newer Projects','Older Projects'); ?>
+			</div>
 		<?php	}
 			?>
-
 </div> <!-- container -->
 </div> <!-- wrapper -->
 <?php get_footer(); ?>

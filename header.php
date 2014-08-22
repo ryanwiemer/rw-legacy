@@ -15,7 +15,15 @@
   <title><?php wp_title('|', true, 'right'); ?></title>
   <script type="text/javascript" src="//use.typekit.net/izi7tnt.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<?php wp_head(); ?>
+  <?php wp_head(); ?>
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-42486629-1', 'ryanwiemer.com');
+	  ga('send', 'pageview');
+  </script>
 </head>
 <body <?php body_class(); ?>>
 <header class="site-header">
