@@ -6,7 +6,6 @@
 $headline: "myriad-pro", Helvetica, sans-serif;
 $body: "chaparral-pro", Georgia, serif;
 
-
 html {
 	font-size: 100%;
 
@@ -75,9 +74,6 @@ em {
 .icon-right_arrow:before {
 	content: "\f054";
 }
-.icon-down_arrow:before {
-	content: "\f078";
-}
 .icon-linkedin:before {
 	content: "\f08c";
 }
@@ -89,17 +85,4 @@ em {
 }
 .icon-mail:before {
 	content: "\f0e0";
-}
-.icon-dot:before {
-	content: "\f111";
-}
-.icon-tag:before {
-	margin-right: .75em;
-	content: "\e600";
-	font-size: 1.25em;
-}
-.icon-clock:before {
-	margin-right: .75em;
-	content: "\e601";
-	font-size: 1.25em;
 }
