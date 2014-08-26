@@ -5,8 +5,13 @@
  * @package rw
  */
 ?>
-<?php while ( have_posts() ) : the_post(); ?>
 
-	<?php get_template_part( 'content', 'page' ); ?>
+</div> <!-- hero -->
+<div class="wrapper">
+<div class="container">
 
-<?php endwhile; // end of the loop. ?>
+<h2><?php the_title() ;?></h2>
+<p><?php the_content(); ?></p>
+
+</div> <!-- container -->
+</div> <!-- wrapper -->

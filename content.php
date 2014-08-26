@@ -1,7 +1,6 @@
 <?php
 /**
- * @package rw
+ * Content
  */
 ?>
-
 	<?php get_template_part( 'content','standard' ) ?>

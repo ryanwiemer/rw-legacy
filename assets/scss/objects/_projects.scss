@@ -12,13 +12,13 @@
   overflow: hidden;
   @include span-columns(12);
   @include bp(medium) {
-    @include span-columns(4);
-    @include omega(4n);
+    @include span-columns(6);
   }
 }
-.project:nth-child(7) {
+ .project:nth-child(3), .project:nth-child(5), .project:nth-child(7) {
   margin-right: 0;
 }
+
 
 .project__title, .touch .project:hover .project__title {
   color: white;

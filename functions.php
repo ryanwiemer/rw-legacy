@@ -179,8 +179,8 @@ function custom_post_type() {
     'show_in_admin_bar'   => true,
     'menu_position'       => 5,
     'can_export'          => true,
-    'has_archive'         => true,
-    'rewrite' => array('slug' => 'projects'),
+    'has_archive'         => false,
+    'rewrite' => array('slug' => 'projects', 'with_front' => false),
     'exclude_from_search' => false,
     'publicly_queryable'  => true,
     'capability_type'     => 'page',
@@ -190,18 +190,6 @@ function custom_post_type() {
 
 // Hook into the 'init' action
 add_action( 'init', 'custom_post_type', 0 );
-
-////////////////////////////////
-//Limit Displayed Archive Posts/
-////////////////////////////////
-
-add_filter('pre_get_posts', 'limit_archive_posts');
-function limit_archive_posts($query){
-    if ($query->is_archive) {
-        $query->set('posts_per_page', -6);
-    }
-    return $query;
-}
 
 ////////////////////////
 //CSS & JS Scripts//////
