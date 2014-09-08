@@ -17,7 +17,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 
 		<?php else : ?>
-			<p><?php _e( 'Sorry, there are no posts' ); ?></p>
+			<p><?php _e( 'Sorry, there are no posts.' ); ?></p>
 	<?php endif; ?>
 
 	<div class="pag-nav">

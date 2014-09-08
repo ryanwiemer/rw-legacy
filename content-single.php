@@ -20,14 +20,14 @@ echo $image_url[0]; } else {}?>');">
 <div class="navigation">
 
 	<?php if(!is_singular( 'projects' ) ){?>
-	<span class="navigation__left"><?php previous_post('%','', 'no'); ?></span>
+	<span class="navigation__left"><?php previous_post_link('%link',''); ?></span>
 	<span class="post__date"><?php the_time('F j, Y'); ?></span>
-	<span class="navigation__right"><?php next_post('%','', 'no'); ?></span>
+	<span class="navigation__right"><?php next_post_link('%link',''); ?></span>
 
 	<?php }else {?>
-	<span class="navigation__left"><?php previous_post('%','', 'no'); ?></span>
+	<span class="navigation__left"><?php previous_post_link('%link',''); ?></span>
 	<span class="post__tag"><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span>
-	<span class="navigation__right"><?php next_post('%','', 'no'); ?></span>
+	<span class="navigation__right"><?php next_post_link('%link',''); ?></span>
 	<?php }?>
 
 </div> <!--navigation -->

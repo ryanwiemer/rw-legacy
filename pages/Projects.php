@@ -40,7 +40,7 @@ get_header(); ?>
   <?php $wp_query = null; $wp_query = $temp;  // Reset ?>
 
   <?php endwhile; else: ?>
-    <p><?php _e( 'Sorry, there are no projects' ); ?></p>
+    <p><?php _e( 'Sorry, there are no projects.' ); ?></p>
   <?php endif; ?>
 
 </div> <!-- container -->
