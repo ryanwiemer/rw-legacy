@@ -7,13 +7,11 @@
   margin-bottom: 1.4em;
   text-align: center;
   color: darken( $background, 35%);
-  @include bp(small) {
-    margin-bottom: 1.45em;
-  }
-  @include bp(medium) {
-    margin-bottom: 1.5em;
-    position: relative;
-    bottom: .2em;
+  margin-bottom: 1.5em;
+@include bp(medium) {
+  margin-bottom: 1.75em;
+  position: relative;
+  bottom: .2em;
   }
 }
 

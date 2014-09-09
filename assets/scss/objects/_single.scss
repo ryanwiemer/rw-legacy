@@ -32,9 +32,8 @@
 
 .single .container ul, .single .container ol {
   margin-bottom: 1.45em;
-    line-height: 1.45;
-    margin-bottom: 1.45em;
-@include span-columns(12);
+  line-height: 1.45;
+  @include span-columns(12);
 @include bp(medium) {
   @include span-columns(10);
   @include shift(1);
@@ -62,4 +61,32 @@
 
 .single strong {
   font-size: .9em;
+}
+
+
+//Heading Styles
+.single .container h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 0.725em;
+  line-height: 1.45;
+  margin-bottom: 1.1em;
+  @include span-columns(12);
+@include bp(medium) {
+  font-size: 1.1em;
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: 0.75em;
+  margin-bottom: 1.15em;
+  }
+@include bp(large) {
+  @include span-columns(8.5);
+  @include shift(1.75);
+  font-size: 1.025em;
+}
+@include bp(extra-large) {
+  @include span-columns(8.5);
+  @include shift(1.75);
+  font-size: 1.05em;
+}
 }
