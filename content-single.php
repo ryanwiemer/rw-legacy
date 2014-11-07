@@ -6,12 +6,13 @@
  */
 ?>
 
+<div class="hero__filler">
 <div class="hero" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
 $image_url = wp_get_attachment_image_src($image_id,'full', true);
 echo $image_url[0]; } else {}?>');">
-<div>
 		<h2 class="hero__title"><?php the_title() ;?></h2>
-	</div>
+</div>
+</div>
 
 </div> <!-- hero -->
 <div class="wrapper">

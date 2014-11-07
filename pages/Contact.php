@@ -16,7 +16,7 @@ get_header(); ?>
   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact.jpg" class="contact-intro__image"/>
 </div>
 
-<form class="form" method="post" name="contact">
+<form class="form" method="post" name="contact" autocomplete="off">
   <fieldset>
     <div class="form__name">
       <input class="form__name__input" name="name" for="name" placeholder="Name" type="text"/>
@@ -50,10 +50,10 @@ get_header(); ?>
 </form>
 
 <script>
-Modernizr.load({
-  test: Modernizr.input.placeholder,
-  nope: '<?php echo get_template_directory_uri(); ?>/assets/js/vendo/placeholders.min.js',
-});
+  Modernizr.load({
+    test: Modernizr.input.placeholder,
+    nope: '<?php echo get_template_directory_uri(); ?>/assets/js/vendo/placeholders.min.js',
+  });
 </script>
 
 <?php endwhile; else: ?>

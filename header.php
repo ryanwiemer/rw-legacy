@@ -21,7 +21,7 @@
 	  ga('send', 'pageview');
   </script>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('loading'); ?>>
 <header class="site-header">
     <div class="site-header__container">
       <nav class="site-header__nav">
@@ -29,7 +29,7 @@
       </nav>
       <div class="site-header__inner">
         <a href="<?php echo site_url(); ?>"><h1 class="site-header__title">Ryan Wiemer</h1></a>
-        <button id="site-header__toggle" class="site-header__toggle icon-"></button>
+        <button class="site-header__toggle icon-"></button>
       </div>
     </div>
 </header>

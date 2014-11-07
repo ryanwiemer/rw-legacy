@@ -38,7 +38,6 @@ gulp.task('concat', function() {
         .pipe(concat('contact.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'));
-
 });
 
 // Compile Sass & Minify CSS

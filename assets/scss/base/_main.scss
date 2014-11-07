@@ -3,9 +3,14 @@
  * ------- */
 
 .wrapper {
+	opacity: 0;
 	@extend %clearfix;
 	position: relative;
 	background: $background;
+}
+
+.loaded .wrapper {
+	opacity: 1;
 }
 
 .container {
