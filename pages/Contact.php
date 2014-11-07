@@ -52,7 +52,7 @@ get_header(); ?>
 <script>
 Modernizr.load({
   test: Modernizr.input.placeholder,
-  nope: '<?php echo get_template_directory_uri(); ?>/assets/js/placeholders.min.js',
+  nope: '<?php echo get_template_directory_uri(); ?>/assets/js/vendo/placeholders.min.js',
 });
 </script>
 

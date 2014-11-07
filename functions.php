@@ -198,16 +198,13 @@ add_action( 'init', 'custom_post_type', 0 );
 //Enqueue scripts and styles.
 function rw_scripts() {
   wp_enqueue_style( 'rw-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'rw-modernizr',  get_template_directory_uri() . '/assets/js/modernizr.min.js');
-  wp_enqueue_script( 'rw-global-script',  get_template_directory_uri() . '/assets/js/global.min.js', '', '', true);
+  wp_enqueue_script( 'rw-modernizr',  get_template_directory_uri() . '/assets/js/vendor/modernizr.min.js');
+  wp_enqueue_script( 'rw-main-scripts',  get_template_directory_uri() . '/assets/js/scripts.min.js', '', '', true);
 }
 
 function contact_scripts() {
   if( is_page('contact')) {
-  wp_enqueue_script( 'rw-jquery',  get_template_directory_uri() . '/assets/js/jquery.min.js', '', '', true);
-  wp_enqueue_script( 'rw-jquery-validate',  get_template_directory_uri() . '/assets/js/jquery.validate.min.js', '', '', true);
-  wp_enqueue_script( 'rw-jquery-form',  get_template_directory_uri() . '/assets/js/jquery.form.min.js', '', '', true);
-  wp_enqueue_script( 'rw-jquery-form-settings',  get_template_directory_uri() . '/assets/js/jquery.form.settings.min.js', '', '', true);
+  wp_enqueue_script( 'rw-contact-scripts',  get_template_directory_uri() . '/assets/js/contact.min.js', '', '', true);
 }}
 
 add_action( 'wp_enqueue_scripts', 'rw_scripts');
