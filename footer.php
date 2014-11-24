@@ -1,12 +1,9 @@
 <?php
 /**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after
- *
- * @package rw
- */
+  * Footer
+  */
 ?>
+
 <footer class="site-footer">
   <div class="site-footer__container">
     <div class="site-footer__colophon">

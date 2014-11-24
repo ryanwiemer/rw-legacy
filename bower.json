@@ -19,6 +19,7 @@
     "jquery-validate": "~1.13.0",
     "fastclick": "~1.0.3",
     "placeholders": "~3.0.2",
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "picturefill": "~2.2.0"
   }
 }

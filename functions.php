@@ -1,8 +1,7 @@
 <?php
 /**
- * rw theme functions
- *
- */
+  * Functions
+  */
 
 ////////////////////////
 //Clean up Wordpress////

@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: Projects Page
- * Description: A Page Template for the Projects Page
- */
+  * Projects Page
+  */
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

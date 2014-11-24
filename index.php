@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * Index
  */
 
 get_header(); ?>

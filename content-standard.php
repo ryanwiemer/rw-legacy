@@ -1,7 +1,7 @@
 <?php
 /**
-* The template used for the standard blog post type
-*/
+	* Content-Standard
+	*/
 ?>
 
 <article class="post">

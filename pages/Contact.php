@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: Contact Page
- * Description: A Page Template for the Contact Page
- */
+  * Contact Page
+  */
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

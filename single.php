@@ -1,7 +1,7 @@
 <?php
 /**
- * The Template for displaying all single posts.
- */
+	* Single
+	*/
 
 get_header(); ?>
 

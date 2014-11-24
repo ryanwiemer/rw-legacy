@@ -1,12 +1,12 @@
 <?php
 /**
- *Theme Header
- */
+  * Header
+  */
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
   <title><?php wp_title('|', true, 'right'); ?></title>
   <script type="text/javascript" src="//use.typekit.net/izi7tnt.js"></script>
@@ -25,7 +25,7 @@
 <header class="site-header">
     <div class="site-header__container">
       <nav class="site-header__nav">
-            <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => 'ul', 'menu_class' => '', 'container_class' => '') ); ?>
+        <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => 'ul', 'menu_class' => '', 'container_class' => '') ); ?>
       </nav>
       <div class="site-header__inner">
         <a href="<?php echo site_url(); ?>"><h1 class="site-header__title">Ryan Wiemer</h1></a>

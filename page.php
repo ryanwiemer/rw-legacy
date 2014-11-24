@@ -1,8 +1,7 @@
 <?php
 /**
- *
- * @package rw
- */
+  * Page
+  */
 
 get_header(); ?>
 

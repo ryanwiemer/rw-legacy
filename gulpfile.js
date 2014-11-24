@@ -14,7 +14,7 @@ var autoprefixer = require('gulp-autoprefixer');
 
 // Move and Minfiy Scripts from Bower
 gulp.task ('move', function() {
-    gulp.src(['bower_components/jquery/dist/jquery.js','bower_components/jquery-validate/dist/jquery.validate.js', 'bower_components/fastclick/lib/fastclick.js', 'bower_components/jquery-form/jquery.form.js'])
+    gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/jquery/dist/jquery.js','bower_components/jquery-validate/dist/jquery.validate.js', 'bower_components/fastclick/lib/fastclick.js', 'bower_components/jquery-form/jquery.form.js'])
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets/js/vendor/'))
@@ -30,7 +30,7 @@ gulp.task('scripts', function() {
 
 // Concat JS
 gulp.task('concat', function() {
-    gulp.src(['assets/js/vendor/jquery.min.js','assets/js/scripts/global.js','assets/js/vendor/prism.min.js'])
+    gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/global.js','assets/js/vendor/prism.min.js'])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('assets/js/'));

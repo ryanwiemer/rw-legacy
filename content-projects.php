@@ -1,7 +1,7 @@
 <?php
 /**
- * The template used for the project post type
- */
+	* Content-Projects
+	*/
 ?>
 
 <div class="project" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
