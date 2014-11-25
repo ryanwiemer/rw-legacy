@@ -20,8 +20,3 @@ npm-debug.log
 #Bower
 bower_components
 bower_components/*
-
-# Codekit
-codekit-config.json
-
-#Build files
