@@ -4,6 +4,8 @@ var gulp = require('gulp');
 // Include the Plugins
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
+var bourbon = require('node-bourbon');
+var neat = require('node-neat');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
@@ -43,7 +45,9 @@ gulp.task('concat', function() {
 // Compile Sass & Minify CSS
 gulp.task('sass', function() {
     gulp.src(['assets/scss/style.scss'])
-        .pipe(sass())
+        .pipe(sass({
+            includePaths: require('node-neat').includePaths
+         }))
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
         .pipe(minifycss())
         .pipe(rename({ suffix: '.min' }))
