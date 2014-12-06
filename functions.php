@@ -105,15 +105,8 @@ function fixed_img_caption_shortcode($attr, $content = null) {
   . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
 }
 
-//Featured Image Support and removing some file sizes
+//Featured Image Support
 add_theme_support( 'post-thumbnails');
-function trickspanda_remove_default_image_sizes( $sizes) {
-    unset( $sizes['thumbnail']);
-    //unset( $sizes['medium']);
-    unset( $sizes['large']);
-    return $sizes;
-}
-add_filter('intermediate_image_sizes_advanced', 'trickspanda_remove_default_image_sizes');
 
 ///////////////////////////
 //Theme Specific Functions/

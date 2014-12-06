@@ -2,28 +2,28 @@
  *  MIXINS *
  * ------- */
 
-$small: 450px !default;
-$medium: 650px !default;
-$large: 900px !default;
-$extra-large: 1100px !default;
-
-$breakpoints: small $small, medium $medium, extra-large $extra-large, large $large !default;
-
-$oldie: false !default;
-
-@mixin bp($point) {
-  @if $oldie {
-    @if ($point == large) or ($point == medium) or ($point == small)  {
+@mixin bp($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (min-width: 450px) {
       @content;
     }
   }
-  @else {
-    @each $breakpoint in $breakpoints {
-      @if $point == nth($breakpoint, 1) {
-        @media (min-width: nth($breakpoint, 2)) {
-          @content;
-        }
-      }
+
+  @else if $breakpoint == "medium" {
+    @media (min-width: 650px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "extra-large" {
+    @media (min-width: 1100px) {
+      @content;
     }
   }
 }
