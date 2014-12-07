@@ -108,6 +108,9 @@ function fixed_img_caption_shortcode($attr, $content = null) {
 //Featured Image Support
 add_theme_support( 'post-thumbnails');
 
+//100% jpeg Quality
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+
 ///////////////////////////
 //Theme Specific Functions/
 ///////////////////////////
