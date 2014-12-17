@@ -16,8 +16,8 @@
   }
 }
 
- .project:nth-child(3), .project:nth-child(5), .project:nth-child(7) {
-  margin-right: 0;
+ .project:nth-child(odd) {
+  @include omega();
 }
 
 .project__title, .touch .project:hover .project__title {
