@@ -7,27 +7,9 @@ code, pre {
   overflow: auto;
   padding: .5em 1em;
   font-size: .85em;
-}
-
-
-code[class*="language-"],pre[class*="language-"] {
-	color: #f8f8f2;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-/* Code blocks */
-
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
-	background: $base;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  color: #f8f8f2;
+  background: $base;
 }
 
 /* Inline code */
