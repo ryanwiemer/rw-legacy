@@ -12,14 +12,14 @@
   overflow: hidden;
   @include span-columns(12);
   @include bp(medium) {
-    //@include span-columns(6 of 12, block-collapse);
-    @include span-columns(6);
-    @include omega(odd);
+    width: 48.82117%;
+    margin-right:  2.35765%;
+    float: left;
   }
 }
 
- .project:nth-child(odd) {
-  //margin-right: 0;
+ .project:nth-child(3), .project:nth-child(5), .project:nth-child(7) {
+  margin-right: 0;
 }
 
 .project__title, .touch .project:hover .project__title {
