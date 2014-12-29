@@ -12,13 +12,13 @@
   overflow: hidden;
   @include span-columns(12);
   @include bp(medium) {
-    width: 48.82117%;
-    margin-right:  2.35765%;
-    float: left;
+    @include span-columns(6);
   }
 }
 
- .project:nth-child(3), .project:nth-child(5), .project:nth-child(7) {
+.project:nth-child(3), .project:nth-child(5), .project:nth-child(7),
+.project:nth-of-type(3), .project:nth-of-type(5), .project:nth-of-type(7)
+ {
   margin-right: 0;
 }
 
