@@ -7,7 +7,7 @@
 <footer class="site-footer">
   <div class="site-footer__container">
     <div class="site-footer__colophon">
-      &copy; Copyright 2014 Ryan Wiemer. All Rights Reserved.
+      &copy; Copyright <?php echo date("Y"); ?> Ryan Wiemer. All Rights Reserved.
     </div>
     <div class="site-footer__icons">
       <a href="https://github.com/ryanwiemer" target="blank" class="icon-github"></a>
