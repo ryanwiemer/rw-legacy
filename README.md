@@ -1,4 +1,4 @@
-www.ryanwiemer.com
+Ryan Wiemer
 ==
 Custom WordPress theme for www.ryanwiemer.com
 - Version: 1.0.0
@@ -18,10 +18,7 @@ The source code for this website is contained here on GitHub. The code checked i
 - 3. Once satisfied with an update I push it to the Dev branch on GitHub.
 - 4. After some additional testing I merge the changes into the Master branch and use DeployHQ to push it to the live environment.
 
-##Links
-- [Welcome to the Blog](http://ryanwiemer.com/blog/welcome-blog/)
-
 ##Copyright
 - All rights reserved
-- Copyright 2014 Ryan Wiemer
+- Copyright 2015 Ryan Wiemer
 - Open source tools used are under the restrictions of their specific licensing
