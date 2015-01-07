@@ -1,7 +1,6 @@
 Ryan Wiemer
 ==
 Custom WordPress theme for www.ryanwiemer.com
-- Version: 1.0.0
 
 ##Development Dependencies
 - [node.js](http://nodejs.org/)
