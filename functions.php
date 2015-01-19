@@ -105,11 +105,19 @@ function fixed_img_caption_shortcode($attr, $content = null) {
   . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
 }
 
+//Unset Large Images
+function sgr_filter_image_sizes( $sizes) {
+  unset( $sizes['large']);
+  return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'sgr_filter_image_sizes');
+
+
 //Featured Image Support
 add_theme_support( 'post-thumbnails');
 
-//100% jpeg Quality
-add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
+//95% jpeg Quality
+add_filter( 'jpeg_quality', create_function( '', 'return 95;' ) );
 
 ///////////////////////////
 //Theme Specific Functions/
