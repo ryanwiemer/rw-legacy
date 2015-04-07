@@ -105,14 +105,6 @@ function fixed_img_caption_shortcode($attr, $content = null) {
   . do_shortcode( $content ) . '<span class="wp-caption-text">' . $caption . '</span></p>';
 }
 
-//Unset Large Images
-function sgr_filter_image_sizes( $sizes) {
-  unset( $sizes['large']);
-  return $sizes;
-}
-add_filter('intermediate_image_sizes_advanced', 'sgr_filter_image_sizes');
-
-
 //Featured Image Support
 add_theme_support( 'post-thumbnails');
 
@@ -144,6 +136,12 @@ add_filter('next_posts_link_attributes','add_link_css_class_older');
  function add_link_css_class_newer() {
  return 'class="btn btn--post newer"';
  }
+
+ //Remove Additional PictureFill Script From Plugin
+ function mytheme_dequeue_scripts() {
+   wp_dequeue_script('picturefill');
+ }
+ add_action('wp_enqueue_scripts', 'mytheme_dequeue_scripts');
 
 
 ///////////////////////////
