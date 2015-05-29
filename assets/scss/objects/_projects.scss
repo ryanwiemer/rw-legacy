@@ -33,12 +33,11 @@
 
 .project:nth-of-type(5) {
   //margin-right: 0;
-  @include span-columns(4);
+  //@include span-columns(4);
 }
 
-
 .project:nth-of-type(6) {
-  @include span-columns(8);
+  //@include span-columns(8);
   height: 520px;
   margin-right: 0;
 }
