@@ -16,29 +16,9 @@
   }
 }
 
-.project:nth-of-type(2) {
-  //@include span-columns(8);
-  height: 520px;
-}
-
-.project:nth-of-type(3) {
-  //@include span-columns(4);
-  margin-right: 0;
-}
-
-.project:nth-of-type(4) {
-  //@include span-columns(4);
-  margin-right: 0;
-}
-
-.project:nth-of-type(5) {
-  //margin-right: 0;
-  //@include span-columns(4);
-}
-
-.project:nth-of-type(6) {
-  //@include span-columns(8);
-  height: 520px;
+.project:nth-child(3), .project:nth-child(5), .project:nth-child(7),
+.project:nth-of-type(3), .project:nth-of-type(5), .project:nth-of-type(7)
+ {
   margin-right: 0;
 }
 

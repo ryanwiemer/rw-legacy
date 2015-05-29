@@ -31,16 +31,22 @@ get_header(); ?>
   <?php get_template_part( 'content', 'projects' ); ?>
   <?php endwhile; ?>
 
-  <div class="pag-nav">
-      <?php previous_posts_link('Newer Projects') ?>
-      <?php next_posts_link('Older Projects') ?>
-  </div>
-
   <?php $wp_query = null; $wp_query = $temp;  // Reset ?>
 
   <?php endwhile; else: ?>
     <p><?php _e( 'Sorry, there are no projects.' ); ?></p>
   <?php endif; ?>
+
+  <div class="project" style="background-image: url('<?php echo get_template_directory_uri()?>/assets/img/placeholder.png');" >
+  	<a href="<?php echo get_permalink(); ?>"><h2 class="project__title">Start your project</h2></a>
+  </div>
+
+  <div class="pag-nav">
+      <?php previous_posts_link('Newer Projects') ?>
+      <?php next_posts_link('Older Projects') ?>
+  </div>
+
+
 
 </div> <!-- container -->
 </div> <!-- wrapper -->
