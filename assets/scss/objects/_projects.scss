@@ -22,6 +22,14 @@
   margin-right: 0;
 }
 
+.project--blank {
+  background: darken($background, 15%);
+}
+
+.project__title--blank {
+  opacity: 1;
+}
+
 .project__title, .touch .project:hover .project__title {
   color: white;
   width: 100%;
@@ -42,4 +50,10 @@
 
 .project:hover .project__title {
   opacity: 1;
+}
+
+.project__title--blank {
+  opacity: 1!important;
+  background: darken($background, 15%);
+  color: white;
 }

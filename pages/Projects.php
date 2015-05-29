@@ -37,8 +37,8 @@ get_header(); ?>
     <p><?php _e( 'Sorry, there are no projects.' ); ?></p>
   <?php endif; ?>
 
-  <div class="project" style="background-image: url('<?php echo get_template_directory_uri()?>/assets/img/placeholder.png');" >
-  	<a href="<?php echo get_permalink(); ?>"><h2 class="project__title">Start your project</h2></a>
+  <div class="project project--blank">
+  	<h2 class="project__title project__title--blank">More coming soon...</h2>
   </div>
 
   <div class="pag-nav">
