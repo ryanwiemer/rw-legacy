@@ -38,7 +38,7 @@ get_header(); ?>
   <?php endif; ?>
 
   <div class="project project--blank">
-  	<h2 class="project__title project__title--blank">More coming soon...</h2>
+  	<h2 class="project__title project__title--blank">More projects coming soon...</h2>
   </div>
 
   <div class="pag-nav">

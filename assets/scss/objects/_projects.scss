@@ -24,6 +24,10 @@
 
 .project--blank {
   background: darken($background, 15%);
+  display: none;
+  @include bp(medium) {
+    display: block;
+  }
 }
 
 .project__title--blank {
