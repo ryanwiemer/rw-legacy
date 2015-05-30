@@ -22,18 +22,6 @@
   margin-right: 0;
 }
 
-.project--blank {
-  background: darken($background, 15%);
-  display: none;
-  @include bp(medium) {
-    display: block;
-  }
-}
-
-.project__title--blank {
-  opacity: 1;
-}
-
 .project__title, .touch .project:hover .project__title {
   color: white;
   width: 100%;
@@ -45,7 +33,7 @@
   background: rgba(52,52,52,.3);
   @include bp(medium) {
     font-size: .85em;
-    background: rgba(141,196,197,.8);
+    background: rgba(226,196,138,.8);
     height: 100%;
     padding: 120px 1em 0 1em;
     opacity: 0;
@@ -56,8 +44,16 @@
   opacity: 1;
 }
 
+.project--blank {
+  display: none;
+  border: 2px solid darken($background, 15%);
+  @include bp(medium) {
+    display: block;
+  }
+}
+
 .project__title--blank {
   opacity: 1!important;
-  background: darken($background, 15%);
-  color: white;
+  background: white;
+  color: darken($background, 30%);
 }

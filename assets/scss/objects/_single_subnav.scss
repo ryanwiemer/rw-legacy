@@ -44,9 +44,9 @@
 }
 
 .navigation__left a, .navigation__right a, .touch .navigation__left a:hover, .touch .navigation__right a:hover {
-  border: none;
+  border: none!important;
   vertical-align: top;
-  color: darken( $background, 25%);
+  color: darken( $background, 25%)!important;
   @include bp(medium) {
     vertical-align: middle;
   }
@@ -66,7 +66,7 @@
 }
 }
 
-
 .navigation__left a:hover, .navigation__right a:hover {
   border: none;
+  color: $highlight!important;
 }

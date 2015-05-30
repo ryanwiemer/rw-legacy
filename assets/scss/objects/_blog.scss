@@ -30,18 +30,10 @@
   }
 }
 
-.post hr {
-  width: 50px;
-  margin: .5em 0;
-  border: none;
-  height: 4px;
-  background: $base;
-  margin-bottom: 1em;
-  text-align: left;
-  @include bp(medium) {
-    float: left;
-  }
+.post__date {
+  margin-top: .6em;
 }
+
 
 .post__title {
   font-weight: 700;

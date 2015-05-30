@@ -11,7 +11,6 @@
 	</div>
 	<div class="post__details">
 		<h2 class="post__title"><?php the_title(); ?></h2>
-		<hr>
 		<div>
 			<p class="post__date"><?php the_time('F j, Y'); ?></p>
 		</div>

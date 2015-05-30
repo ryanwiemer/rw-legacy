@@ -7,12 +7,12 @@ a {
   border: none;
 }
 
-.container a, .touch .container a:hover {
+.single .container a, .touch .single .container a:hover {
 	color: $base;
 	border-bottom: 2px solid lighten($base, 15%);
 }
 
-.container a:hover {
+.single .container a:hover {
 	color: darken($highlight, 15%);
 	border-bottom: 2px solid darken($highlight, 15%);
 }
