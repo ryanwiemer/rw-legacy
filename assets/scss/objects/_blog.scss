@@ -31,18 +31,23 @@
 }
 
 .post__date {
-  margin-top: .6em;
+  margin-top: 1em;
+  @include bp(medium) {
+    margin-top: .5em;
+  }
 }
 
 
 .post__title {
   font-weight: 700;
   font-size: 1.45em;
+  @include span-columns(9);
   @include bp(small) {
       font-size: 1.35em;
   }
   @include bp(medium) {
       font-size: 1.25em;
+      @include span-columns(12);
   }
   @include bp(large) {
       font-size: 1.175em;
@@ -87,7 +92,7 @@
 .post__read {
   float: right;
   position: relative;
-  bottom: .66em;
+  bottom: .2em;
   @include bp(medium) {
   position: absolute;
   bottom: 2em;

@@ -62,23 +62,6 @@
   }
 }
 
-.web-link {
-  color: $highlight;
-  position: relative;
-  top: .1em;
-  font-size: .8em;
-  left: .1em;
-  z-index: 99999;
- &:hover {
-   color: lighten($highlight, 15%);
- }
-}
-
-
-.hero__title {
-  font-size: 1.5em;
-}
-
 .loaded .hero__title {
   opacity: 1;
 }

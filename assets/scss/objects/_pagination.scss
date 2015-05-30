@@ -15,11 +15,9 @@
 }
 
 .btn--post {
-  background: darken( $background, 5%)!important;
-  border-color: darken( $background, 5%)!important;
+  background: darken($background, 20%)!important;
 }
 
 .btn--post:hover {
-  background: $highlight!important;
-  border-color: $highlight!important;
+  background: $base!important;
 }

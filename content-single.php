@@ -8,13 +8,7 @@
 <div class="hero" style="background-image: url('<?php if ( has_post_thumbnail() ) { $image_id = get_post_thumbnail_id();
 $image_url = wp_get_attachment_image_src($image_id,'full', true);
 echo $image_url[0]; } else {}?>');">
-			<h2 class="hero__title"><?php the_title() ;?>
-				<?php if(get_field('hero_link'))
-					{
-						echo '<a href="' . get_field('hero_link') . '"class="web-link icon-link"></a>';
-					}
-				?>
-			</h2>
+		<h2 class="hero__title"><?php the_title() ;?></h2>
 </div>
 </div>
 
