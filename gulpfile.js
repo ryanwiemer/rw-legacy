@@ -34,7 +34,7 @@ gulp.task ('move', function() {
   gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/jquery/dist/jquery.js','bower_components/jquery-validate/dist/jquery.validate.js', 'bower_components/fastclick/lib/fastclick.js', 'bower_components/jquery-form/jquery.form.js'])
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('assets/js/vendor/'))
+    .pipe(gulp.dest('assets/js/vendor/'));
 });
 
 // Lint JS
@@ -73,7 +73,7 @@ gulp.task('sass', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('assets/scss/*/*.scss', ['sass'])
-    gulp.watch('assets/js/*/*.js', ['scripts','concat']);
+    gulp.watch('assets/js/*/*.js', ['scripts','concat'])
     gulp.watch('.php').on('change', reload);
 });
 
