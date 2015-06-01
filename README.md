@@ -8,6 +8,6 @@ WordPress theme built for Ryan Wiemer's personal website.
 - Gulp
 - Bower
 
-##Copyright
+###Copyright
 - All rights reserved
 - Copyright 2015 Ryan Wiemer
