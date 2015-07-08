@@ -1,7 +1,8 @@
 <?php
 /**
-  * About Page
-  */
+ * Template Name: About Page
+ * Description: A Page Template for the About Page
+ */
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
