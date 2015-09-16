@@ -9,6 +9,8 @@ get_header(); ?>
 
 <div class="container">
 
+<h2 class="info-title">Lorem Ipsum Dolor</h2>
+
 <div class="about__image">
   <img alt="Ryan Wiemer" src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg">
 </div>

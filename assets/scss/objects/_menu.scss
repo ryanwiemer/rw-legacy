@@ -20,71 +20,43 @@
 .site-header__title, .touch .site-header__title {
   font-size: 18px;
   text-transform: capitalize;
-  line-height: 60px;
+  line-height: 75px;
   float: left;
+  text-align: left;
   display: inline-block;
   font-weight: 400;
   margin-left: 1em;
+  margin-bottom: -2em;
+  @include bp(medium) {
+    width: auto;
+    margin-bottom: 0;
+  }
 }
 
 .site-header__title:hover {
   color: $highlight;
 }
 
-.site-header__toggle:before {
-	content: "\f0c9";
-}
-
-.open .site-header__toggle:before {
-  content: "\f00d";
-}
-
-.site-header__toggle {
-  color: $base;
-  font-size: 20px;
-  float: right;
-  border: none;
-  outline: none;
-  border-radius: 50%;
-  padding: .5em;
-  margin: .4em .5em;
-  cursor: pointer;
-  display: inline-block;
-  background: $secondary;
-  @include bp(medium) {
-    display: none;
-  }
-}
-.no-touch .site-header__toggle:hover {
-  background: $secondary;
-  //color: $highlight;
-}
-
 .site-header__nav {
+  line-height: 75px;
+  float: left;
+  margin: 0 0 0 1em;
+  display: block;
+  clear: both;
   @include bp(medium) {
+    clear: none;
+    margin: 0;
     float: right;
-    height: 60px;
   }
 }
 
 .site-header__nav ul {
-  margin: 0;
-  text-align: center;
-  overflow: hidden;
-  height: 0;
-  font-size: 16px!important;
+  float: left;
+  font-size: 1rem;
   @include bp(medium) {
-    line-height: 60px;
-    padding: 0 1em;
     float: right;
     text-align: right;
-    max-height: none;
-    overflow: visible;
   }
-}
-
-.open .site-header__nav ul {
-  height:  183px;
 }
 
 .site-header__nav ul li {
@@ -92,24 +64,15 @@
 }
 
 .site-header__nav ul li a {
-  font-family: $headline;
-  margin: 0;
-  border-bottom: 1px solid darken($secondary, 10%);
-  line-height: 60px;
-  display: block;
+  margin: 0 1em 0 0;
+  border-bottom: 2px solid $secondary;
   @include bp(medium) {
     border: none;
-    display: inline-block;
-    margin-left: 2em;
-    background: none!important;
+    margin-left: 1em;
   }
 }
 
 .site-header__nav ul li a:hover {
-  color: $base;
-  background: $secondary;
-  opacity: .75;
-  @include bp(medium) {
-    color: $highlight;
-  }
+  color: $highlight;
+  border-color: $highlight;
 }
