@@ -3,8 +3,8 @@
  * ------- */
 
 //Font Families
-$headline: "myriad-pro", Helvetica, sans-serif;
-$body: "chaparral-pro", Georgia, serif;
+$headline: "Apercu Pro", Georgia, Helvetica, sans-serif;
+$body: "Apercu Pro", Georgia, serif;
 
 html {
 	font-size: 100%;
@@ -30,6 +30,7 @@ body, p {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $headline;
+	font-weight: 700;
 }
 
 strong {
@@ -80,7 +81,7 @@ em {
 .icon-github:before {
 	content: "\f09b";
 }
-.icon-menu:before, .site-header__toggle:before {
+.icon-menu:before {
 	content: "\f0c9";
 }
 .icon-mail:before {

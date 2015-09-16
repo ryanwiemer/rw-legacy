@@ -1,24 +1,3 @@
 /* ------- *
  * PARAGRAPHS *
  * ------- */
-
-p, .wp-caption {
-	line-height: 1.4;
-	margin-bottom: 1.4em;
-	@include bp(small) {
-	    line-height: 1.45;
-	    margin-bottom: 1.45em;
-	}
-	@include bp(medium) {
-	 	line-height: 1.5;
-	 	margin-bottom: 1.5em;
-	}
-	@include bp(large) {
-		line-height: 1.6;
-		margin-bottom: 1.6em;
-	}
-	@include bp(extra-large) {
-		line-height: 1.7;
-		margin-bottom: 1.7em;
-	}
-}

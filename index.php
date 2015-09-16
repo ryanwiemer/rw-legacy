@@ -4,12 +4,7 @@
  */
 
 get_header(); ?>
-<div class="wrapper">
 <div class="container">
-<div class="page-header">
-	<h2 class="page-header__title">My Words, Thoughts and Insights</h2>
-</div>
-
 	<?php if ( have_posts() ) : ?>
 		<?php /* Start the Loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -24,5 +19,4 @@ get_header(); ?>
 		 <?php posts_nav_link(' ','Newer Posts','Older Posts'); ?>
 	</div>
 </div> <!-- container -->
-</div> <!-- wrapper -->
 <?php get_footer(); ?>

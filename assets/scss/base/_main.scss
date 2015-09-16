@@ -2,49 +2,8 @@
  *   Main  *
  * ------- */
 
-.wrapper {
-	opacity: 0;
-	@extend %clearfix;
-	position: relative;
-	background: $background;
-}
-
-.loaded .wrapper {
-	opacity: 1;
-}
-
 .container {
-	@include outer-container;
-	@extend %clearfix;
-	position: relative;
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 2em 1em;
-	@include bp(medium) {
-	padding: 3em 1em;
-	}
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
 }
-
-p, .container ul, .container ol, input, textarea, .site-footer {
-	font-size: 1.1em;
-	@include bp(small) {
-			font-size: 1em;
-	}
-	@include bp(medium) {
-			font-size: .9em;
-	}
-	@include bp(large) {
-			font-size: .825em;
-	}
-	@include bp(extra-large) {
-			font-size: .85em;
-	}
-}
-
-/*
-::-moz-selection {
-}
-
-::selection {
-}
-*/

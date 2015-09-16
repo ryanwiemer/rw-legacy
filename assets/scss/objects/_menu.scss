@@ -4,65 +4,60 @@
 
 .site-header {
   z-index: 99999;
-  margin: 0 auto;
+  max-width: 960px;
   display: block;
   @extend %clearfix;
-  position: relative;
   width: 100%;
-  background: $secondary;
-}
-
-.single .site-header {
-  background: none;
-}
-
-.site-header .site-header__inner{
-  @extend %clearfix;
-  @include bp(medium) {
-    float: left;
+    margin: 0 auto;
+  a {
+    color: $base;
+    &:hover {
+      color: $highlight;
+    }
   }
-}
-
-.site-header .site-header__container{
-  margin: 0 auto;
-  max-width: 1100px;
 }
 
 .site-header__title, .touch .site-header__title {
   font-size: 18px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 60px;
-  color: white;
   float: left;
-  margin-left: 1em;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
+  margin-left: 1em;
 }
 
 .site-header__title:hover {
-  color: darken( $background, 10%);
+  color: $highlight;
+}
+
+.site-header__toggle:before {
+	content: "\f0c9";
+}
+
+.open .site-header__toggle:before {
+  content: "\f00d";
 }
 
 .site-header__toggle {
-  vertical-align: center;
-  color: white;
-  font-size: 22px;
-  line-height: 60px;
+  color: $base;
+  font-size: 20px;
   float: right;
   border: none;
   outline: none;
-  background: none;
-  padding: 0 1em;
-  margin: 0;
+  border-radius: 50%;
+  padding: .5em;
+  margin: .4em .5em;
   cursor: pointer;
   display: inline-block;
+  background: $secondary;
   @include bp(medium) {
     display: none;
   }
 }
 .no-touch .site-header__toggle:hover {
-  opacity: .75;
+  background: $secondary;
+  //color: $highlight;
 }
 
 .site-header__nav {
@@ -89,40 +84,32 @@
 }
 
 .open .site-header__nav ul {
-  height:  250px;
+  height:  183px;
 }
 
 .site-header__nav ul li {
-  background: $secondary;
+  display: inline;
+}
+
+.site-header__nav ul li a {
   font-family: $headline;
   margin: 0;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid darken($secondary, 10%);
   line-height: 60px;
+  display: block;
   @include bp(medium) {
     border: none;
     display: inline-block;
     margin-left: 2em;
-    background: none;
+    background: none!important;
   }
 }
 
-.site-header__nav ul li a {
-  color: white;
-  display: block;
-}
-
-.site-header__nav .active a {
+.site-header__nav ul li a:hover {
+  color: $base;
+  background: $secondary;
+  opacity: .75;
   @include bp(medium) {
-    line-height: 54px;
-    border-bottom: 3px solid $highlight;
-  }
-}
-
-.no-touch .site-header__nav ul li a:hover {
-  color: $highlight;
-  background: $tertiary;
-  @include bp(medium) {
-    background: none;
-    color: darken( $background, 10%);
+    color: $highlight;
   }
 }
