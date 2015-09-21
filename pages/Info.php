@@ -7,15 +7,12 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+<section class="hero"></section>
 <div class="container">
-<div class="info-image">
-</div>
-<h2 class="info-title">Lorem Ipsum Dolor</h2>
 
-<div class="info-bio">
-  <?php the_content(); ?>
-  <a href="<?php echo get_site_url(); ?>/wp-content/uploads/2014/07/Ryan-Wiemer-Resume.pdf" class="btn">Download Resume</a>
-</div>
+<p id="info-intro">Hello lorem <a href="#">ipsum dolore set</a>. Vitae ante ipsum. Nunc.Fusce quis quam eu ipsum. Laoreet sed. Sed pulvinar non enim eget. Quisque in nisl egestas, consectetur. Vivamus consequat nunc tortor, non.</p>
+
+<?php the_content(); ?>
 
 <?php endwhile; else: ?>
 
