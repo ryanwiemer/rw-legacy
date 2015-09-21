@@ -8,7 +8,8 @@
   display: block;
   @extend %clearfix;
   width: 100%;
-    margin: 0 auto;
+  margin: 0 auto;
+  text-align: center;
   a {
     color: $base;
     &:hover {
@@ -20,16 +21,13 @@
 .site-header__title, .touch .site-header__title {
   font-size: 18px;
   text-transform: capitalize;
-  line-height: 75px;
-  float: left;
-  text-align: left;
   display: inline-block;
   font-weight: 400;
-  margin-left: 1em;
-  margin-bottom: -2em;
+  margin: 1em 0 0 0;
   @include bp(medium) {
-    width: auto;
-    margin-bottom: 0;
+    line-height: 75px;
+    float: left;
+    margin: 0 0 0 1em;
   }
 }
 
@@ -38,24 +36,22 @@
 }
 
 .site-header__nav {
-  line-height: 75px;
-  float: left;
-  margin: 0 0 0 1em;
-  display: block;
-  clear: both;
+  line-height: 50px;
   @include bp(medium) {
-    clear: none;
+    line-height: 75px;
     margin: 0;
     float: right;
   }
 }
 
 .site-header__nav ul {
-  float: left;
   font-size: 1rem;
+  display: inline-block;
+  margin: 0;
   @include bp(medium) {
     float: right;
     text-align: right;
+    margin-right: .5em;
   }
 }
 
@@ -64,15 +60,9 @@
 }
 
 .site-header__nav ul li a {
-  margin: 0 1em 0 0;
-  border-bottom: 2px solid $secondary;
-  @include bp(medium) {
-    border: none;
-    margin-left: 1em;
-  }
+  margin: 0 .75em 0 .75em;
 }
 
 .site-header__nav ul li a:hover {
-  color: $highlight;
-  border-color: $highlight;
+  color: $secondary;
 }

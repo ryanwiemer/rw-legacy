@@ -33,12 +33,6 @@
     margin-right: 1em;
   }
   a {
-    color: $base;
     font-family: $body;
-    border-bottom: 2px solid $secondary;
-    &:hover {
-      color: $highlight;
-      border-color: $highlight;
-    }
   }
 }

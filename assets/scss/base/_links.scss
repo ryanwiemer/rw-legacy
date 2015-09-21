@@ -5,4 +5,12 @@
 a {
 	text-decoration: none;
   border: none;
+	color: $base;
+	&:hover {
+		color: $secondary;
+	}
+}
+
+.container a, footer a {
+	text-decoration: underline;
 }

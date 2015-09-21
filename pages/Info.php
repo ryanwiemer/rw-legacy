@@ -8,14 +8,11 @@ get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div class="container">
-
+<div class="info-image">
+</div>
 <h2 class="info-title">Lorem Ipsum Dolor</h2>
 
-<div class="about__image">
-  <img alt="Ryan Wiemer" src="<?php echo get_template_directory_uri(); ?>/assets/img/bio.jpg">
-</div>
-
-<div class="about__bio">
+<div class="info-bio">
   <?php the_content(); ?>
   <a href="<?php echo get_site_url(); ?>/wp-content/uploads/2014/07/Ryan-Wiemer-Resume.pdf" class="btn">Download Resume</a>
 </div>
