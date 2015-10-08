@@ -6,6 +6,7 @@
   @include bp(medium) {
     @include span-columns(6);
     @include omega(2n);
+    margin-bottom: 2em;
   }
   img {
     border: 1px solid $secondary;

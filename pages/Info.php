@@ -9,13 +9,15 @@ get_header(); ?>
 <section class="intro">
   <a href="#info"></a>
     <p class="intro__text">
-      Donec eget orci congue, fermentum. Cras pharetra ipsum in vestibulum. Pellentesque ut leo neque. Nulla.
+      Ryan Wiemer<br><span>Digital Project Manager</span>
     </p>
+    <div class="intro__scroll">
+        <em>scroll down</em>
+    </div>
 </section> <!-- Intro -->
 <div class="container">
 
 <section id="info" class="info">
-  <h2 class="section-title">Info</h2>
   <div class="info__bio">
     <p>
       My name is Ryan Wiemer and I am a project manager working in San Francisco, California. I particularly enjoy working on interactive and web focused projects. I have expertsie strategic planning, technial problem solving and front end web development. I currently work at <a href="#">Epsilon</a>, a global marketing agency, where I have managed proejcts for clients including Pacific Union, ProSight Specialty Insurance, RSA, and American Express just to name a few.
