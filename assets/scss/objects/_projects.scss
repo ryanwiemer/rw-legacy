@@ -1,0 +1,19 @@
+/* ------- *
+*   Projects  *
+* ------- */
+
+.project {
+  @include bp(medium) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  img {
+    border: 1px solid $secondary;
+  }
+  h2 {
+    //font-weight: normal;
+  }
+  h3 {
+    font-weight: normal;
+  }
+}

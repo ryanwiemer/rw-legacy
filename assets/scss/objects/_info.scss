@@ -1,58 +1,30 @@
 /* ------- *
-*  Info  *
+*   Info   *
 * ------- */
 
-.hero {
-  background: $secondary;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  left: 0;
-  z-index: -1;
-  display: none;
-  @include bp(medium) {
-      display: block;
-      height: 80vh;
-  }
-}
-
-#info-intro {
-  font-size: 1.5rem;
-  float: left;
-  @include bp(medium) {
-    max-width: 50%;
-  }
-}
-
-.intro-social {
-  float: left;
-}
-
-
-
-.info-title {
-  font-size: 4em;
-  opacity: .5;
-  color: blue;
-  line-height: 1.1;
-  float: right;
-  clear: both;
-  width: 50%;
-}
-
-
-.info-image {
+.info {
   position: relative;
-  background: gray;
-  height: 400px;
-  margin-bottom: 2em;
-  background-position: center;
-  background-size: cover;
-  width: 50%;
-  float: left;
 }
 
-.info-bio {
+.info__bio {
+  line-height: 1.6;
+  position: relative;
+  @include bp(medium) {
+    @include span-columns(6);
+  }
+  p {
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
+.info__image {
+  background: $secondary;
+  margin: 2rem 0 2rem;
+  @include bp(medium) {
+    @include span-columns(6);
+    margin: 0;
+  }
 }

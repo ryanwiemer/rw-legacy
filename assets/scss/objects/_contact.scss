@@ -2,158 +2,22 @@
 *  Contact  *
 * ------- */
 
-.contact-intro {
-  @include span-columns(12);
-  @include bp(medium) {
-    @include span-columns(4);
-  }
+
+
+.contact {
+  margin-top: 4em;
 }
 
-.contact-intro__image {
-  display: none;
-  @include bp(medium) {
-    @include span-columns(12);
-  }
+
+
+.contact__methods {
+  margin-top: 2em;
 }
 
-input, textarea {
-  background: $background;
-  font-family: $body;
-  padding: .5em;
-  resize: none;
-  -webkit-appearance:none;
-  border-radius: 0;
-}
-
-textarea {
-  line-height: 1.4;
-  overflow: auto;
-}
-
-.error {
-  border: 2px solid #c53f3f!important;
-  color: #c53f3f;
-}
-
-.form {
-  @extend %clearfix;
-  position: relative;
-}
-
-.form input, .form textarea {
-  border: 2px solid lighten($base, 15%);
-}
-
-.form__name input:focus, .form__email input:focus, .form__message textarea:focus, .form__subject input:focus {
-  outline: none !important;
-  box-shadow: 0;
-  border: 2px solid $base;
-}
-
-.form__submit {
-  outline: none !important;
-  box-shadow: 0;
-  line-height: 1;
-  border: none!important;
-}
-
-.form fieldset {
-  @include span-columns(12);
-  @include bp(medium) {
-  @include span-columns(8);
-}
-}
-
-.form__name {
-  @include span-columns(12);
-  margin-bottom: .5em;
-
-  @include bp(medium) {
-  @include span-columns(6);
-}
-}
-
-.form__name__input{
-  @include span-columns(12);
-}
-
-.form__email {
-  @include span-columns(12);
+.contact__methods li {
   margin-bottom: .5em;
   @include bp(medium) {
-  @include span-columns(6);
-  @include omega;
-}
-}
-
-.form__email__input{
-  @include span-columns(12);
-}
-
-.form__subject {
-  @include span-columns(12);
-  margin-bottom: .5em;
-}
-
-.form__subject__input{
-  @include span-columns(12);
-}
-
-.form__message {
-  margin-bottom: .5em;
-}
-
-.form__message__textarea{
-  height: 300px;
-  @include span-columns(12);
-}
-
-.form__submit, .touch .form__submit:hover {
-  margin-top: .75em;
-  background: none;
-  float: left;
-}
-
-.form__submit:hover {
-  cursor: pointer;
-}
-
-.form__success, .form__error {
-  display: none;
-}
-.form__success {
-  color: $highlight;
-}
-
-.form__error {
-  color: #c53f3f;
-}
-
-.form__success, .form__error {
-  position: relative;
-  font-family: $headline;
-  left: 1em;
-  top: 1.5em;
-  font-size: 1em;
-  @include bp(small) {
-      font-size: .9em;
+    @include span-columns(6);
+    @include omega(2n);
   }
-  @include bp(medium) {
-      font-size: .8em;
-  }
-  @include bp(large) {
-      font-size: .725em;
-  }
-  @include bp(extra-large) {
-      font-size: .75em;
-  }
-}
-
-//Spam Filter
-.form__bot {
-  display:none!important;
-}
-
-.form__bot__input {
-  display:none!important;
 }

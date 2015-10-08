@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
   <title><?php wp_title('|', true, 'right'); ?></title>
-  <script type="text/javascript" src="//use.typekit.net/izi7tnt.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <?php wp_head(); ?>
   <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,9 +20,9 @@
   </script>
 </head>
 <body <?php body_class('loading'); ?>>
-  <header class="site-header">
-    <a href="<?php echo site_url(); ?>"><h1 class="site-header__title">Ryan Wiemer</h1></a>
-    <nav class="site-header__nav">
-      <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => 'false', 'menu_class' => '', 'container_class' => '') ); ?>
+  <header class="header">
+    <nav class="nav">
+      <a href="<?php echo site_url(); ?>"><h1>Ryan Wiemer</h1></a>
+      <?php wp_nav_menu( array( 'menu' => 'Menu 1', 'container' => false, 'menu_class' => '', 'container_class' => '') ); ?>
     </nav>
   </header>

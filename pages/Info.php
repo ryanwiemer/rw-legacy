@@ -6,18 +6,36 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-<section class="hero"></section>
+<section class="intro">
+  <a href="#info"></a>
+    <p class="intro__text">
+      Donec eget orci congue, fermentum. Cras pharetra ipsum in vestibulum. Pellentesque ut leo neque. Nulla.
+    </p>
+</section> <!-- Intro -->
 <div class="container">
 
-<p id="info-intro">Hello lorem <a href="#">ipsum dolore set</a>. Vitae ante ipsum. Nunc.Fusce quis quam eu ipsum. Laoreet sed. Sed pulvinar non enim eget. Quisque in nisl egestas, consectetur. Vivamus consequat nunc tortor, non.</p>
+<section id="info" class="info">
+  <h2 class="section-title">Info</h2>
+  <div class="info__bio">
+    <p>
+      My name is Ryan Wiemer and I am a project manager working in San Francisco, California. I particularly enjoy working on interactive and web focused projects. I have expertsie strategic planning, technial problem solving and front end web development. I currently work at <a href="#">Epsilon</a>, a global marketing agency, where I have managed proejcts for clients including Pacific Union, ProSight Specialty Insurance, RSA, and American Express just to name a few.
+    </p>
+    <p>
+      When not working I can usually be found reading up on the latest tech gadgets, exploring the San Francisco Bay Area, or out taking photographs. I love meeting new people with similar passions or goals in making a difference on the web. If you are interested in possible work or project opportunities please feel free to get in touch.
+    </p>
+    <ul class="contact__methods">
+      <li><a href="mailto:ryan@ryanwiemer.com">ryan@ryanwiemer.com</a></li>
+      <li><a href="http://ryanwiemer.dev/assets/ryan_wiemer_resume.pdf" target="_blank">Resume</a></li>
+      <li><a href="https://www.linkedin.com/in/ryanwiemer" target="_blank">LinkedIn</a></li>
+      <li><a href="https://instagram.com/ryanwiemer/" target="_blank">Instagram</a></li>
+    </ul>
+  </div>
+  <img class="info__image" src='assets/img/about.jpg' />
+</section>
 
 <?php the_content(); ?>
-
 <?php endwhile; else: ?>
-
   <p>Sorry, this page does not exist</p>
-
 <?php endif; ?>
 
 </div> <!-- container -->

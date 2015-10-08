@@ -24,7 +24,7 @@ gulp.task('browser-sync', function() {
   //initialize browsersync
   browserSync.init(files, {
   //browsersync with a php server
-  proxy: "v4.dev",
+  proxy: "ryanwiemer.dev",
   notify: false,
   open: false
   });
@@ -48,12 +48,8 @@ gulp.task('scripts', function() {
 
 // Concat JS
 gulp.task('concat', function() {
-  gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/global.js','assets/js/vendor/prism.min.js'])
+  gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/global.js'])
     .pipe(concat('scripts.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('assets/js/'));
-  gulp.src(['assets/js/vendor/jquery.form.min.js','assets/js/scripts/jquery.form.settings.js','assets/js/vendor/jquery.validate.min.js'])
-    .pipe(concat('contact.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('assets/js/'));
 });

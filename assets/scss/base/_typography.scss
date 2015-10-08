@@ -69,24 +69,39 @@ em {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-left_arrow:before {
+.icon-close:before {
+	content: "\f00d";
+}
+.icon-chevron-left:before {
 	content: "\f053";
 }
-.icon-right_arrow:before {
+.icon-chevron-right:before {
 	content: "\f054";
 }
-.icon-linkedin:before {
+.icon-plus-circle:before {
+	content: "\f055";
+}
+.icon-info-circle:before {
+	content: "\f05a";
+}
+.icon-linkedin-square:before {
 	content: "\f08c";
 }
-.icon-github:before {
-	content: "\f09b";
-}
-.icon-menu:before {
+.icon-bars:before {
 	content: "\f0c9";
 }
-.icon-mail:before {
-	content: "\f0e0";
+.icon-github-alt:before {
+	content: "\f113";
 }
-.icon-link:before {
-	content: "\e600";
+.icon-instagram:before {
+	content: "\f16d";
+}
+.icon-sun-o:before {
+	content: "\f185";
+}
+.icon-moon-o:before {
+	content: "\f186";
+}
+.icon-file-pdf-o:before {
+	content: "\f1c1";
 }

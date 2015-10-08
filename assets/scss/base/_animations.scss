@@ -1,44 +1,15 @@
 //Animations
 
-.wrapper {
-  @include transition (opacity 200ms ease-in);
+.work a {
+  @include transition(opacity 200ms ease-in-out);
+}
+.contact a  {
+  @include transition(color 200ms ease-in-out);
+}
+.btn {
+  @include transition(background 200ms ease-in-out);
 }
 
-.hero {
-  @include transition (opacity 200ms ease-in);
-}
-
-.cssanimations .hero:before {
-  @include transition (opacity 200ms ease-in);
-}
-
-.project__title{
-  @include transition (opacity 150ms ease-in-out);
-}
-
-.container a, .form__submit {
-  @include transition-property (border, background-color, color);
-  @include transition-duration(100ms);
-  @include transition-timing-function(ease-in-out);
-}
-
-.site-header__title {
-  @include transition (color 100ms ease-in-out);
-}
-
-header a, header a:hover {
-  @include transition (background 100ms ease-in-out);
-  @include bp(medium) {
-    @include transition (color 100ms ease-in-out);
-  }
-}
-
-.site-footer__icons a {
-  @include transition (color 100ms ease-in-out);
-}
-
-.site-header__nav ul {
-  @include transition-property (height);
-  @include transition-duration(300ms);
-  @include transition-timing-function(ease-out);
+.intro {
+  //@include transition(background 300ms ease-in-out);
 }

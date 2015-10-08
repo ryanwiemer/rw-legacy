@@ -6,11 +6,11 @@ a {
 	text-decoration: none;
   border: none;
 	color: $base;
-	&:hover {
-		color: $secondary;
-	}
 }
 
-.container a, footer a {
+.container a {
 	text-decoration: underline;
+	&:hover {
+		opacity: .75;
+	}
 }
