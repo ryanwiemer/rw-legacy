@@ -22,7 +22,6 @@
 
 .info__image {
   background: $secondary;
-  margin: 2rem 0 2rem;
   @include bp(medium) {
     @include span-columns(6);
     margin: 0;

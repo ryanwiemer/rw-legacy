@@ -1,5 +1,18 @@
 //Animations
 
+.project img, .project h2, .project h3 {
+  @include transition(all 200ms ease-in-out);
+}
+
+
+
+
+
+
+
+
+
+
 .work a {
   @include transition(opacity 200ms ease-in-out);
 }

@@ -18,18 +18,15 @@
   margin: 0 auto;
     padding: 0 1rem;
   h1 {
-    @include span-columns(6);
     line-height: 75px;
     float: left;
     font-weight: normal;
   }
   ul {
-    //@include span-columns(6);
     float: right;
   }
   li {
     display: inline;
     margin-left: 3em;
-    //@include span-columns(4);
   }
 }

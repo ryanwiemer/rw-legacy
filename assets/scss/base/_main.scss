@@ -5,15 +5,20 @@
 .container {
   max-width: 960px;
   margin: 75px auto 4em;
-  padding: 0 1em;
+  padding: 2em 1em 0;
   @extend %clearfix;
 }
 
+.home .container {
+  padding-top: 0;
+}
+
+
 section {
-  padding: 2em 0 0 0;
+  //padding: 2em 0 0 0;
   @extend %clearfix;
   @include bp(medium) {
-    padding: 4em 0 0 0;
+    //padding: 4em 0 0 0;
   }
 }
 

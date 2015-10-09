@@ -7,7 +7,6 @@
   background-size: cover;
   width: 100%;
   background: $secondary;
-  //background-image:url('/assets/img/header.jpg');
   background-position: center bottom;
   background-size: cover;
   @extend %clearfix;
@@ -22,29 +21,20 @@
     left: 0;
     right: 0;
     display: block;
+    z-index: 2;
   }
   span {
     color: $highlight;
-  }
-  em {
-    font-style: normal;
-    position: absolute;
-    bottom: 2em;
-    color: darken($secondary, 20%);
-  }
-  .intro__scroll {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 2rem 0 2rem;
   }
 }
 
 .intro__text {
   max-width: 960px;
-  padding: 6rem 1rem 2rem;
+  padding: 4em 1em 4em;
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: bold;
+  margin-top: 75px;
   @extend %clearfix;
   @include bp(medium) {
     padding: 0 1rem 0 1rem;
@@ -57,4 +47,25 @@
 }
 
 
-//Scroll down animation
+
+//Scroll Down
+.intro__scroll {
+  @extend %clearfix;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em 0 1em;
+  display: none;
+  @include bp(medium) {
+    display: block;
+  }
+  span {
+    font-style: normal;
+    position: absolute;
+    bottom: 3em;
+    color: darken($secondary, 20%);
+    text-decoration: underline;
+    &:hover {
+      color: $base;
+    }
+  }
+}

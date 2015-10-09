@@ -3,18 +3,41 @@
 * ------- */
 
 .project {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1em;
   @include bp(medium) {
+    margin-bottom: 2.35765%;
     @include span-columns(6);
     @include omega(2n);
-    margin-bottom: 2em;
   }
   img {
     border: 1px solid $secondary;
+    &:hover {
+      border: 1px solid $base;
+    }
   }
   h2 {
     //font-weight: normal;
+    position: absolute;
+    top: 1em;
+    width: 100%;
   }
   h3 {
     font-weight: normal;
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
   }
+}
+
+.project h2, .project h3 {
+
+  @include bp(medium) {
+    opacity: 0;
+  }
+}
+
+.project:hover h2,.project:hover h3 {
+  opacity: 1;
 }
