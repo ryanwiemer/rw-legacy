@@ -1,0 +1,35 @@
+/* ------- *
+*  Intro  *
+* ------- */
+
+.banner {
+  position: relative;
+  background: $secondary;
+  @extend %clearfix;
+  min-height: 300px;
+  height: 50vh;
+  @include bp(medium) {
+    height: 50vh;
+  }
+}
+
+.banner__contents {
+  max-width: 1000px;
+  margin: 75px auto 0;
+  padding: 0 1em;
+  @extend %clearfix;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  p {
+    font-weight: bold;
+    font-size: 2.5rem;
+    @include bp(medium) {
+      @include span-columns(10);
+      font-size: 3.5rem;
+    }
+  }
+  span {
+    color: $highlight;
+  }
+}

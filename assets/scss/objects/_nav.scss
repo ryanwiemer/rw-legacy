@@ -6,17 +6,20 @@
   margin: 0 auto;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   background: white;
   width: 100%;
   line-height: 75px;
+  a:hover {
+    color: $highlight;
+  }
 }
 
 .nav {
   @extend %clearfix;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
-    padding: 0 1rem;
+  padding: 0 1rem;
   h1 {
     line-height: 75px;
     float: left;

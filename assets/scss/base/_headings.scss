@@ -5,24 +5,3 @@
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1.4;
 }
-
-.section-title {
-  display: inline-block;
-	font-weight: normal;
-	margin: 0 0 2em 0;
-	@include span-columns(12);
-}
-
-.section-preface {
-	line-height: 1.6;
-	margin-bottom: 1rem;
-	@include bp(medium) {
-		@include span-columns(6);
-		margin-bottom: 0;
-	}
-}
-
-
-.section-caption {
-	//color: darken($secondary, 20%);
-}

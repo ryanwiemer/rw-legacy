@@ -7,10 +7,18 @@
 }
 
 .info__bio {
+  border: 1px solid $base;
+  padding: 2em;
+  background: white;
+  z-index: 99;
   line-height: 1.6;
-  position: relative;
+  margin-bottom: 0;
   @include bp(medium) {
+    position: relative;
+    top: 6em;
+    margin-bottom: 4em;
     @include span-columns(6);
+    @include shift(6);
   }
   p {
     margin-bottom: 1rem;
@@ -21,9 +29,17 @@
 }
 
 .info__image {
-  background: $secondary;
   @include bp(medium) {
-    @include span-columns(6);
+    @include span-columns(8);
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  ul {
+    margin: 1em 0 2em;
+  }
+  li {
+    margin-bottom: .5em;
   }
 }

@@ -3,23 +3,10 @@
  * ------- */
 
 //Font Families
-$headline: "Apercu Pro", Georgia, Helvetica, sans-serif;
-$body: "Apercu Pro", Georgia, serif;
+$body: "Apercu Pro", Helvetica, sans-serif;
 
 html {
 	font-size: 100%;
-
-	@include bp(small) {
-		//font-size: 112.5%;
-	}
-
-	@include bp(medium) {
-		//font-size: 112.5%;
-	}
-
-	@include bp(large) {
-		//font-size: 125%;
-	}
 }
 
 body, p {
@@ -29,18 +16,10 @@ body, p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: $headline;
-	font-weight: 700;
+	font-family: $body;
+	font-weight: bold;
 }
 
-strong {
-	font-family: $headline;
-	font-weight: 700;
-}
-
-em {
-	font-style: italic;
-}
 
 //Icons
 @font-face {
