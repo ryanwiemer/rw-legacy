@@ -4,11 +4,13 @@
 	*/
 get_header(); ?>
 
-<div class="wrapper">
 <div class="container">
-		<section class="error-404 not-found">
-				<p><?php _e( 'Oops! That page can&rsquo;t be found. Please check the URL and try again.'); ?></p>
+		<section class="not-found">
+				<h2>Eror 404!</h2>
+				<div class="video-container">
+					<img src="<?php echo site_url(); ?>/wp-content/uploads/2015/10/twilight_zone.gif"/>
+				</div>
+				<h3>Oops! That page can&rsquo;t be found. Please check the URL and try again.</h3>
 		</section><!-- .error-404 -->
 </div> <!-- container -->
-</div> <!-- wrapper -->
 <?php get_footer(); ?>

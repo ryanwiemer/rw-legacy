@@ -1,0 +1,28 @@
+/* ------- *
+* 404 Page *
+* ------- */
+
+.error404 .container {
+}
+
+.not-found h2 {
+  font-size: 2.5rem;
+  margin: -.5em 0 .5em 0;
+  @include bp(medium) {
+      font-size: 3.5rem;
+  }
+}
+
+.not-found h3 {
+  margin: 1em 0;
+  padding: 1em;
+  background: white;
+  border: 1px solid $base;
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 0;
+  @include bp(medium) {
+      top: -2em;
+  }
+}
