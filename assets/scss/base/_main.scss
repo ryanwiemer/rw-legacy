@@ -4,15 +4,13 @@
 
 .container {
   max-width: 1000px;
-  margin: 75px auto 4em;
-  padding: 2em 1em 2em;
-  @extend %clearfix;
+  margin: 100px auto 4em;
+  padding: 0 1em;
 }
 
 .home .container {
-  padding-top: 0;
+  margin: 4em auto;
 }
-
 
 section {
   @extend %clearfix;

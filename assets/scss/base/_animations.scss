@@ -1,7 +1,7 @@
 //Animations
 
-.project img, .project h2, .project h3 {
-  @include transition(all 200ms ease-in-out);
+.project {
+  //@include transition(all 200ms ease-in-out);
 }
 
 

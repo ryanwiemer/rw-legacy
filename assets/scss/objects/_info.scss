@@ -10,7 +10,7 @@
   border: 1px solid $base;
   padding: 2em;
   background: white;
-  z-index: 99;
+  z-index: 2;
   line-height: 1.6;
   margin-bottom: 0;
   @include bp(medium) {
@@ -29,6 +29,7 @@
 }
 
 .info__image {
+  @extend %clearfix;
   @include bp(medium) {
     @include span-columns(8);
     margin: 0;
@@ -38,6 +39,9 @@
   }
   ul {
     margin: 1em 0 2em;
+    @include bp(medium) {
+      margin: 1em 0 4em;
+    }
   }
   li {
     margin-bottom: .5em;

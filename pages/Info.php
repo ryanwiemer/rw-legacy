@@ -8,9 +8,9 @@ get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="banner">
   <div class="banner__contents">
-    <p class="banner__text">
+    <h2 class="banner__text">
       <?php the_field('banner_headline'); ?>
-    </p>
+    </h2>
   </div>
 </section> <!-- Intro -->
 <div id="info-top" class="container">

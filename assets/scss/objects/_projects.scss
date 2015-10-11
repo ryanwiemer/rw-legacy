@@ -3,38 +3,44 @@
 * ------- */
 
 .project {
-  text-align: center;
   position: relative;
   margin-bottom: 1em;
+  border: 1px solid $base;
   @include bp(medium) {
     margin-bottom: 2.35765%;
     @include span-columns(6);
     @include omega(2n);
   }
-  img {
-    border: 1px solid $secondary;
-    &:hover {
-      border: 1px solid $base;
-    }
-  }
   h2 {
-    position: absolute;
-    top: 1em;
-    width: 100%;
+    color: $base;
+    opacity: 0;
   }
   h3 {
+    color: $base;
     font-weight: normal;
-    position: absolute;
-    bottom: 1em;
+    opacity: 0;
+  }
+  figure {
     width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
-.project h2, .project h3 {
-
-  @include bp(medium) {
-    opacity: 0;
-  }
+.project:hover {
+  border-color: white;
+}
+.project__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.project:hover .project__overlay {
+  background: $secondary;
 }
 
 .project:hover h2,.project:hover h3 {
