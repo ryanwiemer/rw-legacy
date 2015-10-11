@@ -6,6 +6,7 @@
   max-width: 1000px;
   margin: 100px auto 4em;
   padding: 0 1em;
+  @extend %clearfix;
 }
 
 .home .container {
@@ -18,4 +19,8 @@ section {
 
 .loading {
   cursor: wait;
+}
+
+strong {
+  font-weight: bold;
 }

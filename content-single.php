@@ -5,18 +5,20 @@
 ?>
 
 <div class="container">
+<div class="single__details">
+<h2 class="single__title"><?php the_title(); ?></h3>
+	<ul>
+		<li><p>A minimal and clean photography website built on WordPress.</p></li>
+		<li><strong>Role:</strong> <?php $category = get_the_category(); echo $category[0]->cat_name; ?></li>
+		<li><strong>URL:</strong> <a href="#" target="_blank">www.kathrynkellerartist.com</a></li>
+	</ul>
+</div>
+
 
 <div class="navigation">
 	<span class="navigation__left"><?php previous_post_link('%link',''); ?></span>
-	<span class="post__date"><?php the_time('F j, Y'); ?></span>
 	<span class="navigation__right"><?php next_post_link('%link',''); ?></span>
 </div> <!--navigation -->
 
 <?php the_content(); ?>
-<?php
-	// If comments are open or we have at least one comment, load up the comment template
-	if ( comments_open() || '0' != get_comments_number() ) :
-		comments_template();
-	endif;
-?>
 </div> <!-- container -->

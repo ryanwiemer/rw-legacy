@@ -1,0 +1,38 @@
+/* ------- *
+*  Single  *
+* ------- */
+
+.single__details {
+  margin-bottom: 2em;
+  @extend %clearfix;
+}
+
+.single__title {
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: .5em;
+  @include bp(medium) {
+    @include span-columns(6);
+    font-size: 3.5rem;
+  }
+}
+
+.single__details ul {
+  @extend %clearfix;
+  padding: 1em;
+  border: 1px solid $base;
+  line-height: 1.6;
+  @include bp(medium) {
+    @include span-columns(6);
+    margin-right: 0;
+  }
+}
+
+.single .container p {
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
