@@ -2,25 +2,25 @@
 * 404 Page *
 * ------- */
 
-.not-found h2 {
+.error404__title {
   font-size: 2.5rem;
   margin: 0 0 .5em 0;
   @include bp(medium) {
+    @include span-columns(6);
     font-size: 3.5rem;
   }
 }
 
-.not-found h3 {
-  margin: 1em 0;
+.error404__message {
+  line-height: 1.6;
+  width: 100%;
+  float: right;
   padding: 1em;
   background: white;
   border: 1px solid $base;
-  display: inline-block;
-  float: right;
-  position: relative;
   font-weight: normal;
+  margin-bottom: 1em;
   @include bp(medium) {
-    top: -2em;
-    margin-bottom: -2em;
+      width: 48.82117%;
   }
 }

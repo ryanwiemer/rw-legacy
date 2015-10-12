@@ -7,18 +7,24 @@
   @extend %clearfix;
 }
 
-.single__title {
-  line-height: 1.2;
-  font-weight: bold;
-  font-size: 2.5rem;
+.single__details__left {
   margin-bottom: .5em;
   @include bp(medium) {
     @include span-columns(6);
+  }
+}
+
+.single__details__left  h2 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: bold;
+  font-size: 2.5rem;
+  @include bp(medium) {
     font-size: 3.5rem;
   }
 }
 
-.single__details ul {
+.single__details__right {
   @extend %clearfix;
   padding: 1em;
   border: 1px solid $base;
@@ -31,8 +37,24 @@
 
 .single .container p {
   margin-bottom: 1em;
-
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.first {
+  margin-bottom: 1em;
+}
+
+.single__navigation {
+  margin-top: 2em;
+}
+
+.single__navigation__left {
+  float: left;
+}
+
+.single__navigation__right {
+  float: right;
+  text-align: right;
 }

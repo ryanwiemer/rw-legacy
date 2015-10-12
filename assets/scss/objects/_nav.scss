@@ -30,6 +30,9 @@
   }
   li {
     display: inline;
-    margin-left: 3em;
+    margin-left: 2em;
+    @include bp(medium) {
+      margin-left: 3em;
+    }
   }
 }
