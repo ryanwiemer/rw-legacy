@@ -14,7 +14,7 @@
   }
 }
 
-.single__details__left  h2 {
+.single__details__left h2 {
   margin-bottom: 1rem;
   line-height: 1.2;
   font-weight: bold;
@@ -25,9 +25,9 @@
 }
 
 .single__details__right {
+  background: white;
   @extend %clearfix;
-  padding: 1em;
-  border: 1px solid $base;
+  //padding: 1em;
   line-height: 1.6;
   @include bp(medium) {
     @include span-columns(6);

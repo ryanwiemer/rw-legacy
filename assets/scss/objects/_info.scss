@@ -7,13 +7,12 @@
 }
 
 .info__bio {
-  border: 1px solid $base;
-  padding: 2em;
   background: white;
   z-index: 2;
   line-height: 1.6;
   margin-bottom: 0;
   @include bp(medium) {
+    padding: 2em;
     position: relative;
     top: 6em;
     margin-bottom: 4em;

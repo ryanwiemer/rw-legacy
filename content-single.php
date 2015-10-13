@@ -18,7 +18,7 @@
 
 <?php the_content(); ?>
 <div class="single__navigation">
-	<span class="single__navigation__left"><?php previous_post_link('%link','Previous Project'); ?></span>
-	<span class="single__navigation__right"><?php next_post_link('%link','Next Project'); ?></span>
+	<span class="single__navigation__left"><?php next_post_link('%link','Previous Project'); ?></span>
+	<span class="single__navigation__right"><?php previous_post_link('%link','Next Project'); ?></span>
 </div>
 </div> <!-- container -->
