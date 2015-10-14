@@ -24,3 +24,14 @@ section {
 strong {
   font-weight: bold;
 }
+
+
+//Loading
+.container, .banner  {
+  //opacity: 0;
+  //transition: all 200ms ease-in-out;
+}
+
+.loaded .container, .loaded .banner {
+  //opacity: 1;
+}

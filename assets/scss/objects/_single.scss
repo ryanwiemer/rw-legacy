@@ -25,9 +25,7 @@
 }
 
 .single__details__right {
-  background: white;
   @extend %clearfix;
-  //padding: 1em;
   line-height: 1.6;
   @include bp(medium) {
     @include span-columns(6);

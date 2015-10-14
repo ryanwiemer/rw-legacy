@@ -13,16 +13,17 @@
     @include span-columns(6);
     @include omega(2n);
   }
+  img {
+    margin-bottom: -2px;
+  }
   h2 {
     color: $highlight;
-    opacity: 0;
   }
   h3 {
     color: $base;
     font-weight: normal;
-    opacity: 0;
   }
-  figure {
+  figure div {
     width: 100%;
     text-align: center;
     position: absolute;
@@ -42,9 +43,5 @@
 }
 
 .project:hover .project__overlay {
-  opacity: 1;
-}
-
-.project:hover h2,.project:hover h3 {
   opacity: 1;
 }
