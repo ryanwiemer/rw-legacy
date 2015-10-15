@@ -5,6 +5,7 @@
 .error404__title {
   font-size: 2.5rem;
   margin: 0 0 .5em 0;
+  line-height: 1.2;
   @include bp(medium) {
     @include span-columns(6);
     font-size: 3.5rem;
@@ -13,14 +14,9 @@
 
 .error404__message {
   line-height: 1.6;
-  width: 100%;
-  float: right;
-  padding: 1em;
-  background: white;
-  border: 1px solid $base;
-  font-weight: normal;
-  margin-bottom: 1em;
+  margin: 0 0 1rem 0;
   @include bp(medium) {
-      width: 48.82117%;
+      @include span-columns(6);
+      margin: 0 1em 0 0;
   }
 }
