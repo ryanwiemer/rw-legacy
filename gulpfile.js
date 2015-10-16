@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() {
 
 // Move and Minfiy Scripts from Bower
 gulp.task ('move', function() {
-  gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/jquery/dist/jquery.js'])
+  gulp.src(['bower_components/picturefill/dist/picturefill.js','bower_components/PACE/pace.js'])
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('assets/js/vendor/'));
@@ -48,7 +48,7 @@ gulp.task('scripts', function() {
 
 // Concat JS
 gulp.task('concat', function() {
-  gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/jquery.min.js','assets/js/scripts/global.js'])
+  gulp.src(['assets/js/vendor/picturefill.min.js','assets/js/vendor/pace.min.js','assets/js/scripts/global.js'])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('assets/js/'));

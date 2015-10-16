@@ -14,9 +14,9 @@
 
 .error404__message {
   line-height: 1.6;
-  margin: 0 0 1rem 0;
+  margin: 0 1em 0 0;
   @include bp(medium) {
-      @include span-columns(6);
-      margin: 0 1em 0 0;
+    @include span-columns(6);
+      margin: 0 0 1rem 0;
   }
 }

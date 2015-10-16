@@ -19,7 +19,7 @@
 	  ga('send', 'pageview');
   </script>
 </head>
-<body <?php body_class('loading'); ?>>
+<body <?php body_class(''); ?>>
   <header class="header">
     <nav class="nav">
       <a href="<?php echo site_url(); ?>"><h1>Ryan Wiemer</h1></a>

@@ -144,6 +144,20 @@ add_filter('next_posts_link_attributes','add_link_css_class_older');
  add_action('wp_enqueue_scripts', 'mytheme_dequeue_scripts');
 
 
+ /* Register template redirect action callback */
+ add_action('template_redirect', 'meks_remove_wp_archives');
+
+ /* Remove archives */
+ function meks_remove_wp_archives(){
+   //If we are on category or tag or date or author archive
+   if( is_category() || is_tag() || is_date() || is_author() ) {
+     global $wp_query;
+     $wp_query->set_404(); //set to 404 not found page
+   }
+ }
+
+
+
 ////////////////////////
 //CSS & JS Scripts//////
 ////////////////////////
