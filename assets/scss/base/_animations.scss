@@ -1,17 +1,19 @@
 //Animations
 
+.container a, header a {
+  @include transition(all 200ms ease-in-out);
+}
+
 .project__overlay, .project h2, .project h3 {
   @include transition(all 200ms ease-in-out);
 }
- .cotinaer a, header a {
-   @include transition(all 200ms ease-in-out);
- }
+
 
 
 
 
  //Loading
- .js .container, .js .banner  {
+.container, .banner  {
    opacity: 0;
    transition: all 500ms ease-in-out;
    transform: translateY(30px);

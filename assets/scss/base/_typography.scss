@@ -3,7 +3,8 @@
  * ------- */
 
 //Font Families
-$body: "Apercu Pro", Helvetica, sans-serif;
+$body: "Apercu Regular", Calibri, Roboto, sans-serif;
+$bold:  "Apercu Bold", Calibri, Roboto, sans-serif;
 
 html {
 	font-size: 100%;
@@ -11,11 +12,12 @@ html {
 
 body, p {
 	font-family: $body;
-	font-weight: 400;
+	font-weight: normal;
+	font-style:normal;
+	font-size-adjust:0.508;
 	color: $base;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: $body;
-	font-weight: bold;
+.wf-loading body {
+  visibility: hidden;
 }

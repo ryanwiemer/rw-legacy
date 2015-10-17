@@ -18,10 +18,11 @@
   }
   h2 {
     color: $highlight;
+    font-weight: bold;
+    font-family: $bold;
   }
   h3 {
     color: $base;
-    font-weight: normal;
   }
   figure div {
     width: 100%;

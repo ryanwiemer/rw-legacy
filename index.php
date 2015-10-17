@@ -13,5 +13,5 @@ get_header(); ?>
 		<?php else : ?>
 			<p><?php _e( 'Sorry, there are no posts.' ); ?></p>
 	<?php endif; ?>
-</div> <!-- container -->
+</div>
 <?php get_footer(); ?>

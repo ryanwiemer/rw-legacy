@@ -21,4 +21,4 @@
 	<span class="single__navigation__left"><?php next_post_link('%link','Previous Project'); ?></span>
 	<span class="single__navigation__right"><?php previous_post_link('%link','Next Project'); ?></span>
 </div>
-</div> <!-- container -->
+</div>

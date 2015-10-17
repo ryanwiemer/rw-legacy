@@ -36,9 +36,8 @@ get_header(); ?>
   </div>
 
 </section>
-<?php endwhile; else: ?>
-  <p>Sorry, this page does not exist</p>
+<?php endwhile;?>
 <?php endif; ?>
 
-</div> <!-- container -->
+</div>
 <?php get_footer(); ?>
