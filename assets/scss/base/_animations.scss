@@ -34,11 +34,13 @@
 }
 
 .pace .pace-progress {
-  background: $highlight;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 2px;
+  @include bp(medium) {
+    background: $highlight;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+  }
 }
