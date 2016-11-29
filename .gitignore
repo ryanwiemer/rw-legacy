@@ -17,6 +17,10 @@ npm-debug.log
 *.swp
 *.bak
 
-#Bower
+# Bower
 bower_components
 bower_components/*
+
+# Dist Folder
+dist
+dist/*

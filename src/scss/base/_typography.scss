@@ -1,0 +1,58 @@
+/* ------- *
+ *  Typography  *
+ * ------- */
+
+ /*
+  * Web Fonts from colophon-foundry.org
+  *
+  * The fonts included in this stylesheet are subject to the End User License you purchased
+  * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+  * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+  * distributing this font software.
+  *
+  * (c) 2016 Colophon Foundry
+  *
+  * Licenced to Ryan Wiemer
+  */
+
+@font-face {
+    font-family: 'apercu-regular';
+    src: url('../fonts/apercu-regular.eot');
+    src: url('../fonts/apercu-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/apercu-regular.woff') format('woff'),
+         url('../fonts/apercu-regular.woff2') format('woff2'),
+         url('../fonts/apercu-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+   font-family: 'apercu-bold';
+   src: url('../fonts/apercu-bold.eot');
+   src: url('../fonts/apercu-bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/apercu-bold.woff') format('woff'),
+        url('../fonts/apercu-bold.woff2') format('woff2'),
+        url('../fonts/apercu-bold.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+//Font Families
+$body: "apercu-regular", Calibri, Roboto, sans-serif;
+$bold: "apercu-bold", Calibri, Roboto, sans-serif;
+
+html {
+	font-size: 100%;
+}
+
+body, p {
+	font-family: $body;
+	font-weight: normal;
+	font-style:normal;
+	font-size-adjust:0.508;
+	color: $base;
+}
+
+.wf-loading body {
+  visibility: hidden;
+}

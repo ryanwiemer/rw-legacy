@@ -170,8 +170,8 @@ if (defined('WPSEO_VERSION')){
 
 //Enqueue scripts and styles.
 function rw_scripts() {
-  wp_enqueue_style( 'rw-style',  get_stylesheet_directory_uri() . '/assets/css/style.min.css');
-  wp_enqueue_script( 'rw-main-scripts',  get_template_directory_uri() . '/assets/js/scripts.min.js');
+  wp_enqueue_style( 'rw-style',  get_stylesheet_directory_uri() . '/dist/css/style.min.css');
+  wp_enqueue_script( 'rw-pace',  get_template_directory_uri() . '/dist/js/pace.min.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'rw_scripts');
