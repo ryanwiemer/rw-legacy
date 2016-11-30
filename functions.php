@@ -175,4 +175,3 @@ function rw_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'rw_scripts');
-add_action( 'wp_enqueue_scripts', 'contact_scripts');
