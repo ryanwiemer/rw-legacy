@@ -1,7 +1,7 @@
 
-#README
+# README
 WordPress theme built for Ryan Wiemer's personal website.
 
-###Copyright
+### Copyright
 - All rights reserved
-- Copyright 2017 Ryan Wiemer
+- Copyright Ryan Wiemer
